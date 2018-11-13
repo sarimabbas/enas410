@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Nav from './components/Nav/Nav1';
 import Masthead from './components/Masthead/Masthead';
 import UpdateCard from './components/Update/UpdateCard';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -28,7 +29,7 @@ class App extends Component {
                         </div>
                     </div>
                 </section>
-               
+                <Footer/>
             </div>
         );
     }

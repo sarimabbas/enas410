@@ -1,0 +1,26 @@
+
+.footer {
+    display: grid;
+    grid-template-areas: 
+        "a a b c"
+        "d d d d";
+    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+}
+
+.logo {
+    grid-area: a;
+    line-height: 1;
+}
+
+.info1 {
+    grid-area: b;
+}
+
+.info2 {
+    grid-area: c;
+}
+
+.copyright {
+    grid-area: d;
+}
