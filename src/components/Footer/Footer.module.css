@@ -2,8 +2,8 @@
 .footer {
     display: grid;
     grid-template-areas: 
-        "a a b c"
-        "d d d d";
+        "a a a a a a b b b c c c"
+        "d d d d d d d d d d d d";
     grid-column-gap: 20px;
     grid-row-gap: 25px;
 }
