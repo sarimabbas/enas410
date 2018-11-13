@@ -13,3 +13,8 @@
     max-width: 64px;
     margin-right: 10px;
 }
+
+.vertical {
+    display: flex;
+    align-items: center;
+}

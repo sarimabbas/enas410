@@ -1,0 +1,10 @@
+.base {
+    height: 100%;
+    max-width: 350px;
+}
+
+.sub {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
