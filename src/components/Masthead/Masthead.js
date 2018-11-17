@@ -7,7 +7,7 @@ import classNames from 'classnames';
 const masthead = () => {
     return (
         <Aux>
-            <div class="container">
+            <div className="container">
                 <div className={classNames("image")}>
                     <img src={squid} className={styles.mastheadImg} alt="squid"/>
                 </div>

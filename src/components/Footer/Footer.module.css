@@ -1,26 +1,25 @@
 
 .footer {
     display: grid;
-    grid-template-areas: 
-        "a a a a a a b b b c c c"
-        "d d d d d d d d d d d d";
-    grid-column-gap: 20px;
-    grid-row-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 25px;
 }
 
-.logo {
-    grid-area: a;
+.info {
     line-height: 1;
 }
 
-.info1 {
-    grid-area: b;
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
 }
 
-.info2 {
-    grid-area: c;
+.icons > * {
+    margin-right: 10px;
 }
 
-.copyright {
-    grid-area: d;
+.separator {
+    border-top: 1px solid navy;
 }

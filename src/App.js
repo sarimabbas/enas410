@@ -8,22 +8,30 @@ import './App.css';
 
 // import debug from './Debug.module.css';
 
+// icons with FontAwesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
+library.add(faFacebook, faTwitter, faInstagram, faYoutube, faBars, faSearch)
+
+
+
 class App extends Component {
     render() {
         return (
             <div className="App">
                 <Nav/>
                 <Masthead/>
-                <section class="section">
+                <section className="section">
                     <div className="container">
-                        <div class="columns">
-                            <div class="column">
+                        <div className="columns">
+                            <div className="column">
                                 <UpdateCard />
                             </div>
-                            <div class="column">
+                            <div className="column">
                                 <UpdateCard />
                             </div>
-                            <div class="column">
+                            <div className="column">
                                 <UpdateCard />
                             </div>
                         </div>
