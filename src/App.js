@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 
 // custom components
-import Nav from './components/Nav/Nav1';
-import Masthead from './components/Masthead/Masthead';
-import SpotlightSection from './components/Spotlight/SpotlightSection';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
-
-
-
-// import debug from './Debug.module.css';
+import SpotlightSection from './components/Spotlight/SpotlightSection';
 
 // styles
 import './App.css';
+import 'bulma/css/bulma.css';
+// import debug from './Debug.module.css';
 
 // icons with FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'

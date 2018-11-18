@@ -10,8 +10,10 @@
     "bulma": "^0.7.2",
     "classnames": "^2.2.6",
     "i": "^0.3.6",
+    "node-sass": "^4.10.0",
     "npm": "^6.4.1",
-    "react": "^16.6.1",
+    "nuka-carousel": "^4.4.3",
+    "react": "^16.6.3",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
   },
