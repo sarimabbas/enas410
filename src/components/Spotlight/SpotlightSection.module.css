@@ -1,0 +1,16 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.title {
+    font-family: "GT America Expanded Black", sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.more {
+    font-family: "GT America Bold", sans-serif;
+}

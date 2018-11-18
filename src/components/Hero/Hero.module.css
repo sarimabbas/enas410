@@ -1,0 +1,19 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    background-image: url('./assets/slide1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+
+
+.text {
+    margin-right: 50px;
+}
