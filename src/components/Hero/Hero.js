@@ -1,20 +1,39 @@
 import React, { Component } from 'react';
-import styles from './Hero.module.css';
 
+// styles
+import styles from './Hero.module.css';
+import classNames from 'classnames';
+
+// animations
+import posed from 'react-pose';
+
+// assets
 import slide1 from './assets/slide1.jpg';
 import slide2 from './assets/slide2.jpg';
 
+const Hero = posed.div({
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 }
+})
+
 class hero extends Component {
 
-    // initial state
-    state = {
-        image: slide1,
-        title : "Behind the Giant Squid",
-        subtitle: "Peabody Spotlights",
+    constructor(props) {
+        super(props);
+
+        // initial state
+        this.state = {
+            image: slide1,
+            title: "Behind the Giant Squid",
+            subtitle: "Peabody Spotlights",
+        }
+
+        // controls handler binding
+        this.handleControls = this.handleControls.bind(this);
     }
 
     // update state from controls
-    controlHandler = (e) => {
+    handleControls = (e) => {
 
         let image = null;
         let title = null;
@@ -44,8 +63,6 @@ class hero extends Component {
             title: title,
             subtitle: subtitle
         })
-
-        console.log(this.state)
     }
 
     render() {
@@ -53,18 +70,20 @@ class hero extends Component {
         let url = "url('" + this.state.image + "')"
 
         return (
-            <section className={styles.hero} style={{backgroundImage: url}}>
+            <Hero 
+                className={classNames(styles.hero, styles.fadeIn)} 
+                style={{backgroundImage: url}}>
                 <div className={styles.heroInner}>
                     <div className={styles.text}>
                         <h1 className={styles.title}>{this.state.title}</h1>
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
                         <div className={styles.controls}>
-                            <input type="radio" name="slider" id="slider-1" onClick={this.controlHandler} defaultChecked />
-                            <input type="radio" name="slider" id="slider-2" onClick={this.controlHandler}/>
+                            <input type="radio" name="slider" id="slider-1" onClick={this.handleControls} defaultChecked />
+                            <input type="radio" name="slider" id="slider-2" onClick={this.handleControls}/>
                         </div>
                     </div>
                 </div>
-            </section>
+            </Hero>
         )
     }
 }
