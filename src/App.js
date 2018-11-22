@@ -15,8 +15,8 @@ import 'bulma/css/bulma.css';
 // icons with FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
-library.add(faFacebook, faTwitter, faInstagram, faYoutube, faBars, faSearch)
+import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
+library.add(faFacebook, faTwitter, faInstagram, faYoutube, faBars, faSearch, faTimes)
 
 
 class App extends Component {

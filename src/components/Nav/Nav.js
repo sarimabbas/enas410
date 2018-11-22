@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux';
+import Overlay from './Overlay';
 
 // styles
 import styles from './Nav.module.css'
@@ -12,9 +13,17 @@ class nav extends Component {
         this.state = {
             scrollThresholdMet : false,
             fadedOnce: false,
+            showOverlay: false,
         }
 
         this.handleScroll = this.handleScroll.bind(this);
+        this.showSettings = this.showSettings.bind(this);
+    }
+
+    showSettings = (event) => {
+        this.setState({
+            showOverlay: true,
+        })
     }
 
     componentDidMount() {
@@ -27,7 +36,7 @@ class nav extends Component {
 
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
-        const scrollThreshold = 650; //! if changed here, make sure to change in Floto.js
+        const scrollThreshold = window.innerHeight; //! if changed here, make sure to change in Floto.js
 
         if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
             this.setState({
@@ -52,9 +61,12 @@ class nav extends Component {
             logoFade = this.state.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
         }
 
+        let overlay = this.state.showOverlay ? <Overlay/> : null;
+        let overlayFade = this.state.showOverlay ? styles.logoTransparent : null;
+
         return (
             <Aux>
-                <div className={classNames(styles.nav, barFade)} >
+                <div className={classNames(styles.nav, barFade, overlayFade)} >
                     <div className={classNames(styles.logo, logoFade)}>
                         <span className={classNames(styles.link)}>
                             Yale Peabody Museum of Natural History
@@ -66,9 +78,11 @@ class nav extends Component {
                         <span className={classNames(styles.link)}>Learn</span>
                         <span className={classNames(styles.link)}>Collections</span>
                         <span className={classNames(styles.link)}>About</span>
-                        <FontAwesomeIcon icon={["fas", "bars"]} className={classNames(styles.link)}></FontAwesomeIcon>
+                        <FontAwesomeIcon href="#" onClick={this.showSettings} icon={["fas", "bars"]} className={classNames(styles.link)}>
+                        </FontAwesomeIcon>
                     </div>
                 </div>
+                { overlay }
             </Aux>
         )
     }
