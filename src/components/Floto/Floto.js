@@ -11,6 +11,7 @@ class floto extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            scrollThresholdMet: false,
             size: "15vh",
         }
     }
@@ -25,6 +26,7 @@ class floto extends Component {
 
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
+        const scrollThreshold = 650;
         const shrinkSpeed = 1.5;
 
         // set the size as a function of scroll and max font size
@@ -35,16 +37,27 @@ class floto extends Component {
         this.setState({
             size : size,
         })
+
+        // set the threshold (for hiding the logo completely)
+        if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
+            this.setState({
+                scrollThresholdMet: true,
+            })
+        }
+
+        if (this.state.scrollThresholdMet && scrollTop <= scrollThreshold) {
+            this.setState({
+                scrollThresholdMet: false,
+            })
+        }
      
-
-        console.log(this.state.size)
     }
-
     
     render() {
+        let fade = this.state.scrollThresholdMet ? styles.transparent : styles.opaque;
         return(
             <Aux>
-                <div className={classNames(styles.floto)}>
+                <div className={classNames(styles.floto, fade)}>
                     <h1 className={classNames(styles.text)} style={{fontSize: this.state.size}}>Peabody</h1>
                 </div>
             </Aux>

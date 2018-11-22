@@ -27,15 +27,16 @@ class nav extends Component {
 
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
+        const scrollThreshold = 650; //! if changed here, make sure to change in Floto.js
 
-        if (!this.state.scrollThresholdMet && scrollTop > 650) {
+        if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
             this.setState({
                 scrollThresholdMet : true,
                 fadedOnce: true,
             })
         } 
 
-        if (this.state.scrollThresholdMet && scrollTop <= 650) {
+        if (this.state.scrollThresholdMet && scrollTop <= scrollThreshold) {
             this.setState({
                 scrollThresholdMet: false,
             })
@@ -45,14 +46,20 @@ class nav extends Component {
     render() {
 
         // fade logic
-        let fade = NaN
+        let barFade, logoFade= NaN;
         if (this.state.fadedOnce) {
-            fade = this.state.scrollThresholdMet ? styles.opaque : styles.transparent;
+            barFade = this.state.scrollThresholdMet ? styles.barOpaque : styles.barTransparent;
+            logoFade = this.state.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
         }
 
         return (
             <Aux>
-                <div className={classNames(styles.nav, fade)} >
+                <div className={classNames(styles.nav, barFade)} >
+                    <div className={classNames(styles.logo, logoFade)}>
+                        <span className={classNames(styles.link)}>
+                            Yale Peabody Museum of Natural History
+                        </span>
+                    </div>
                     <div className={classNames(styles.links)}>
                         <span className={classNames(styles.link)}>Visit</span>
                         <span className={classNames(styles.link)}>Exhibitions</span>
