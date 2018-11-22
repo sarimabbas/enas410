@@ -25,11 +25,11 @@ class floto extends Component {
 
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
-        const offset = 0.3;
+        const shrinkSpeed = 1.5;
 
         // set the size as a function of scroll and max font size
         const fontMax = 15;
-        let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0)
+        let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
         let size = ((1 - normalized) * fontMax).toString() + "vh";
 
         this.setState({
