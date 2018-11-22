@@ -6,12 +6,15 @@ import styles from './Nav.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+// animation
+import posed from 'react-pose';
+
 class nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
             scrollThresholdMet : false,
-            opacity: 1,
+            fadedOnce: false,
         }
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -28,12 +31,10 @@ class nav extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
 
-        // make scroll a linear function of opacity
-
-
         if (!this.state.scrollThresholdMet && scrollTop > 650) {
             this.setState({
                 scrollThresholdMet : true,
+                fadedOnce: true,
             })
         } 
 
@@ -42,16 +43,19 @@ class nav extends Component {
                 scrollThresholdMet: false,
             })
         }
-
-        // console.log(scrollTop);
     }
 
     render() {
-        
-        let opaque = this.state.scrollThresholdMet ? styles.opaque : NaN;
+
+        // fade logic
+        let fade = NaN
+        if (this.state.fadedOnce) {
+            fade = this.state.scrollThresholdMet ? styles.opaque : styles.transparent;
+        }
+
         return (
             <Aux>
-                <div className={classNames(styles.nav, opaque)}>
+                <div className={classNames(styles.nav, fade)} >
                     <div className={classNames(styles.links)}>
                         <span className={classNames(styles.link)}>Visit</span>
                         <span className={classNames(styles.link)}>Exhibitions</span>

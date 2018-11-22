@@ -34,19 +34,26 @@
 
 .opaque {
     /* set nav black */
-     background-color: rgba(0, 0, 0, 1.0);
+    background-color: rgba(0, 0, 0, 1.0);
 
     /* fade animation */
-    opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
-	animation-duration: 0.4s;
+	animation-duration: 0.5s;
 }
 
 .opaque > * {
     /* remove white border from the links classs */
     border-bottom: 0px !important;
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0.0);
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 0.5s;
 }
 
 @keyframes fadeInOpacity {
@@ -55,5 +62,14 @@
 	}
 	100% {
         background-color: rgba(0, 0, 0, 1.0); 
+	}
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+        background-color: rgba(0, 0, 0, 1.0);
+	}
+	100% {
+        background-color: rgba(0, 0, 0, 0.0); 
 	}
 }
