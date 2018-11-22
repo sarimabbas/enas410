@@ -6,12 +6,12 @@ import styles from './Nav.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
 class nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
             scrollThresholdMet : false,
+            opacity: 1,
         }
 
         this.handleScroll = this.handleScroll.bind(this);
@@ -28,13 +28,16 @@ class nav extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
 
-        if (!this.state.scrollThresholdMet && scrollTop > 500) {
+        // make scroll a linear function of opacity
+
+
+        if (!this.state.scrollThresholdMet && scrollTop > 650) {
             this.setState({
                 scrollThresholdMet : true,
             })
         } 
 
-        if (this.state.scrollThresholdMet && scrollTop <= 500) {
+        if (this.state.scrollThresholdMet && scrollTop <= 650) {
             this.setState({
                 scrollThresholdMet: false,
             })
@@ -58,7 +61,6 @@ class nav extends Component {
                         <FontAwesomeIcon icon={["fas", "bars"]} className={classNames(styles.link)}></FontAwesomeIcon>
                     </div>
                 </div>
-
             </Aux>
         )
     }

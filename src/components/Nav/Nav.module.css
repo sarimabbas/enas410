@@ -34,13 +34,13 @@
 
 .opaque {
     /* set nav black */
-    background-color: black;
+     background-color: rgba(0, 0, 0, 1.0);
 
     /* fade animation */
     opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
+	animation-timing-function: linear;
 	animation-duration: 0.4s;
 }
 
@@ -51,9 +51,9 @@
 
 @keyframes fadeInOpacity {
 	0% {
-		opacity: 0;
+        background-color: rgba(0, 0, 0, 0.0);
 	}
 	100% {
-		opacity: 1;
+        background-color: rgba(0, 0, 0, 1.0); 
 	}
 }

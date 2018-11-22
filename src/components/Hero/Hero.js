@@ -67,7 +67,9 @@ class hero extends Component {
 
     render() {
 
-        let url = "url('" + this.state.image + "')"
+        // prepare image
+        let vignette = "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), "
+        let url = vignette + "url('" + this.state.image + "')"
 
         return (
             <Hero 
