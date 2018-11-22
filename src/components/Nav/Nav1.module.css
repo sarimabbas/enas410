@@ -1,0 +1,20 @@
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+    max-width: 64px;
+    margin-right: 10px;
+}
+
+.vertical {
+    display: flex;
+    align-items: center;
+}

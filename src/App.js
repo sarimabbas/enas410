@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 // custom components
-import Footer from './components/Footer/Footer';
+import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import SpotlightSection from './components/Spotlight/SpotlightSection';
+import Footer from './components/Footer/Footer';
 
 // styles
 import './App.css';
@@ -21,6 +22,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Nav/>
                 <Hero/>
                 <SpotlightSection/>
                 <Footer/>

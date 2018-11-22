@@ -1,20 +1,32 @@
-.center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.nav {
+    /* move on top of background */
+    position: absolute;
+    width: 100%;
+    top: 0px; 
+    left: 0px;
+    z-index: 1;
 }
 
-.grid {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+.links {
+    /* text style */
+    color: white;
+    font-family: "GT America Medium", sans-serif;
 
-.logo {
-    max-width: 64px;
-    margin-right: 10px;
-}
-
-.vertical {
+    /* layout of children */
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+
+    /* let them breathe */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* add bottom border */
+    border-bottom: 2px solid white;
+    width: 500px;
+    margin-left: auto;
+}
+
+.navLink {
+    margin-right: 25px;
 }

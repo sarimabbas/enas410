@@ -57,36 +57,3 @@
 .controls > * {
     margin-left: 10px;
 }
-/* 
-.controls > input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-}
-
-.controls:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-
-.controls input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-} */

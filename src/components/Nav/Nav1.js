@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bulma/css/bulma.css';
-import styles from './Nav.module.css';
+import styles from './Nav1.module.css';
 import logo from './logo.png';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
