@@ -1,0 +1,30 @@
+.floto {
+    /* fix to the top left */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    /* expand to height of masthead */
+    height: 100vh;
+
+    /* set child inside flexbox */
+    display: flex;
+    align-items: flex-start;
+}
+
+.text {
+    /* add padding against the top of the parent */
+    /* padding-bottom: 50px; */
+
+    /* style */
+    color: white;
+    font-family: "GT America Expanded Black", sans-serif;
+    /* height: 100%; */
+    text-transform: uppercase;
+
+    /* flip sideways */
+    text-orientation: sideways-right;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}

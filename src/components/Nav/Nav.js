@@ -6,9 +6,6 @@ import styles from './Nav.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-// animation
-import posed from 'react-pose';
-
 class nav extends Component {
     constructor(props) {
         super(props);

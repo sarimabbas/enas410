@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 // custom components
+import Floto from './components/Floto/Floto';
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import SpotlightSection from './components/Spotlight/SpotlightSection';
@@ -22,6 +23,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Floto/>
                 <Nav/>
                 <Hero/>
                 <SpotlightSection/>
