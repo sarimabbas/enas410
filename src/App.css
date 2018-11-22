@@ -49,7 +49,3 @@
   font-family: 'GT America Regular';
   src: url('./fonts/GT\ America\ Regular.otf') format('opentype');
 }
-
-body {
-    margin: 0;
-}
