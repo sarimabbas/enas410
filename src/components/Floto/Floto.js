@@ -12,7 +12,7 @@ class floto extends Component {
         super(props)
         this.state = {
             scrollThresholdMet: false,
-            size: "15vh",
+            width: "'wdth' 1000",
         }
     }
 
@@ -27,18 +27,23 @@ class floto extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight;
-        const shrinkSpeed = 1.5;
+        const shrinkSpeed = 6;
 
-        // set the size as a function of scroll and max font size
-        const fontMax = 15;
+        // set the font-width as a function of scroll and max font width
+        const fontMax = 1000;
         let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
-        let size = ((1 - normalized) * fontMax).toString() + "vh";
+       
+        let widthNo = ((1 - normalized) * fontMax).toString();
+        let width = "'wdth' " + widthNo
 
         this.setState({
-            size : size,
+            width : width,
         })
 
-        // set the threshold (for hiding the logo completely)
+        console.log(width)
+
+
+        // hiding the logo completely
         if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
             this.setState({
                 scrollThresholdMet: true,
@@ -54,11 +59,16 @@ class floto extends Component {
     }
     
     render() {
+        // hiding the logo completely
         let fade = this.state.scrollThresholdMet ? styles.transparent : styles.opaque;
+
         return(
             <Aux>
                 <div className={classNames(styles.floto, fade)}>
-                    <h1 className={classNames(styles.text)} style={{fontSize: this.state.size}}>Peabody</h1>
+                    <h1 className={classNames(styles.text)} 
+                        style={{fontVariationSettings: this.state.width}}>
+                        Peabody
+                    </h1>
                 </div>
             </Aux>
         )

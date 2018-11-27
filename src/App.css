@@ -1,6 +1,11 @@
 /* Custom Fonts */
 
 @font-face {
+    font-family: 'Peabody Variable';
+    src: url('./fonts/peabody-VF.woff2') format('woff2-variations');
+}
+
+@font-face {
   font-family: 'GT America Black';
   src: url('./fonts/GT\ America\ Black.otf') format('opentype');
 }

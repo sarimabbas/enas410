@@ -1,6 +1,6 @@
 .floto {
     /* fix to the top left */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
@@ -10,24 +10,32 @@
 
     /* set child inside flexbox */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; /* left-right alignment */
+    align-items: flex-start;  /* top-down alignment */
 }
 
 .text {
     /* add padding against the top of the parent */
     padding-bottom: 10px;
 
-    /* style */
+    /* font style */
     color: white;
-    font-family: "GT America Expanded Black", sans-serif;
-    height: 100vh;
+    font-family: "Peabody Variable", sans-serif;
+    font-variation-settings: "wdth" 1000;
     text-transform: uppercase;
 
-    /* flip sideways */
+    /* text orientation */
     text-orientation: sideways-right;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+
+    /* height: 100vh; */
+    
+    font-size: 14vh;
+    
+
+
 }
 
 .transparent {
