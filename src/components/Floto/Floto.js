@@ -29,7 +29,7 @@ class floto extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight;
-        const shrinkSpeed = 6;
+        const shrinkSpeed = 5;
 
         // set the font-width as a function of scroll and max font width
         const fontMax = 1000;
