@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 
 // pages
 import Home from './pages/Home/Home'
+import Visit from './pages/Visit/Visit'
 
 // styles
 import './App.css';
@@ -23,6 +24,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Route path="/" exact component={Home} />
+                <Route path="/visit" exact component={Visit} />
             </div>
         );
     }
