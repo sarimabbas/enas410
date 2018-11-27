@@ -68,16 +68,16 @@ class nav extends Component {
             <Aux>
                 <div className={classNames(styles.nav, barFade, overlayFade)} >
                     <div className={classNames(styles.logo, logoFade)}>
-                        <span className={classNames(styles.link)}>
+                    <a href="/" className={classNames(styles.link)}>
                             Yale Peabody Museum of Natural History
-                        </span>
+                    </a>
                     </div>
                     <div className={classNames(styles.links)}>
-                        <span className={classNames(styles.link)}>Visit</span>
-                        <span className={classNames(styles.link)}>Exhibitions</span>
-                        <span className={classNames(styles.link)}>Learn</span>
-                        <span className={classNames(styles.link)}>Collections</span>
-                        <span className={classNames(styles.link)}>About</span>
+                        <a href="/visit" className={classNames(styles.link)}>Visit</a>
+                        <a className={classNames(styles.link)}>Exhibitions</a>
+                        <a className={classNames(styles.link)}>Learn</a>
+                        <a className={classNames(styles.link)}>Collections</a>
+                        <a className={classNames(styles.link)}>About</a>
                         <FontAwesomeIcon href="#" onClick={this.showSettings} icon={["fas", "bars"]} className={classNames(styles.link)}>
                         </FontAwesomeIcon>
                     </div>

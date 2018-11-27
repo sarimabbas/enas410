@@ -51,7 +51,15 @@
 
 .link {
     margin-right: 25px;
+    
+    text-decoration: none;
+    color: inherit;
 }
+
+.link:hover {
+    color: grey;
+}
+
 
 .logoTransparent {
     opacity: 0;
