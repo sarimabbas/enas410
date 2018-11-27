@@ -1,7 +1,9 @@
 .floto {
-    /* fix to the top left */
-    position: fixed;
-    top: 0;
+    /* fixed: follow on scroll */
+    /* absolute: stay in place */
+    /* top: how far from the top of screen */
+ 
+
     left: 0;
     z-index: 10;
 
@@ -23,6 +25,7 @@
     font-family: "Peabody Variable", sans-serif;
     font-variation-settings: "wdth" 1000;
     text-transform: uppercase;
+    font-size: 14vh;
 
     /* text orientation */
     text-orientation: sideways-right;
@@ -32,7 +35,7 @@
 
     /* height: 100vh; */
     
-    font-size: 14vh;
+    
     
 
 

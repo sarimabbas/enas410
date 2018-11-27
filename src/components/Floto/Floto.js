@@ -13,6 +13,8 @@ class floto extends Component {
         this.state = {
             scrollThresholdMet: false,
             width: "'wdth' 1000",
+            positionType: "fixed",
+            top: 0
         }
     }
 
@@ -42,8 +44,21 @@ class floto extends Component {
 
         console.log(width)
 
+        // don't follow on scroll once width threshold has been met
+        const pos = scrollThreshold / 2;
+        if (scrollTop > pos) {
+            this.setState({
+                positionType: "absolute",
+                top: pos
+            })
+        } else {
+            this.setState({
+                positionType: "fixed",
+                top: 0
+            })
+        }
 
-        // hiding the logo completely
+        // hiding the logo completely after a threshold
         if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
             this.setState({
                 scrollThresholdMet: true,
@@ -64,9 +79,15 @@ class floto extends Component {
 
         return(
             <Aux>
-                <div className={classNames(styles.floto, fade)}>
+                <div className={classNames(styles.floto, fade)}
+                    style={{
+                        position: this.state.positionType,
+                        top: this.state.top
+                    }}>
                     <h1 className={classNames(styles.text)} 
-                        style={{fontVariationSettings: this.state.width}}>
+                        style={{
+                            fontVariationSettings: this.state.width,
+                        }}>
                         Peabody
                     </h1>
                 </div>
