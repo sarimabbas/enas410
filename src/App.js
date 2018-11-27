@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 
-// custom components
-import Floto from './components/Floto/Floto';
-import Nav from './components/Nav/Nav';
-import Hero from './components/Hero/Hero';
-import SpotlightSection from './components/Spotlight/SpotlightSection';
-import Footer from './components/Footer/Footer';
+// routing
+import { Route } from 'react-router-dom';
+
+// pages
+import Home from './pages/Home/Home'
 
 // styles
 import './App.css';
@@ -23,11 +22,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Floto/>
-                <Nav/>
-                <Hero/>
-                <SpotlightSection/>
-                <Footer/>
+                <Route path="/" exact component={Home} />
             </div>
         );
     }
