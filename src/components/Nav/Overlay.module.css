@@ -7,16 +7,51 @@
     height: 100%;
     width: 100%;
     overflow: hidden; 
-    background-color: rgba(0,0,0, 0.6); 
+
+    /* overlay background */
+    background-color: rgba(0,0,0, 0.9); 
+ 
 }
 
-.headings {
+/* Position the content inside the overlay */
+.content {
+    position: relative;
+    width: 100%; /* 100% width */
+    margin-top: 25px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+
+.groups {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    /* padding on the edges */
+    padding-left: 10%;
+    padding-right: 2%;
+
+}
+
+.links {
+    margin-top: 20px;
+}
+
+
+.heading {
+    font-family: "GT America Medium", sans-serif; 
+    margin-bottom: 20px;
+}
+
+
+.links > * {
+    display: block;
+    margin-bottom: 5px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .transparent {
+    font-family: "GT America", sans-serif;
     opacity: 0;
     animation-name: fadeOut;
 	animation-iteration-count: 1;
@@ -48,13 +83,4 @@
 	100% {
         opacity: 0;
 	}
-}
-
-/* Position the content inside the overlay */
-.content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }

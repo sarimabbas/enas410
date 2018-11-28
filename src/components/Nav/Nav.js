@@ -21,9 +21,15 @@ class nav extends Component {
     }
 
     showSettings = (event) => {
-        this.setState({
-            showOverlay: true,
-        })
+        if (this.state.showOverlay) {
+            this.setState({
+                showOverlay: false,
+            })
+        } else {
+            this.setState({
+                showOverlay: true,
+            })
+        }
     }
 
     componentDidMount() {
@@ -61,7 +67,7 @@ class nav extends Component {
             logoFade = this.state.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
         }
 
-        let overlay = this.state.showOverlay ? <Overlay/> : null;
+        let overlay = this.state.showOverlay ? <Overlay clickHandler={this.showSettings} /> : null;
         let overlayFade = this.state.showOverlay ? styles.logoTransparent : null;
 
         return (

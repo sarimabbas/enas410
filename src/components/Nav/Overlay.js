@@ -10,15 +10,73 @@ const overlay = (props) => {
     return (
         <Aux>
             <div className={classNames(styles.overlay)}>
-                <div class={classNames(styles.headings)}>
-                    <span className={classNames(styles.link)}>Visit</span>
-                    <span className={classNames(styles.link)}>Exhibitions</span>
-                    <span className={classNames(styles.link)}>Learn</span>
-                    <span className={classNames(styles.link)}>Collections</span>
-                    <span className={classNames(styles.link)}>About</span>
-                </div>
-                <div class={classNames(styles.links)}>
-
+                <div className={classNames(styles.content)}>
+                    <div className={classNames(styles.groups)}>
+                        <div className={classNames(styles.group)}>
+                            <span className={classNames(styles.heading)}>
+                                Visit
+                            </span>
+                            <div className={classNames(styles.links)}>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                            </div>
+                        </div>
+                        <div className={classNames(styles.group)}>
+                            <span className={classNames(styles.heading)}>
+                                Exhibitions
+                            </span>
+                            <div className={classNames(styles.links)}>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                            </div>
+                        </div>
+                        <div className={classNames(styles.group)}>
+                            <span className={classNames(styles.heading)}>
+                                Learn
+                            </span>
+                            <div className={classNames(styles.links)}>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                            </div>
+                        </div>
+                        <div className={classNames(styles.group)}>
+                            <span className={classNames(styles.heading)}>
+                                Collections
+                            </span>
+                            <div className={classNames(styles.links)}>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                            </div>
+                        </div>
+                        <div className={classNames(styles.group)}>
+                            <span className={classNames(styles.heading)}>
+                                About
+                            </span>
+                            <div className={classNames(styles.links)}>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                                <a href="#">Hours {'&'} Admission</a>
+                            </div>
+                        </div>
+                        <div className={classNames(styles.group)}>
+                            <FontAwesomeIcon onClick={props.clickHandler} href="#" icon={["fas", "times"]}>
+                            </FontAwesomeIcon>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Aux>
