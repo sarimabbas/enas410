@@ -5,7 +5,7 @@
  
 
     left: 0;
-    z-index: 10;
+    z-index: 15;
 
     /* expand to height of masthead */
     height: 100vh;
