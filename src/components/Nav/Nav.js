@@ -7,6 +7,10 @@ import styles from './Nav.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
+// routing
+import { Link } from 'react-router-dom';
+
 class nav extends Component {
     constructor(props) {
         super(props);
@@ -79,11 +83,11 @@ class nav extends Component {
                     </a>
                     </div>
                     <div className={classNames(styles.links)}>
-                        <a href="/visit" className={classNames(styles.link)}>Visit</a>
-                        <a className={classNames(styles.link)}>Exhibitions</a>
-                        <a className={classNames(styles.link)}>Learn</a>
-                        <a className={classNames(styles.link)}>Collections</a>
-                        <a className={classNames(styles.link)}>About</a>
+                        <Link to="/visit" className={classNames(styles.link)}>Visit</Link>
+                        <Link to="/exhibits" className={classNames(styles.link)}>Exhibits</Link>
+                        <Link to="/learn" className={classNames(styles.link)}>Learn</Link>
+                        <Link to="/collections" className={classNames(styles.link)}>Collections</Link>
+                        <Link to="/about" className={classNames(styles.link)}>About</Link>
                         <FontAwesomeIcon href="#" onClick={this.showSettings} icon={["fas", "bars"]} className={classNames(styles.link)}>
                         </FontAwesomeIcon>
                     </div>

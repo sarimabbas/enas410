@@ -1,10 +1,13 @@
 import React from 'react';
 import Aux from '../../hoc/Aux';
+import { Link } from 'react-router-dom';
 
 // styles
 import styles from './Overlay.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const overlay = (props) => {
     return (
@@ -17,23 +20,20 @@ const overlay = (props) => {
                                 Visit
                             </span>
                             <div className={classNames(styles.links)}>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
+                                <Link to="/map">Map</Link>
+                                <Link to="/visit/admission">Admission {'&'} Hours</Link>
+                                <Link to="/visit/directions">Directions {'&'} Parking</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
                             <span className={classNames(styles.heading)}>
-                                Exhibitions
+                                Exhibits
                             </span>
                             <div className={classNames(styles.links)}>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
+                                <Link to="/exhibits/current">Current</Link>
+                                <Link to="/exhibits/upcoming">Upcoming</Link>
+                                <Link to="/exhibits/past">Past</Link>
+                                <Link to="/exhibits/calendar">Calendar</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
@@ -41,11 +41,9 @@ const overlay = (props) => {
                                 Learn
                             </span>
                             <div className={classNames(styles.links)}>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
+                                <Link to="/learn/adult">Adult</Link>
+                                <Link to="/learn/yale">Yale</Link>
+                                <Link to="/learn/group">Group</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
@@ -53,11 +51,8 @@ const overlay = (props) => {
                                 Collections
                             </span>
                             <div className={classNames(styles.links)}>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
+                                <Link to="/collections/search">Search</Link>
+                                <Link to="/collections/random">Random</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
@@ -65,11 +60,10 @@ const overlay = (props) => {
                                 About
                             </span>
                             <div className={classNames(styles.links)}>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
-                                <a href="#">Hours {'&'} Admission</a>
+                                <Link to="/about/highlights">Highlights</Link>
+                                <Link to="/about/history">History</Link>
+                                <Link to="/about/staff">Staff</Link>
+                                <Link to="/about/contact">Contact</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>

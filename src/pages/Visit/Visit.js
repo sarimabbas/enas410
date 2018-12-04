@@ -1,18 +1,35 @@
 import React from 'react'
 
 // components
-import GenericInfo from '../GenericInfo/GenericInfo'
+import Aux from '../../hoc/Aux';
+import Sidebar from './Sidebar';
+import Generic from '../Generic/Generic';
+
+// sub pages
+import Directions from './Directions/Directions';
+import Admission from './Admission/Admission';
 
 // styles
 import styles from './Visit.module.css'
 import classNames from 'classnames';
 
+// routing
+import { Route } from 'react-router-dom';
+
 const visit = (props) => {
-    return (
-        <GenericInfo>
-            <h1 className={(classNames(styles.title))}>Hours {'&'} Admission</h1>
-        </GenericInfo>
+    return (    
+        <Aux>
+            <Generic>
+                <div className={classNames(styles.grid)}>
+                    <Sidebar></Sidebar>
+                    <div className={classNames(styles.content)}>
+                        <Route path={'/visit/directions'} component={Directions} />
+                        <Route path={'/visit/admission'} component={Admission} />
+                    </div>
+                </div>
+            </Generic>
+        </Aux>
     )
 }
 
-export default visit
+export default visit;

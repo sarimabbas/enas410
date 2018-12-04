@@ -1,0 +1,21 @@
+.sidebar {
+    /* border-right: 1px solid grey; */
+    height: 100%;
+}
+
+.links {
+    font-family: 'GT America', sans-serif;
+    /* text-indent: 10%; */
+}
+
+.links > * {
+    display: block;
+}
+
+.heading {
+    /* text-transform: uppercase; */
+    font-family: 'GT America', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+

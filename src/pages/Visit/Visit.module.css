@@ -1,5 +1,11 @@
-.title {
-    font-family: 'GT America Compressed Black', sans-serif;
-    font-size: 1.6rem;
-    
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
 }
+
+.content {
+    min-height: 35vh;
+}
+

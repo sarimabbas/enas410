@@ -55,6 +55,18 @@
   src: url('./fonts/GT\ America\ Regular.otf') format('opentype');
 }
 
+
+@font-face {
+    font-family: 'FFMetaPro-Bold';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold.otf') format('opentype');
+}
+
+/* @font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF') format('woff2-variations');
+} */
+
+
 /* remove a link decoration sitewide */
 
 a:link {
