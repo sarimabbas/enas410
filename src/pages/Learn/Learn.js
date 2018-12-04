@@ -1,16 +1,21 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
-import classNames from 'classnames';
 
 // components
 import Aux from '../../hoc/Aux';
-import Generic from '../Generic/Generic';
 import Sidebar from './Sidebar';
+import Generic from '../Generic/Generic';
 
-// import sub pages here
+// sub pages
+import Adult from './Adult/Adult';
+import Group from './Group/Group';
+import Yale from './Yale/Yale';
 
 // styles
 import styles from './Learn.module.css'
+import classNames from 'classnames';
+
+// routing
+import { Route } from 'react-router-dom';
 
 const learn = (props) => {
     return (    
@@ -19,9 +24,9 @@ const learn = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    {/* start sub pages components here */}
-
-                    { /* end sub pages components here */ }
+                        <Route path={'/learn/adult'} component={Adult} />
+                        <Route path={'/learn/group'} component={Group} />
+                        <Route path={'/learn/yale'} component={Yale} />
                     </div>
                 </div>
             </Generic>
