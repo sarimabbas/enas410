@@ -60,9 +60,8 @@ class map extends Component {
                             right
                             pageWrapId={ "page-wrap" } 
                             outerContainerId={ "outer-container" }>
-                            <a id="home" className="menu-item" href="/">Home</a>
-                            <a id="about" className="menu-item" href="/about">About</a>
-                            <a id="contact" className="menu-item" href="/contact">Contact</a>   
+                            <h1>Cafe</h1> 
+                            <p>Enjoy a relaxing sandwich.</p>
                     </Menu>
                     <main id="page-wrap">
                     <div className={classNames(styles.wrapper)}>

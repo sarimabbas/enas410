@@ -1,19 +1,20 @@
+// react
 import React, { Component } from 'react';
-
-// routing
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 // pages
 import Home from './pages/Home/Home'
 import Visit from './pages/Visit/Visit'
-import FloorMap from './pages/FloorMap/FloorMap';
+import Exhibits from './pages/Exhibits/Exhibits'
+import Learn from './pages/Learn/Learn'
+import Collections from './pages/Collections/Collections'
+import About from './pages/About/About'
+import FloorMap from './pages/FloorMap/FloorMap'
 
 // styles
 import './App.css';
 import 'bulma/css/bulma.css';
 // import debug from './Debug.module.css';
-
-// icons with FontAwesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -26,6 +27,10 @@ class App extends Component {
                 <div className="App">
                     <Route path="/" exact component={Home} />
                     <Route path="/visit" component={Visit} />
+                    <Route path="/exhibits" component={Exhibits} />
+                    <Route path="/learn" component={Learn} />
+                    <Route path="/collections" component={Collections} />
+                    <Route path="/about" component={About} />
                     <Route path="/map" component={FloorMap} />
                 </div>
             </Router>
@@ -34,4 +39,3 @@ class App extends Component {
 }
     
 export default App;
-    
