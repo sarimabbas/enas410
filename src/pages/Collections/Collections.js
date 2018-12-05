@@ -22,11 +22,9 @@ const collections = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    {/* start sub pages components here */}
                     <Route path={'/collections/search'} component={Search} />
                     <Route path={'/collections/random'} component={Random} />
                     <Route path={'/collections/use'} component={Use} />
-                    { /* end sub pages components here */ }
                     </div>
                 </div>
             </Generic>
