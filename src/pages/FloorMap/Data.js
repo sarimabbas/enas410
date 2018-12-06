@@ -1,36 +1,20 @@
 const data = {
 
-    
+    roomName: {
 
-    cafe : {
-        title : "",
-        description : "",
-        image: "",
-    } , 
+        "cafe" : {
+            title: "", 
+            description: "",
+            image: "",
+        } ,
 
-    north_hall : {
-        title: "",
-        description: "",
-        image: "",
-    }, 
+        "great_hall" : {
+            title: "",
+            description: "",
+            image: "",
+        }
 
-    north_hall : {
-        title: "",
-        description: "",
-        image: "",
-    }, 
-
-    north_hall : {
-        title: "",
-        description: "",
-        image: "",
-    }, 
-
-
-
-
-
-
+    }
 }
 
 export default data;
