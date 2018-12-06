@@ -2,7 +2,7 @@ import React from 'react';
 import Aux from '../../hoc/Aux';
 
 import classNames from 'classnames';
-import styles from './Sidebar.module.css';
+import styles from '../Sidebar.module.css';
 
 // routing
 import { Link } from 'react-router-dom';
