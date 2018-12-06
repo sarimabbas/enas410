@@ -1,70 +1,72 @@
-/* Custom Fonts */
+/* fonts */
 
 @font-face {
-    font-family: 'Peabody Variable';
-    src: url('./fonts/peabody-VF.woff2') format('woff2-variations');
-}
-
-@font-face {
-  font-family: 'GT America Black';
-  src: url('./fonts/GT\ America\ Black.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Bold';
-  src: url('./fonts/GT\ America\ Bold.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Compressed Black';
-  src: url('./fonts/GT\ America\ Compressed\ Black.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Compressed Medium';
-  src: url('./fonts/GT\ America\ Compressed\ Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Condensed Medium';
-  src: url('./fonts/GT\ America\ Condensed\ Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Expanded Black';
-  src: url('./fonts/GT\ America\ Expanded\ Black.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Expanded Medium';
-  src: url('./fonts/GT\ America\ Expanded\ Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Extended Black';
-  src: url('./fonts/GT\ America\ Extended\ Black.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Medium';
-  src: url('./fonts/GT\ America\ Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'GT America Regular';
-  src: url('./fonts/GT\ America\ Regular.otf') format('opentype');
-}
-
-
-@font-face {
-    font-family: 'FFMetaPro-Bold';
-    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold.otf') format('opentype');
-}
-
-/* @font-face {
     font-family: 'FF Meta Pro';
-    src: url('./fonts/FF') format('woff2-variations');
-} */
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold\ Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Book.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Book\ Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Medium.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Medium\ Italic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Bold\ Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Black.otf') format('opentype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'FF Meta Pro';
+    src: url('./fonts/FF\ Meta\ Pro\ -\ Black\ Italic.otf') format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
 
 
 /* remove a link decoration sitewide */
