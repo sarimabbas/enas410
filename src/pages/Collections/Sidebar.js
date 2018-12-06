@@ -1,8 +1,11 @@
 import React from 'react';
 import Aux from '../../hoc/Aux';
+
 import classNames from 'classnames';
+import styles from '../Sidebar.module.css';
+
+// routing
 import { Link } from 'react-router-dom';
-import styles from './Sidebar.module.css';
 
 const sidebar = (props) => {
 
@@ -10,12 +13,12 @@ const sidebar = (props) => {
         <Aux>
             <div className={classNames(styles.sidebar)}>
                 <h1 className={classNames(styles.heading)}>
-                    {/* heading */}
-                    {/* end heading */}
+                    Collections
                 </h1>
                 <div className={classNames(styles.links)}>
-                    {/* links */}
-                    {/* end links */}
+                    Search<br/>
+                    How to use<br/>
+                    Object of the Day<br/>
                 </div>
             </div>
         </Aux>
