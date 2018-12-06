@@ -11,12 +11,13 @@ const sidebar = (props) => {
             <div className={classNames(styles.sidebar)}>
                 <h1 className={classNames(styles.heading)}>
                     {/* heading */}
-                    Sidebar
+                    About
                     {/* end heading */}
                 </h1>
                 <div className={classNames(styles.links)}>
-                    {/* links */}
-                    {/* end links */}
+                    <Link to="/about/history"><span>History</span></Link>
+                    <Link to="/about/contact"><span>Contact</span></Link>
+                    <Link to="/about/staff"><span>Staff</span></Link>
                 </div>
             </div>
         </Aux>

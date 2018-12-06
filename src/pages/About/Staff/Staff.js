@@ -13,7 +13,52 @@ import styles from './Staff.module.css'
 const staff = (props) => {
     return (    
         <Aux>
-            <h1 className={styles.title}>Administrative Staff</h1>   
+            <h1 className={styles.title}>Design Team</h1> 
+            <br/>  
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Sarim Abbas</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>sarim.abbas@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Seamus Houlihan</b>
+                        <br/>Major
+                        <br/>Trumbull '19
+                        <br/>seamus.houlihan@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Kevin Koste</b>
+                        <br/>Mechanical Engineering
+                        <br/>Ezra Stiles '19
+                        <br/>kevin.koste@yale.edu
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Julia Ma</b>
+                        <br/>Major
+                        <br/>Jonathan Edwards '19
+                        <br/>julia.ma@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Rebecca Reza</b>
+                        <br/>Mechanical Engineering
+                        <br/>Saybrook '19
+                        <br/>rebecca.reza@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                </div>
+            </div>
+            <br/>
+            <h1 className={styles.title}>Administrative Staff</h1> 
+            <br/>  
             <div class="columns">
                 <div class="column">
                     <p> <b>David Skelly</b>
@@ -80,7 +125,9 @@ const staff = (props) => {
                 <div class="column">
                 </div>
             </div>
-            <h1 className={styles.title}>Curatorial Staff</h1>   
+            <br/> 
+            <h1 className={styles.title}>Curatorial Staff</h1>
+            <br/>    
             <div class="columns">
                 <div class="column">
                     <p> <b>Michael Anderson</b>
@@ -219,7 +266,162 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Andy Melien</b>
+                        <br/>Digital Media Specialist
+                        <br/>(203) 436-9428
+                        <br/>andrew.melien@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Hannah Meyer</b>
+                        <br/>Assistant Director, Visitor Experience and Special Events
+                        <br/>(203) 432-3065
+                        <br/>hannah.meyer@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Armand Morgan</b>
+                        <br/>Senior Instructor, Public Education
+                        <br/>(203) 432-3297	
+                        <br/>armand.morgan@yale.edu
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Sarah Morrill</b>
+                        <br/>Assistant Director, Grants Management
+                        <br/>(203) 432-3452	
+                        <br/>sarah.morrill@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Andrea Motto</b>
+                        <br/>Manager, Public and Youth Engagement
+                        <br/>Afterschool Program Director
+                        <br/>andrea.motto@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Nicole Palffy-Muhoray</b>
+                        <br/>Assistant Director, Student Programs
+                        <br/>(203) 432-6115	 
+                        <br/>nicole.palffy-muhoray@yale.edu
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Sally Pallatto</b>
+                        <br/>Graphic Designer, Exhibits and Graphics	
+                        <br/>(203) 432-5004	
+                        <br/>sally.pallatto@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Tom Parlapiano</b>
+                        <br/>Manager,Student and Teacher Engagement
+                        <br/>(203) 432-0944
+                        <br/>thomas.parlapiano@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Apple Pham</b>
+                        <br/>Sci.CORPS Coordinator
+                        <br/>(203) 432-9589	
+                        <br/>hang.pham@yale.edu
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Chris Renton</b>
+                        <br/>Assistant Director of Development	
+                        <br/>(203) 432-8837	
+                        <br/>christopher.renton@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Nelson Rios</b>
+                        <br/>Head, Biodiversity Informatics and Data Science
+                        <br/>(203) 432-1844	
+                        <br/>nelson.rios@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>LaToya Sealy Cotto</b>
+                        <br/>Manager of Finance and Administration
+                        <br/>(203) 432-9857
+                        <br/>latoya.sealycotto@yale.edu
+                    </p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Catherine Sease</b>
+                        <br/>Senior Conservator		
+                        <br/>(203) 432-3965
+                        <br/>catherine.sease@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>James Sirch</b>
+                        <br/>Coordinator, Public Education
+                        <br/>(203) 432-6919	
+                        <br/>james.sirch@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Elizabeth Steele</b>
+                        <br/>Scheduler, School Programs and Birthday Parties
+                        <br/>(203) 432-3775 (8:30 - 1:30)
+                        <br/>elizabeth.steele@yale.edu
+                    </p>
+                </div>
+            </div> 
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Rosemary Volpe</b>
+                        <br/>Publications Manager	
+                        <br/>(203) 432-9804	
+                        <br/>rosemary.volpe@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Darnell Walker</b>
+                        <br/>Security Attendant
+                        <br/>(203) 432-3738	
+                        <br/>darnell.walker@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Stephanie Wratten</b>
+                        <br/>Student Programs Educator
+                        <br/>(203) 432-6115	
+                        <br/>stephanie.wratten@yale.edu
+                    </p>
+                </div>
+            </div>  
+            <div class="columns">
+                <div class="column">
+                    <p> <b>Sung H. Yun</b>
+                        <br/>Development Coordinator	
+                        <br/>(203) 432-6844
+                        <br/>sung.yun@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                    <p> <b>Kimberley Zolvik</b>
+                        <br/>Graphic Designer, Exhibits and Graphics
+                        <br/>(203) 432-9897	
+                        <br/>kimberley.zolvik@yale.edu
+                    </p>
+                </div>
+                <div class="column">
+                </div>
+            </div>  
         </Aux>
     )
 }
