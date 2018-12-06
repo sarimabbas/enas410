@@ -1,3 +1,6 @@
 .title {
     font-size:40px;
 }
+figcaption {
+    text-align: center;
+}
