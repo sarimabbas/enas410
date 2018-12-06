@@ -1,5 +1,4 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
 import classNames from 'classnames';
 
 // components
@@ -97,12 +96,12 @@ const history = (props) => {
                 <div class="column">
                 <br/>
                 <figure class="image is-1000 × 1366">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg"></img>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
                     <figcaption class="history_captions">OC Marsh</figcaption>
                 </figure>
                 <br/>
                 <figure class="image is-1986×2400">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg"></img>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
                     <figcaption class="history_captions">Benjamin Silliman</figcaption>
                 </figure>
                 </div>
