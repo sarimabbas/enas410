@@ -10,12 +10,12 @@ const sidebar = (props) => {
         <Aux>
             <div className={classNames(styles.sidebar)}>
                 <h1 className={classNames(styles.heading)}>
-                    {/* heading */}
-                    {/* end heading */}
+                    Exhibits
                 </h1>
                 <div className={classNames(styles.links)}>
-                    {/* links */}
-                    {/* end links */}
+                    <a href="#current">Current Exhibits</a>
+                    <a href="#temporary">Temporary Exhibits</a>
+                    <a href="#upcoming">Upcoming Exhibits</a>
                 </div>
             </div>
         </Aux>

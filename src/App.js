@@ -1,6 +1,6 @@
 // react
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // pages
 import Home from './pages/Home/Home'
@@ -14,7 +14,6 @@ import FloorMap from './pages/FloorMap/FloorMap'
 // styles
 import './App.css';
 import 'bulma/css/bulma.css';
-// import debug from './Debug.module.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
