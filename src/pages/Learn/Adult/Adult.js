@@ -15,9 +15,10 @@ import natsci from './assets/adult_natsci.jpg';
 const adult = (props) => {
     return (
         <Aux>
+            <h1 className={classNames(styles.title)}>Adult Programs</h1>
             <div className={classNames("workshop")}>
                 <img src={workshop} alt="workshop" className={styles.image}></img>
-                <h1 className={styles.title}>Workshops, Classes {'&'} General Interest</h1>
+                <h1 className={styles.subtitle}>Workshops, Classes {'&'} General Interest</h1>
                 <p className={styles.description}>
                 Come enjoy a wide variety of expert-led activities year-round at the Peabody Museum.
                 Our programs for adults are centered on anthropology, life science, earth science and
@@ -27,7 +28,7 @@ const adult = (props) => {
             </div>
             <div className={classNames("talks")}>
                 <img src={talks} alt="talks" className={styles.image}></img>
-                <h1 className={styles.title}>Talks {'&'} Lectures</h1>
+                <h1 className={styles.subtitle}>Talks {'&'} Lectures</h1>
                 <p className={styles.description}>
                 The Peabody Museum hosts talks and lectures on a regular basis, featuring Museum staff,
                 Yale University faculty and distinguished speakers from around the world.  The schedule
@@ -40,7 +41,7 @@ const adult = (props) => {
             </div>
             <div className={classNames("natsci")}>
                 <img src={natsci} alt="natsci" className={styles.image}></img>
-                <h1 className={styles.title}>Natural Science Illustration Program</h1>
+                <h1 className={styles.subtitle}>Natural Science Illustration Program</h1>
                 <p className={styles.description}>
                 Be a part of an ongoing series of unique art classes and workshops held at the Peabody
                 Museum!  Select from a range of classes in drawing and painting or register for course
