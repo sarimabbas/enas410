@@ -7,7 +7,10 @@ import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
 import Sidebar from './Sidebar';
 
-// import sub pages here
+//sub pages
+import Search from './Search/Search';
+import Random from './Random/Random';
+import Use from './Use/Use';
 
 // styles
 import styles from './Collections.module.css'
@@ -19,9 +22,9 @@ const collections = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    {/* start sub pages components here */}
-
-                    { /* end sub pages components here */ }
+                    <Route path={'/collections/search'} component={Search} />
+                    <Route path={'/collections/random'} component={Random} />
+                    <Route path={'/collections/use'} component={Use} />
                     </div>
                 </div>
             </Generic>

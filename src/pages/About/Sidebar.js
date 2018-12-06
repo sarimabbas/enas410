@@ -11,6 +11,7 @@ const sidebar = (props) => {
             <div className={classNames(styles.sidebar)}>
                 <h1 className={classNames(styles.heading)}>
                     {/* heading */}
+                    Sidebar
                     {/* end heading */}
                 </h1>
                 <div className={classNames(styles.links)}>

@@ -8,7 +8,7 @@
     /* text-indent: 10%; */
 }
 
-.links>* {
+.links > * {
     display: block;
 }
 
@@ -18,3 +18,4 @@
     font-size: 1.2rem;
     font-weight: bold;
 }
+
