@@ -1,38 +1,3 @@
-.cls-1 {
-    fill: #868586;
-}
-
-.cls-1:hover {
-    fill: rgb(27, 103, 218);
-    cursor: pointer;
-}
-
-.cls-2 {
-    fill: #464545;
-}
-
-.cls-3,
-.cls-4,
-.cls-5 {
-    fill: #fff;
-}
-
-.cls-4,
-.cls-5,
-.cls-6 {
-    stroke: #464545;
-    stroke-miterlimit: 10;
-}
-
-.cls-4 {
-    stroke-width: 2px;
-}
-
-.cls-6 {
-    fill: none;
-    stroke-width: 5px;
-}
-
 /* side menu */
 
 .bm-menu-wrap {
@@ -42,7 +7,7 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-    display: none!important;
+    display: none !important;
 
 
     position: fixed;
