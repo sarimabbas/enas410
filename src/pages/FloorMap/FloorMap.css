@@ -52,7 +52,7 @@
 
 /* Individual item */
 .bm-item {
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 /* Styling of overlay */

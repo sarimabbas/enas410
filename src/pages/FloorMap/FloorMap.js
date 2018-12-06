@@ -58,7 +58,7 @@ class floormap extends Component {
 
     render() {
 
-        let more = NaN
+        let more = <div></div>
         if (this.state.more !== "") {
             console.log('wihf')
             more = <Link to={this.state.more}>View Room</Link>
@@ -72,11 +72,11 @@ class floormap extends Component {
                         noOverlay
                         right
                         onStateChange={ this.handleMenuChange }>
-                    <img src={this.state.image} alt="overlay"></img>
+                    <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                     <div className={classNames(styles.content)}>
-                        <h1>{this.state.title}</h1> 
-                        <p>{this.state.description}</p>
-                        { more }
+                        <h1 className={classNames(styles.title)}>{this.state.title}</h1> 
+                        <p className={classNames(styles.description)}>{this.state.description}</p>
+                        <div className={classNames(styles.more)}>{ more }</div>
                     </div>
                 </Menu>
                 <div className={classNames(styles.wrapper)}>
