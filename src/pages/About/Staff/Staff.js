@@ -25,7 +25,7 @@ const staff = (props) => {
                 </div>
                 <div class="column">
                     <p> <b>Seamus Houlihan</b>
-                        <br/>Major
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
                         <br/>Trumbull '19
                         <br/>seamus.houlihan@yale.edu
                     </p>
@@ -41,7 +41,7 @@ const staff = (props) => {
             <div class="columns">
                 <div class="column">
                     <p> <b>Julia Ma</b>
-                        <br/>Major
+                        <br/>Art, Mechanical Engineering
                         <br/>Jonathan Edwards '19
                         <br/>julia.ma@yale.edu
                     </p>
