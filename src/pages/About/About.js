@@ -9,6 +9,8 @@ import Sidebar from './Sidebar';
 
 // import sub pages here
 import History from './History/History'
+import Contact from './Contact/Contact'
+import Staff from './Staff/Staff'
 
 // styles
 import styles from './About.module.css'
@@ -21,7 +23,9 @@ const about = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                     {/* start sub pages components here */}
-                    <History/>
+                    <Route path={'/about/history'} component={History} />
+                    <Route path={'/about/contact'} component={Contact} />
+                    <Route path={'/about/staff'} component={Staff} />
                     { /* end sub pages components here */ }
                     </div>
                 </div>
