@@ -1,15 +1,21 @@
+// all the required stuff
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu'
 import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 
+// all the components that make up the page
 import NavSimple from '../../components/Nav/NavSimple';
-import Footer from '../../components/Footer/Footer';
+// import Footer from '../../components/Footer/Footer';
 import FirstFloor from './FirstFloor/FirstFloor';
 
+// styling
 import styles from './FloorMap.module.css';
 import './FloorMap.css';
 
+// data source for the map
+import Data from './Data';
 
 class floormap extends Component {
 
@@ -18,7 +24,12 @@ class floormap extends Component {
 
         this.state = {
             roomSelected : false,
-            roomName : ""
+            roomName : "",
+
+            title: "",
+            description: "",
+            image: "",
+            more: "",
         }
 
         this.handleRoom = this.handleRoom.bind(this);
@@ -32,21 +43,28 @@ class floormap extends Component {
     }
 
     handleRoom = (event) => {
-        let roomName = "" + event.currentTarget.id
-        if (this.state.roomSelected) {
-            this.setState({
-                roomSelected: false,
-                roomName: roomName,
-            })
-        } else {
-            this.setState({
-                roomSelected: true,
-                roomName: roomName,
-            })
-        }
+        let name = "" + event.currentTarget.id
+        this.setState({
+            roomSelected: true,
+            roomName: name,
+
+            title: Data.roomName[name].title,
+            description: Data.roomName[name].description,
+            image: Data.roomName[name].image,
+            more: Data.roomName[name].more,
+        })
     }
 
+
     render() {
+
+        let more = NaN
+        if (this.state.more !== "") {
+            console.log('wihf')
+            more = <Link to={this.state.more}>View Room</Link>
+        }
+
+
         return (
             <Aux>
                 <NavSimple />
@@ -54,8 +72,12 @@ class floormap extends Component {
                         noOverlay
                         right
                         onStateChange={ this.handleMenuChange }>
-                        <h1>Cafe</h1> 
-                        <p>Enjoy a relaxing sandwich.</p>
+                    <img src={this.state.image} alt="overlay"></img>
+                    <div className={classNames(styles.content)}>
+                        <h1>{this.state.title}</h1> 
+                        <p>{this.state.description}</p>
+                        { more }
+                    </div>
                 </Menu>
                 <div className={classNames(styles.wrapper)}>
                     <FirstFloor handleRoom={this.handleRoom}/>

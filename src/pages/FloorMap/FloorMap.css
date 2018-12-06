@@ -36,7 +36,7 @@
 /* General sidebar styles */
 .bm-menu {
     background: #373a47;
-    padding: 2.5em 1.5em 0;
+    /* padding: 2.5em 1.5em 0; */
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -47,7 +47,7 @@
 /* Wrapper for item list */
 .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    /* padding: 0.8em; */
 }
 
 /* Individual item */
