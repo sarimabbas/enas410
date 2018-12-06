@@ -3,7 +3,7 @@ import Aux from '../../../hoc/Aux';
 
 
 import classNames from 'classnames';
-import styles from './use.module.css';
+import styles from './Use.module.css';
 
 // routing
 import { Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ const search = (props) => {
     return (
         <Aux>
             <h1 className={classNames(styles.title)}>Using the Collections</h1>
-            <img src={sample}></img>
+            {/* <img src={sample}></img> */}
         </Aux>
     )
 }
