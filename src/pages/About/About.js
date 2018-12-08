@@ -11,6 +11,7 @@ import Sidebar from './Sidebar';
 import History from './History/History'
 import Contact from './Contact/Contact'
 import Staff from './Staff/Staff'
+import Classpage from './Classpage/Classpage'
 
 // styles
 import styles from './About.module.css'
@@ -27,6 +28,7 @@ const about = (props) => {
                         <Route path={'/about/mission'} component={History} />
                         <Route path={'/about/contact'} component={Contact} />
                         <Route path={'/about/staff'} component={Staff} />
+                        <Route path={'/about/classpage'} component={Classpage} />
                         <Route path={'/about/highlights'} component={History} />
                     { /* end sub pages components here */ }
                     </div>
