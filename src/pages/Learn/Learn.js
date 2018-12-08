@@ -25,7 +25,7 @@ const learn = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                         <Route path={'/learn/adult'} component={Adult} />
-                        <Route path={'/learn/group'} component={Group} />
+                        <Route path={'/learn/k12'} component={Group} />
                         <Route path={'/learn/yale'} component={Yale} />
                     </div>
                 </div>

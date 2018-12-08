@@ -1,7 +1,7 @@
 import React from 'react';
 import Aux from '../../hoc/Aux';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from '../Sidebar.module.css';
 
 const sidebar = (props) => {
@@ -15,9 +15,10 @@ const sidebar = (props) => {
                     {/* end heading */}
                 </h1>
                 <div className={classNames(styles.links)}>
-                    <Link to="/about/history"><span>History</span></Link>
-                    <Link to="/about/contact"><span>Contact</span></Link>
-                    <Link to="/about/staff"><span>Staff</span></Link>
+                    <NavLink activeClassName={styles.activeLink} to="/about/highlights"><span>Peabody Highlights</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/about/mission"><span>Mission {'&'} History</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/about/contact"><span>Contact Us</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/about/staff"><span>Staff</span></NavLink>
                 </div>
             </div>
         </Aux>

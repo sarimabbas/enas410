@@ -17,7 +17,7 @@ const sidebar = (props) => {
                 </h1>
                 <div className={classNames(styles.links)}>
                     <Link to="/visit/admission"><span>Admission {'&'} Hours</span></Link>
-                    <Link to="/map"><span>Map</span></Link>
+                    <Link to="/map"><span>Floor Plan {'&'} Virtual Tour</span></Link>
                     <Link to="/visit/directions"><span>Directions {'&'} Parking</span></Link>
                 </div>
             </div>

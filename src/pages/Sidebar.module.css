@@ -9,9 +9,15 @@
 
 .links>* {
     display: block;
+    color: black;
+    text-decoration: none;
 }
 
 .heading {
-    font-size: 1.2rem;
-    font-weight: bold;
+}
+
+
+.activeLink {
+	font-weight: 700;
+	color: red;
 }

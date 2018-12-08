@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import styles from '../Sidebar.module.css';
 
 // routing
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const sidebar = (props) => {
 
@@ -16,9 +16,10 @@ const sidebar = (props) => {
                     Learn
                 </h1>
                 <div className={classNames(styles.links)}>
-                    <Link to="/learn/group"><span>Group</span></Link>
-                    <Link to="/learn/adult"><span>Adult</span></Link>
-                    <Link to="/learn/yale"><span>Yale</span></Link>
+                    <NavLink activeClassName={styles.activeLink} to="/learn/k12"><span>K-12 Programs</span></NavLink>
+                    <a href="https://evolutions.peabody.yale.edu"><span>Peabody Evolutions</span></a>
+                    <NavLink activeClassName={styles.activeLink} to="/learn/yale"><span>Yale Student Opportunities</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/learn/adult"><span>Adult Programs</span></NavLink>
                 </div>
             </div>
         </Aux>

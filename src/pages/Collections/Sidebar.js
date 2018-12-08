@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import styles from '../Sidebar.module.css';
 
 // routing
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const sidebar = (props) => {
 
@@ -16,9 +16,9 @@ const sidebar = (props) => {
                     Collections
                 </h1>
                 <div className={classNames(styles.links)}>
-                    Search<br/>
-                    How to use<br/>
-                    Object of the Day<br/>
+                    <NavLink activeClassName={styles.activeLink} to="/collections/search"><span>Search the Collections</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/collections/how-to-use"><span>How to Use</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/collections/daily-object"><span>Object of the Day</span></NavLink>
                 </div>
             </div>
         </Aux>
