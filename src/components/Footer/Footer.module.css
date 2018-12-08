@@ -15,6 +15,10 @@
     grid-auto-flow: row;
 }
 
+.link {
+    display: block;
+}
+
 .icons > * {
     margin-right: 10px;
 }

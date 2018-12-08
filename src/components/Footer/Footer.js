@@ -25,23 +25,23 @@ const footer = (props) => {
                     <div className={styles.links}>
                         {/* first col */}
                         <div>
-                            <p className="is-size-7">About Us</p>
-                            <p className="is-size-7">Press</p>
-                            <p className="is-size-7">Contact Us</p>
-                            <p className="is-size-7">FAQs</p>
+                            <span className={styles.link}>About Us</span>
+                            <span className={styles.link}>Press</span>
+                            <span className={styles.link}>Contact Us</span>
+                            <span className={styles.link}>FAQs</span>
                         </div>
                         {/* second col */}
                         <div>
-                            <p className="is-size-7">Membership</p>
-                            <p className="is-size-7">Volunteering</p>
-                            <p className="is-size-7">Employment</p>
-                            <p className="is-size-7">Internships</p>
+                            <span className={styles.link}>Membership</span>
+                            <span className={styles.link}>Volunteering</span>
+                            <span className={styles.link}>Employment</span>
+                            <span className={styles.link}>Internships</span>
                         </div>
                         {/* third col */}
                         <div>
-                            <p className="is-size-7">Accessibility</p>
-                            <p className="is-size-7">Terms {"&"} Conditions</p>
-                            <p className="is-size-7">Privacy Policy</p>
+                            <span className={styles.link}>Accessibility</span>
+                            <span className={styles.link}>Terms {"&"} Conditions</span>
+                            <span className={styles.link}>Privacy Policy</span>
                         </div>
                     </div>
                     {/* social & copyright */}
