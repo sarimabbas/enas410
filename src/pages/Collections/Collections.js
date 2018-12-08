@@ -23,8 +23,8 @@ const collections = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                     <Route path={'/collections/search'} component={Search} />
-                    <Route path={'/collections/random'} component={Random} />
-                    <Route path={'/collections/use'} component={Use} />
+                    <Route path={'/collections/daily-object'} component={Random} />
+                    <Route path={'/collections/how-to-use'} component={Use} />
                     </div>
                 </div>
             </Generic>

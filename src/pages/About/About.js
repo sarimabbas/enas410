@@ -23,7 +23,8 @@ const about = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                     {/* start sub pages components here */}
-                        <Route path={'/about/history'} component={History} />
+                        <Route path={'/about/highlights'} component={History} />
+                        <Route path={'/about/mission'} component={History} />
                         <Route path={'/about/contact'} component={Contact} />
                         <Route path={'/about/staff'} component={Staff} />
                     { /* end sub pages components here */ }
