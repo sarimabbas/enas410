@@ -14,7 +14,7 @@ import sample from './sample.png';
 const admission = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Admission {'&'} Hours</h1>
+            <h1>Admission {'&'} Hours</h1>
             <h3>Hours</h3>
             <p>
                 Monday: Closed

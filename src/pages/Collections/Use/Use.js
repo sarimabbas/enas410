@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom';
 const search = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Using the Collections</h1>
+            <h1>How to Use the Collections</h1>
             {/* <img src={sample}></img> */}
         </Aux>
     )

@@ -13,7 +13,7 @@ import styles from './Staff.module.css'
 const staff = (props) => {
     return (    
         <Aux>
-            <h1 className={styles.title}>Design Team</h1> 
+            <h1>Design Team</h1> 
             <br/>  
             <div class="columns">
                 <div class="column">
@@ -57,7 +57,7 @@ const staff = (props) => {
                 </div>
             </div>
             <br/>
-            <h1 className={styles.title}>Administrative Staff</h1> 
+            <h1>Administrative Staff</h1> 
             <br/>  
             <div class="columns">
                 <div class="column">
@@ -126,7 +126,7 @@ const staff = (props) => {
                 </div>
             </div>
             <br/> 
-            <h1 className={styles.title}>Curatorial Staff</h1>
+            <h1>Curatorial Staff</h1>
             <br/>    
             <div class="columns">
                 <div class="column">

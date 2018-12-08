@@ -15,7 +15,7 @@ import yusbs from './assets/yusbs.jpg';
 const yale = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Welcome to the Peabody!</h1>
+            <h1>Welcome to the Peabody!</h1>
             <h1 className={classNames(styles.subtitle)}><span style={{fontStyle:"italic"}}>YOUR</span>          Natural History Museum</h1>
             <div className={classNames(styles.row)}>
                 <div className={classNames("yale")}>

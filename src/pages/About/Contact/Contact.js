@@ -12,7 +12,7 @@ import styles from './Contact.module.css'
 const contact = (props) => {
     return (    
         <Aux>
-            <h1 className={styles.title}>Contact Us</h1>
+            <h1>Contact Us</h1>
             <br/> 
             <p>
                 The Yale Peabody Museum is supported by nearly 100 full and part-time administrative 

@@ -14,7 +14,7 @@ const history = (props) => {
     return (    
         <Aux>
             
-            <h1 className={styles.title}>Mission</h1>
+            <h1>Mission</h1>
                 <p>
                 The mission of the Peabody Museum is to serve Yale University by advancing our understanding of earth’s history through geological, biological and anthropological research, and by communicating the results of this research to the widest possible audience through publication, exhibition and educational programs. Fundamental to this mission is stewardship of the Museum’s rich collections, which provide a remarkable record of the history of the earth, its life and its cultures. Conservation, augmentation and use of these collections become increasingly urgent as modern threats to the diversity of life and culture continue to intensify.
                 </p>
