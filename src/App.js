@@ -1,6 +1,6 @@
 // react
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 // pages
 import Home from './pages/Home/Home'
@@ -25,7 +25,14 @@ class App extends Component {
             <Router>
                 <div className="App">
                     <Route path="/" exact component={Home} />
-                    <Route path="/visit" component={Visit} />
+
+                    <Switch>
+                        <Route path="/visit" component={Visit} />
+
+                    </Switch>
+
+
+
                     <Route path="/exhibits" component={Exhibits} />
                     <Route path="/learn" component={Learn} />
                     <Route path="/collections" component={Collections} />
