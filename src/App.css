@@ -65,10 +65,6 @@
     font-style: italic;
 }
 
-
-
-
-
 /* remove a link decoration sitewide */
 
 a:link {
@@ -85,5 +81,21 @@ a:hover {
 
 a:active {
     text-decoration: none!important;
+}
+
+body {
+    font-family: "FF Meta Pro", sans-serif;
+}
+
+h1 {
+    font-size: 2rem!important; 
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+}
+
+h2 {
+    font-size: 80rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 

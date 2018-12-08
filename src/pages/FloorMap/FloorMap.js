@@ -55,7 +55,7 @@ class floormap extends Component {
         })
     }
 
-
+ 
     render() {
 
         let more = <div></div>

@@ -7,7 +7,7 @@ const spotlightsection = (props) => {
         <section className="section">
             <div className="container">
                 <div className={styles.top}>
-                    <h1 className={styles.title}>Peabody Spotlights</h1>
+                    <h1 className={styles.titles}>Peabody Spotlights</h1>
                     <h3 className={styles.more}>See More</h3>
                 </div>
                 <SpotlightCardRow />
