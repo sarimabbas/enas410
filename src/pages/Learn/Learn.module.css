@@ -1,10 +1,11 @@
 .grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 50px;
 }
 
+
 .content {
+    grid-column: auto / span 3;
     min-height: 35vh;
 }

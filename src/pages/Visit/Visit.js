@@ -16,7 +16,7 @@ import styles from './Visit.module.css'
 import classNames from 'classnames';
 
 // routing
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 
 const visit = (props) => {
     return (    
@@ -25,6 +25,7 @@ const visit = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
+                        <Redirect to="/visit/admission"/>
                         <Route path={'/visit/directions'} component={Directions} />
                         <Route path={'/visit/admission'} component={Admission} />
                         <Route path={'/visit/cafe'} component={Cafe} />

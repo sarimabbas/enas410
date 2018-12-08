@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import classNames from 'classnames';
 
 // components
@@ -23,6 +23,7 @@ const exhibits = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
+                        <Redirect to="/exhibits/on-view"/>
                         <Route path={'/exhibits/calendar'} component={Calendar} />
                         <Route path={'/exhibits/on-view'} component={OnView} />
                         <Route path={'/exhibits/past'} component={Past} />
