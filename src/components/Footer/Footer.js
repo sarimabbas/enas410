@@ -19,7 +19,7 @@ const footer = (props) => {
                             (203) 432-8987
                         </span>
                         <br/>
-                        <p>Open today: 10:30 am–6 pm</p>
+                        <span>Open today: 10:30 am–6 pm</span>
                     </div>
                     {/* links  */}
                     <div className={styles.links}>
