@@ -15,9 +15,10 @@
 
 .activeLink {
 	font-weight: 700;
-	color: #3653b6;
 }
 
 .heading {
 	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 18px;
 }

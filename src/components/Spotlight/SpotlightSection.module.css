@@ -1,11 +1,16 @@
 .top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: -20px;
     align-items: baseline;
 }
 
 .title {
     padding: 0!important;
+    margin-bottom: 10px;
+}
+
+.more {
+	font-size:1rem;
+	font-weight:700;
 }
 
