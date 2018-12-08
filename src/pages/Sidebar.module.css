@@ -5,12 +5,14 @@
 
 .links {
     /* text-indent: 10%; */
+    margin-bottom: 40px;
 }
 
 .links > * {
     display: block;
     color: black;
     text-decoration: none;
+    margin-bottom: 8px;
 }
 
 .activeLink {
