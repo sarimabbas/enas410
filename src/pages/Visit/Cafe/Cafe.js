@@ -14,7 +14,7 @@ import CAFE from './cafe.jpg';
 const cafe = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Peabody Café</h1>
+            <h1>Peabody Café</h1>
             <div className={classNames(styles.imageContainer)}>
                 <img className={classNames(styles.image)} src={CAFE}></img>
             </div>
