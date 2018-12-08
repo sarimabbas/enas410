@@ -20,8 +20,8 @@ const overlay = (props) => {
                                 Visit
                             </span>
                             <div className={classNames(styles.links)}>
-                                <Link to="/map">Map</Link>
                                 <Link to="/visit/admission">Admission {'&'} Hours</Link>
+                                <Link to="/map">Floor Plan {'&'} Virtual Tour</Link>
                                 <Link to="/visit/directions">Directions {'&'} Parking</Link>
                             </div>
                         </div>
@@ -30,10 +30,10 @@ const overlay = (props) => {
                                 Exhibits
                             </span>
                             <div className={classNames(styles.links)}>
-                                <Link to="/exhibits/current">Current</Link>
-                                <Link to="/exhibits/upcoming">Upcoming</Link>
-                                <Link to="/exhibits/past">Past</Link>
-                                <Link to="/exhibits/calendar">Calendar</Link>
+                                <Link to="/exhibits/current">Exhibits On View</Link>
+                                <Link to="/exhibits/temporary">Temporary Exhibits</Link>
+                                <Link to="/exhibits/upcoming">Past Exhibits</Link>
+                                <Link to="/exhibits/calendar">Events Calendar</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
@@ -41,18 +41,20 @@ const overlay = (props) => {
                                 Learn
                             </span>
                             <div className={classNames(styles.links)}>
-                                <Link to="/learn/adult">Adult</Link>
-                                <Link to="/learn/yale">Yale</Link>
-                                <Link to="/learn/group">Group</Link>
-                            </div>
+                                <Link to="/learn/k12">K-12 Programs</Link>
+                                <Link to="https://evolutions.peabody.yale.edu/">Peabody Evolutions</Link>
+                                <Link to="/learn/yale">Yale Student Opportunities</Link>
+                                <Link to="/learn/adult">Adult Programs</Link>
+                            </div>,
                         </div>
                         <div className={classNames(styles.group)}>
                             <span className={classNames(styles.heading)}>
                                 Collections
                             </span>
                             <div className={classNames(styles.links)}>
-                                <Link to="/collections/search">Search</Link>
-                                <Link to="/collections/random">Random</Link>
+                                <Link to="/collections/search">Search the Collections</Link>
+                                <Link to="/collections/how-to-use">How to Use</Link>
+                                <Link to="/collections/daily-object">Object of the Day</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
@@ -60,10 +62,10 @@ const overlay = (props) => {
                                 About
                             </span>
                             <div className={classNames(styles.links)}>
-                                <Link to="/about/highlights">Highlights</Link>
-                                <Link to="/about/history">History</Link>
+                                <Link to="/about/highlights">Peabody Highlights</Link>
+                                <Link to="/about/mission">Mission {'&'} History</Link>
+                                <Link to="/about/contact">Contact Us</Link>
                                 <Link to="/about/staff">Staff</Link>
-                                <Link to="/about/contact">Contact</Link>
                             </div>
                         </div>
                         <div className={classNames(styles.group)}>
