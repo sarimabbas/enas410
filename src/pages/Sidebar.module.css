@@ -13,11 +13,11 @@
     text-decoration: none;
 }
 
-.heading {
-}
-
-
 .activeLink {
 	font-weight: 700;
 	color: #3653b6;
+}
+
+.heading {
+	text-transform: uppercase;
 }
