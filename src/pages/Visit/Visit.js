@@ -8,6 +8,8 @@ import Generic from '../Generic/Generic';
 // sub pages
 import Directions from './Directions/Directions';
 import Admission from './Admission/Admission';
+import Cafe from './Cafe/Cafe';
+ 
 
 // styles
 import styles from './Visit.module.css'
@@ -25,6 +27,7 @@ const visit = (props) => {
                     <div className={classNames(styles.content)}>
                         <Route path={'/visit/directions'} component={Directions} />
                         <Route path={'/visit/admission'} component={Admission} />
+                        <Route path={'/visit/cafe'} component={Cafe} />
                     </div>
                 </div>
             </Generic>

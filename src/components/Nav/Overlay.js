@@ -7,8 +7,7 @@ import styles from './Overlay.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
+// component
 const overlay = (props) => {
     return (
         <Aux>
@@ -22,6 +21,7 @@ const overlay = (props) => {
                             <div className={classNames(styles.links)}>
                                 <Link to="/visit/admission">Admission {'&'} Hours</Link>
                                 <Link to="/map">Floor Plan {'&'} Virtual Tour</Link>
+                                <Link to="/visit/cafe">Peabody Café</Link>
                                 <Link to="/visit/directions">Directions {'&'} Parking</Link>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const overlay = (props) => {
                                 <Link to="https://evolutions.peabody.yale.edu/">Peabody Evolutions</Link>
                                 <Link to="/learn/yale">Yale Student Opportunities</Link>
                                 <Link to="/learn/adult">Adult Programs</Link>
-                            </div>,
+                            </div>
                         </div>
                         <div className={classNames(styles.group)}>
                             <span className={classNames(styles.heading)}>
