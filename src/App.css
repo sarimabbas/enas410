@@ -67,32 +67,15 @@
 
 /* remove a link decoration sitewide */
 
-a:link {
-    text-decoration: none!important;
-    color:inherit!important;
+p > a {
+    text-decoration: none;
+    color: #939597;
 }
 
 a:hover {
-    text-decoration: none !important;
-    color: #5b91ff!important;
+    color: #5b91ff;
 }
 
-a:visited {
-    text-decoration: none!important;
-    color: inherit!important;
-}
-
-p > a:link {
-    color: #939597!important;
-}
-
-p > a:hover {
-    color: #5b91ff!important;
-}
-
-a:active {
-    text-decoration: none !important;
-}
 
 html {
     /* font-size: 18px; */
@@ -109,6 +92,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 3rem;
+    margin: 0;
 }
 
 h2 {
@@ -120,7 +104,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 p {

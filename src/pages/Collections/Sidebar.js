@@ -12,9 +12,9 @@ const sidebar = (props) => {
     return (
         <Aux>
             <div className={classNames(styles.sidebar)}>
-                <h1 className={classNames(styles.heading)}>
+                <h3 className={classNames(styles.heading)}>
                     Collections
-                </h1>
+                </h3>
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/collections/search"><span>Search the Collections</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/collections/how-to-use"><span>How to Use</span></NavLink>

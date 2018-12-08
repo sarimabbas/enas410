@@ -12,9 +12,9 @@ const sidebar = (props) => {
     return (
         <Aux>
             <div className={classNames(styles.sidebar)}>
-                <h1 className={classNames(styles.heading)}>
+                <h3 className={classNames(styles.heading)}>
                     Learn
-                </h1>
+                </h3>
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/learn/k12"><span>K-12 Programs</span></NavLink>
                     <a href="https://evolutions.peabody.yale.edu"><span>Peabody Evolutions</span></a>
