@@ -29,6 +29,7 @@ const visit = (props) => {
                         <Route path={'/visit/admission'} component={Admission} />
                         <Route path={'/visit/cafe'} component={Cafe} />
                     </div>
+                    <div></div>
                 </div>
             </Generic>
         </Aux>
