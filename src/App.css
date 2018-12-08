@@ -179,3 +179,11 @@ p {
         padding: 18rem 1.5rem;
     }
 }
+
+/* image fixes */
+
+.imageKing {
+    object-fit: cover;
+    max-height: 100%;
+    width: 100%;
+}

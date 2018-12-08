@@ -23,13 +23,12 @@ const exhibits = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    {/* start sub pages components here */}
-                        <Route path={'/visit/calendar'} component={Calendar} />
-                        <Route path={'/visit/on-view'} component={OnView} />
-                        <Route path={'/visit/admission'} component={Past} />
-                        <Route path={'/visit/cafe'} component={Temporary} />
-                    { /* end sub pages components here */ }
+                        <Route path={'/exhibits/calendar'} component={Calendar} />
+                        <Route path={'/exhibits/on-view'} component={OnView} />
+                        <Route path={'/exhibits/past'} component={Past} />
+                        <Route path={'/exhibits/temporary'} component={Temporary} />
                     </div>
+                    <div></div>
                 </div>
             </Generic>
         </Aux>
