@@ -14,9 +14,9 @@
 .subtitle {
     font-size: 30px;
 }
-figure {
-    text-align: left;
-}
 figcaption{
     text-align: left;
 }
+/* .exhibits_captions {
+    text-align: left;
+} */
