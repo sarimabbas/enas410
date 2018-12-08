@@ -68,15 +68,26 @@
 /* remove a link decoration sitewide */
 
 a:link {
-    text-decoration: none !important;
-}
-
-a:visited {
-    text-decoration: none !important;
+    text-decoration: none!important;
+    color:inherit!important;
 }
 
 a:hover {
     text-decoration: none !important;
+    color: #5b91ff!important;
+}
+
+a:visited {
+    text-decoration: none!important;
+    color: inherit!important;
+}
+
+p > a:link {
+    color: #939597!important;
+}
+
+p > a:hover {
+    color: #5b91ff!important;
 }
 
 a:active {
