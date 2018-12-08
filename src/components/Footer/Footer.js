@@ -18,20 +18,22 @@ const footer = (props) => {
                             New Haven, CT 06511<br/>
                             (203) 432-8987
                         </span>
-                        <br/><br/>
+                        <br/>
                         <p>Open today: 10:30 am–6 pm</p>
                     </div>
                     {/* links  */}
                     <div className={styles.links}>
                         {/* first col */}
                         <div>
-                            <span className={styles.link}>About Us</span>
-                            <span className={styles.link}>Press</span>
-                            <span className={styles.link}>Contact Us</span>
-                            <span className={styles.link}>FAQs</span>
+                            <span className={styles.link}>Visit</span>
+                            <span className={styles.link}>Exhibits</span>
+                            <span className={styles.link}>Learn</span>
+                            <span className={styles.link}>Collections</span>
+                            <span className={styles.link}>About</span>
                         </div>
                         {/* second col */}
                         <div>
+                            <span className={styles.link}>FAQs</span>
                             <span className={styles.link}>Membership</span>
                             <span className={styles.link}>Volunteering</span>
                             <span className={styles.link}>Employment</span>
@@ -39,6 +41,8 @@ const footer = (props) => {
                         </div>
                         {/* third col */}
                         <div>
+
+                            <span className={styles.link}>Press</span>
                             <span className={styles.link}>Accessibility</span>
                             <span className={styles.link}>Terms {"&"} Conditions</span>
                             <span className={styles.link}>Privacy Policy</span>
@@ -53,7 +57,7 @@ const footer = (props) => {
                             <FontAwesomeIcon icon={["fab", "youtube"]} size="2x"></FontAwesomeIcon>
                         </div>
                         <br/>
-                        <span>Copyright &copy; 2018, Yale Peabody Museum of Natural History</span>
+                        <span>Copyright &copy; 2018<br/>Yale Peabody Museum of Natural History</span>
                     </div>
                 {/* end footer */}
                 </div>

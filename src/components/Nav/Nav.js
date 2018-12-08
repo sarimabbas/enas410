@@ -83,7 +83,7 @@ class nav extends Component {
                     </a>
                     </div>
                     <div className={classNames(styles.links)}>
-                        <Link to="/visit" className={classNames(styles.link)}>Visit</Link>
+                        <Link to="/visit" className={classNames(styles.link, styles.linkFirst)}>Visit</Link>
                         <Link to="/exhibits" className={classNames(styles.link)}>Exhibits</Link>
                         <Link to="/learn" className={classNames(styles.link)}>Learn</Link>
                         <Link to="/collections" className={classNames(styles.link)}>Collections</Link>

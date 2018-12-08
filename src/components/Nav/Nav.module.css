@@ -43,17 +43,18 @@
 
     /* add bottom border */
     border-bottom: 2px solid white;
-    width: 505px;
+    /* width: 100%; */
     margin-left: auto;
 }
 
 .link {
     margin-right: 30px;
-
-    
-    
     text-decoration: none;
     color: inherit;
+}
+
+.linkFirst {
+    margin-left:30px;
 }
 
 .link:hover {

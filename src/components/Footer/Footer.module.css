@@ -8,10 +8,6 @@
     grid-column-gap: 25px;
 }
 
-.info {
-    line-height: 1;
-}
-
 .links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

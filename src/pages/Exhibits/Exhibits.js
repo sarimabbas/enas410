@@ -8,6 +8,13 @@ import Generic from '../Generic/Generic';
 import Sidebar from './Sidebar';
 
 // import sub pages here
+// import Calendar from './Calendar/Calendar';
+// import OnView from './OnView/OnView';
+// import Past from './Past/Past';
+// import Temporary from './Temporary/Temporary';
+
+
+
 import NAdioramas from './North-American-dioramas.jpg';
 import davidfriend from './David-Friend-Hall.jpg';
 import tempGallery from './temporary-gallery.jpg';
@@ -23,6 +30,12 @@ const exhibits = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                     {/* start sub pages components here */}
+                        {/* <Route path={'/visit/directions'} component={Directions} />
+                        <Route path={'/visit/admission'} component={Admission} />
+                        <Route path={'/visit/cafe'} component={Cafe} />
+ */}
+
+
                         <a name="current"></a>
                         <h1 className={styles.title}>Current Exhibits</h1>
                         <br/>
