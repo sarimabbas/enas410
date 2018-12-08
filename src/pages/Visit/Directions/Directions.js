@@ -14,7 +14,7 @@ import sample from './sample.png';
 const directions = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Directions {'&'} Parking</h1>
+            <h1>Directions {'&'} Parking</h1>
             <h3>Directions</h3>
                 
             <p>We are located in New Haven at 170 Whitney Avenue, at the corner of Sachem Street, one block north of Trumbull Street.</p>
