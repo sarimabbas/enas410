@@ -5,18 +5,14 @@
 }
 
 .title {
-    font-family: 'GT America Expanded Black', sans-serif;
     font-size: 1.6rem;
-    text-transform: uppercase;
     margin-bottom: 20px;
     margin-left: 10px;
 }
 
 .subtitle {
     margin: 10px;
-    text-transform: uppercase;
     font-size: 20px;
-    font-family: "GT America Condensed Medium", sans-serif;
     min-height: 60px;
 }
 
@@ -28,6 +24,5 @@
 }
 
 .description {
-    font-family: "GT America Regular", sans-serif;
     margin: 10px;
 }

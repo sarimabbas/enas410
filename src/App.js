@@ -13,7 +13,7 @@ import FloorMap from './pages/FloorMap/FloorMap'
 
 // styles
 import './App.css';
-import 'bulma/css/bulma.css';
+// import 'bulma/css/bulma.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'

@@ -4,7 +4,6 @@
 }
 
 .links {
-    font-family: 'GT America', sans-serif;
     /* text-indent: 10%; */
 }
 
@@ -13,8 +12,6 @@
 }
 
 .heading {
-    /* text-transform: uppercase; */
-    font-family: 'GT America', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
 }

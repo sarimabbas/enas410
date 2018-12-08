@@ -68,19 +68,25 @@
 /* remove a link decoration sitewide */
 
 a:link {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 a:visited {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 a:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
 a:active {
-    text-decoration: none!important;
+    text-decoration: none !important;
+}
+
+html {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "FF Meta Pro", sans-serif;
 }
 
 body {
@@ -88,14 +94,93 @@ body {
 }
 
 h1 {
-    font-size: 2rem!important; 
-    font-weight: 700!important;
-    text-transform: uppercase!important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3rem;
 }
 
 h2 {
-    font-size: 80rem;
+    font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    line-height: 2.2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: "FF Meta Pro", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+/* container */
+
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+@media screen and (min-width: 1088px) {
+    .container {
+        max-width: 960px;
+        width: 960px;
+    }
+
+    .container.is-fluid {
+        margin-left: 64px;
+        margin-right: 64px;
+        max-width: none;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .container.is-widescreen {
+        max-width: 1152px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1471px) {
+    .container.is-fullhd {
+        max-width: 1344px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1152px;
+        width: 1152px;
+    }
+}
+
+@media screen and (min-width: 1472px) {
+    .container {
+        max-width: 1344px;
+        width: 1344px;
+    }
+}
+
+
+/* section */
+
+.section {
+    padding: 3rem 1.5rem;
+}
+
+@media screen and (min-width: 1088px) {
+    .section.is-medium {
+        padding: 9rem 1.5rem;
+    }
+
+    .section.is-large {
+        padding: 18rem 1.5rem;
+    }
+}

@@ -1,16 +1,11 @@
 .top {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: -20px;
     align-items: baseline;
 }
 
 .title {
-    font-family: "FF Meta Pro", sans-serif;
-    font-size: 20rem;
-    text-transform: uppercase;
+    padding: 0!important;
 }
 
-.more {
-    font-family: "GT America Bold", sans-serif;
-}

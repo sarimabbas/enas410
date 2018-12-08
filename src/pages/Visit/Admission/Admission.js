@@ -15,7 +15,9 @@ const admission = (props) => {
     return (
         <Aux>
             <h1 className={classNames(styles.title)}>Admission {'&'} Hours</h1>
-            <img src={sample}></img>
+            <div className={classNames(styles.imageContainer)}>
+                <img className={classNames(styles.image)} src={sample}></img>
+            </div>
         </Aux>
     )
 }
