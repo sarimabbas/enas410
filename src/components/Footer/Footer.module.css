@@ -1,5 +1,8 @@
 
 .footer {
+    font-size: 0.9rem;
+
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 25px;
