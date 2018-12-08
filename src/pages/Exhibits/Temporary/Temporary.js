@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const temporary = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Temporary</h1>
+            <h1>Temporary</h1>
         </Aux>
     )
 }

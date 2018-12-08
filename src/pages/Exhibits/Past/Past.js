@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const past = (props) => {
     return (
         <Aux>
-            <h1 className={classNames(styles.title)}>Past</h1>
+            <h1>Past</h1>
         </Aux>
     )
 }
