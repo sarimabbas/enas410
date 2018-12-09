@@ -19,7 +19,7 @@ const directions = (props) => {
                 
             <p>We are located in New Haven at 170 Whitney Avenue, at the corner of Sachem Street, one block north of Trumbull Street.</p>
 
-            <a href="https://map.yale.edu/?">Yale University Campus Map</a>
+            <p><a href="https://map.yale.edu/?">Yale University Campus Map</a></p>
 
             <p>
                 <b>By Car</b> 

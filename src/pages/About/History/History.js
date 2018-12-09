@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Aux from '../../../hoc/Aux';
 
 // import sub pages here
-import silliman from './Silliman.jpg';
+import silliman from './Silliman.jpg'
 
 // styles
 import styles from './History.module.css'
@@ -16,13 +16,18 @@ const history = (props) => {
             
             <h1>Mission</h1>
                 <p>
-                The mission of the Peabody Museum is to serve Yale University by advancing our understanding of earth’s history through geological, biological and anthropological research, and by communicating the results of this research to the widest possible audience through publication, exhibition and educational programs. Fundamental to this mission is stewardship of the Museum’s rich collections, which provide a remarkable record of the history of the earth, its life and its cultures. Conservation, augmentation and use of these collections become increasingly urgent as modern threats to the diversity of life and culture continue to intensify.
+                The mission of the Peabody Museum is to serve Yale University by advancing our understanding of earth’s 
+                history through geological, biological and anthropological research, and by communicating the results of 
+                this research to the widest possible audience through publication, exhibition and educational programs. 
+                Fundamental to this mission is stewardship of the Museum’s rich collections, which provide a remarkable 
+                record of the history of the earth, its life and its cultures. Conservation, augmentation and use of these 
+                collections become increasingly urgent as modern threats to the diversity of life and culture continue to 
+                intensify.
                 </p>
                 <br/>
             <h1>History of the Peabody</h1>
-            <div class="columns">
-                <div class="column is-three-quarters">
-     
+            <div>
+                <div>
                     <p>
                         Yale University’s earliest museum collection, begun in the 18th century, was a miscellaneous 
                         assortment of “natural and artificial curiosities” from around the world typical of college 
@@ -32,6 +37,9 @@ const history = (props) => {
                         pioneering teaching of geology and mineralogy, became an important source of public 
                         entertainment and one of the principal attractions for visitors to New Haven.
                     </p>
+
+                    <img src={silliman} alt="Silliman"></img>
+                    <p className={classNames("caption")}>Benjamin Silliman</p>
      
                     <p>
                         Silliman’s activities helped to establish Yale as a major center of scientific education in 
@@ -44,7 +52,10 @@ const history = (props) => {
                         with a gift of $150,000 for the construction of a museum building and the care and increase of 
                         the museum and its collections.
                     </p>
-     
+                    
+                    <img img className={classNames("imageKing")} src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
+                    <p className={classNames("caption")}>A photograph of O.C. Marsh</p>
+
                     <p> 
                         O.C. Marsh was appointed Professor of Paleontology at Yale in 1866, the first such 
                         professorship in the United States, and only the second in the world. In addition to serving 
@@ -93,18 +104,8 @@ const history = (props) => {
                         collections that make up the remaining portion of the Yale Peabody Museum’s approximately 
                         13 million specimens and objects requiring upgraded storage, lab and classroom facilities.
                     </p>
-                </div>
-                <div class="column">
 
-                <figure class="image is-1000 × 1366">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
-                    <figcaption class="history_captions">OC Marsh</figcaption>
-                </figure>
 
-                <figure class="image is-1986×2400">
-                    <img src={silliman} alt="Silliman"></img>
-                    <figcaption class="history_captions">Benjamin Silliman</figcaption>
-                </figure>
                 </div>
             </div>
         </Aux>

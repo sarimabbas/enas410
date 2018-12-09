@@ -13,46 +13,6 @@ import styles from './Staff.module.css'
 const staff = (props) => {
     return (    
         <Aux>
-            <h1>Design Team</h1> 
-            <br/>  
-            <div className={classNames(styles.grid)}>
-                <div>
-                    <p> <b>Sarim Abbas</b>
-                        <br/>Computer Science
-                        <br/>Pauli Murray '20
-                        <br/>sarim.abbas@yale.edu
-                    </p>
-                </div>
-                <div>
-                    <p> <b>Seamus Houlihan</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
-                        <br/>Trumbull '19
-                        <br/>seamus.houlihan@yale.edu
-                    </p>
-                </div>
-                <div>
-                    <p> <b>Kevin Koste</b>
-                        <br/>Mechanical Engineering
-                        <br/>Ezra Stiles '19
-                        <br/>kevin.koste@yale.edu
-                    </p>
-                </div>
-                <div>
-                    <p> <b>Julia Ma</b>
-                        <br/>Art, Mechanical Engineering
-                        <br/>Jonathan Edwards '19
-                        <br/>julia.ma@yale.edu
-                    </p>
-                </div>
-                <div>
-                    <p> <b>Rebecca Reza</b>
-                        <br/>Mechanical Engineering
-                        <br/>Saybrook '19
-                        <br/>rebecca.reza@yale.edu
-                    </p>
-                </div>
-            </div>
-            <br/>
             <h1>Administrative Staff</h1> 
             <br/>  
             <div className={classNames(styles.grid)}>
@@ -80,8 +40,6 @@ const staff = (props) => {
                         <br/>tim.white@yale.edu
                     </p>
                 </div>
-            </div>
-            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Jonathan Rohner</b>
                         <br/>Director of Finance and Administration

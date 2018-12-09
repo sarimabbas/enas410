@@ -15,53 +15,138 @@ const classpage = (props) => {
         <Aux>
             <h1>Design Team</h1> 
             <br/>  
-
-            <p> <b>Sarim Abbas</b>
-                <br/>Computer Science
-                <br/>Pauli Murray '20
-                <br/>sarim.abbas@yale.edu
-            </p>
-
-            <p> <b>Seamus Houlihan</b>
-                <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
-                <br/>Trumbull '19
-                <br/>seamus.houlihan@yale.edu
-            </p>
-
-            <p> <b>Kevin Koste</b>
-                <br/>Mechanical Engineering
-                <br/>Ezra Stiles '19
-                <br/>kevin.koste@yale.edu
-            </p>
-
-            <p> <b>Julia Ma</b>
-                <br/>Art, Mechanical Engineering
-                <br/>Jonathan Edwards '19
-                <br/>julia.ma@yale.edu
-            </p>
-
-            <p> <b>Rebecca Reza</b>
-                <br/>Mechanical Engineering
-                <br/>Saybrook '19
-                <br/>rebecca.reza@yale.edu
-            </p>
+            <div className={classNames(styles.grid)}>
+                <div>
+                    <p> <b>Sarim Abbas</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>sarim.abbas@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Seamus Houlihan</b>
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Trumbull '19
+                        <br/>seamus.houlihan@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Kevin Koste</b>
+                        <br/>Mechanical Engineering
+                        <br/>Ezra Stiles '19
+                        <br/>kevin.koste@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Julia Ma</b>
+                        <br/>Art, Mechanical Engineering
+                        <br/>Jonathan Edwards '19
+                        <br/>julia.ma@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Rebecca Reza</b>
+                        <br/>Mechanical Engineering
+                        <br/>Saybrook '19
+                        <br/>rebecca.reza@yale.edu
+                    </p>
+                </div>
+            </div>
             <br/>
 
-            <h1>Interaction Team</h1>
-            <h3>Café</h3>
-            <b>Jenny Xiao</b>
-            <br/> <b>Deniz</b>
-            <br/> <b>Maddie</b>
-            <h3>Egypt</h3>
-            <b>Emily Chu</b>
-            <br/><b>Jacob</b>
-            
+            <h1>Café Team</h1> 
+            <br/>  
+            <div className={classNames(styles.grid)}>
+                <div>
+                    <p> <b>Antonio Cao</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>antonio.cao@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Maddie Hoffmann</b>
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Trumbull '19
+                        <br/>madeline.hoffmann@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Deniz Saip</b>
+                        <br/>Mechanical Engineering
+                        <br/>Ezra Stiles '19
+                        <br/>deniz.saip@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Jenny Xiao</b>
+                        <br/>Art, Mechanical Engineering
+                        <br/>Jonathan Edwards '19
+                        <br/>jenny.xiao@yale.edu
+                    </p>
+                </div>
+            </div>
+            <br/>
 
-            <h1>Tech Team</h1>
-            <h3>Audio</h3>
-            <h3>Dome</h3>
-            <b>Ben Weiss</b>
-            <br/><b>Avital</b>
+            <h1>Egypt Team</h1> 
+            <br/>  
+            <div className={classNames(styles.grid)}>
+                <div>
+                    <p> <b>Emily Chu</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>emily.chu@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Jacob Payne</b>
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Trumbull '19
+                        <br/>jacob.payne@yale.edu
+                    </p>
+                </div>
+            </div>
+            <br/>
+
+            <h1>Dome Team</h1> 
+            <br/> 
+            <div className={classNames(styles.grid)}>
+                <div>
+                    <p> <b>Avital Smotrich-Barr</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>avital.smotrich-barr@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Ben Weiss</b>
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Trumbull '19
+                        <br/>benjamin.s.weiss@yale.edu
+                    </p>
+                </div>
+            </div>
+            <br/>
+
+            <h1>Audio Team</h1> 
+            <br/> 
+            <div className={classNames(styles.grid)}>
+                <div>
+                    <p> <b>Collin Bentley</b>
+                        <br/>Computer Science
+                        <br/>Pauli Murray '20
+                        <br/>collin.bentley@yale.edu
+                    </p>
+                </div>
+                <div>
+                    <p> <b>Evan Smith</b>
+                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Trumbull '19
+                        <br/>evan.smith@yale.edu
+                    </p>
+                </div>
+            </div>
+            <br/>
             
 
         </Aux>

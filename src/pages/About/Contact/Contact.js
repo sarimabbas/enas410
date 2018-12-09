@@ -35,8 +35,8 @@ const contact = (props) => {
                 Connecticut.
             </p> 
             <br/>   
-            <div class="columns">
-                <div class="column">
+            <div className={classNames(styles.grid)}>
+                <div>
                     <p> <b>Mailing Address</b>
                         <br/>Name of Individual
                         <br/>Name of Department
@@ -46,7 +46,7 @@ const contact = (props) => {
                         <br/>New Haven, CT 06520-8118 USA
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Shipping Address</b>
                         <br/>Name of Individual
                         <br/>Name of Department
@@ -56,14 +56,14 @@ const contact = (props) => {
                         <br/>New Haven, CT 06511 USA
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Office of Shipping and Receiving</b>
                         <br/>(203) 432-3759
                     </p>
-                    </div>
+                </div>
             </div>
             <br/> 
-            <div class="columns">
+            <div>
                 The Peabody Museum of Natural History at Yale University is not affiliated with the Peabody 
                 Essex Museum, Salem, Massachusetts, or the Peabody Museum of Archaeology and Ethnology at 
                 Harvard University.
