@@ -55,14 +55,18 @@ class nav extends Component {
                             Yale Peabody Museum of Natural History
                     </a>
                     </div>
-                    <div className={classNames(styles.links)}>
-                        <Link to="/visit" className={classNames(styles.link, styles.linkFirst)}>Visit</Link>
-                        <Link to="/exhibits" className={classNames(styles.link)}>Exhibits</Link>
-                        <Link to="/learn" className={classNames(styles.link)}>Learn</Link>
-                        <Link to="/collections" className={classNames(styles.link)}>Collections</Link>
-                        <Link to="/about" className={classNames(styles.link)}>About</Link>
-                        <FontAwesomeIcon href="#" onClick={this.showSettings} icon={["fas", "bars"]} className={classNames(styles.link)}>
-                        </FontAwesomeIcon>
+                    <div className={classNames(styles.right)}>
+                        <div className={classNames(styles.links)}>
+                            <Link to="/visit" className={classNames(styles.link, styles.linkFirst)}>Visit</Link>
+                            <Link to="/exhibits" className={classNames(styles.link)}>Exhibits</Link>
+                            <Link to="/learn" className={classNames(styles.link)}>Learn</Link>
+                            <Link to="/collections" className={classNames(styles.link)}>Collections</Link>
+                            <Link to="/about" className={classNames(styles.link)}>About</Link>
+                        </div>
+                        <div>
+                            <FontAwesomeIcon href="#" onClick={this.showSettings} icon={["fas", "bars"]} className={classNames(styles.link)}>
+                            </FontAwesomeIcon>
+                        </div>
                     </div>
                 </div>
                 { overlay }

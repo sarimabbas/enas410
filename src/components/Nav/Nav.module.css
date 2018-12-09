@@ -12,6 +12,14 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+}
+
+
+
 .logo {
     /* initial opacity */
     opacity: 0;
@@ -27,7 +35,7 @@
 }
 
 
-.links {
+.right {
     /* text style */
     color: white;
     font-weight: 600;
