@@ -7,7 +7,6 @@ import styles from './Nav.module.css'
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
 // routing
 import { Link } from 'react-router-dom';
 
@@ -15,12 +14,10 @@ class nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            scrollThresholdMet : false,
             fadedOnce: false,
             showOverlay: false,
         }
 
-        this.handleScroll = this.handleScroll.bind(this);
         this.showSettings = this.showSettings.bind(this);
     }
 
@@ -36,41 +33,18 @@ class nav extends Component {
         }
     }
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }   
-
-    handleScroll = (event) => {
-        let scrollTop = document.scrollingElement.scrollTop
-        const scrollThreshold = window.innerHeight; //! if changed here, make sure to change in Floto.js
-
-        if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
-            this.setState({
-                scrollThresholdMet : true,
-                fadedOnce: true,
-            })
-        } 
-
-        if (this.state.scrollThresholdMet && scrollTop <= scrollThreshold) {
-            this.setState({
-                scrollThresholdMet: false,
-            })
-        }
-    }
-
     render() {
+
+        console.log(this.props);
 
         // fade logic
         let barFade, logoFade= NaN;
         if (this.state.fadedOnce) {
-            barFade = this.state.scrollThresholdMet ? styles.barOpaque : styles.barTransparent;
-            logoFade = this.state.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
+            barFade = this.props.scrollThresholdMet ? styles.barOpaque : styles.barTransparent;
+            logoFade = this.props.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
         }
 
+        // overlay logic
         let overlay = this.state.showOverlay ? <Overlay clickHandler={this.showSettings} /> : null;
         let overlayFade = this.state.showOverlay ? styles.logoTransparent : null;
 
