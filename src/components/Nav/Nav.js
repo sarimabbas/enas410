@@ -22,10 +22,12 @@ class nav extends Component {
 
     showSettings = (event) => {
         if (this.state.showOverlay) {
+            document.body.style.overflow = "";
             this.setState({
                 showOverlay: false,
             })
         } else {
+            document.body.style.overflow = "hidden";
             this.setState({
                 showOverlay: true,
             })

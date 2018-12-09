@@ -13,7 +13,21 @@ const overlay = (props) => {
         <Aux>
             <div className={classNames(styles.overlay)}>
                 <div className={classNames(styles.content)}>
+
+                    <div className={classNames(styles.controls)}>
+                        <div className={classNames(styles.cross)}>
+                            <FontAwesomeIcon onClick={props.clickHandler}
+                                             href="#" 
+                                             icon={["fas", "times"]}
+                                             size="md">
+                            </FontAwesomeIcon>
+                        </div>
+                    </div>
+
+
                     <div className={classNames(styles.groups)}>
+                        
+
                         <div className={classNames(styles.group)}>
                             <span className={classNames(styles.heading)}>
                                <Link to="/visit">Visit</Link>
@@ -67,10 +81,6 @@ const overlay = (props) => {
                                 <Link to="/about/contact">Contact Us</Link>
                                 <Link to="/about/staff">Staff</Link>
                             </div>
-                        </div>
-                        <div className={classNames(styles.group)}>
-                            <FontAwesomeIcon onClick={props.clickHandler} href="#" icon={["fas", "times"]}>
-                            </FontAwesomeIcon>
                         </div>
                     </div>
                 </div>

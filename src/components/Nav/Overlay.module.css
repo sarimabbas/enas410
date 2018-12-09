@@ -20,6 +20,16 @@
     margin-top: 25px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
+.controls {
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cross {
+    color: white;
+}
 
 .groups {
     height: 100vh;
