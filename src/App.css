@@ -119,6 +119,10 @@ p {
     line-height: 1.4rem;
 }
 
+.caption {
+    font-style: italic;
+}
+
 /* container */
 
 .container {
