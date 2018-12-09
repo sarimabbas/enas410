@@ -1,12 +1,17 @@
 
 .footer {
     font-size: 0.9rem;
-
+    line-height: 1.2rem;
 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, auto));
     grid-column-gap: 10px;
     grid-row-gap: 30px;
+}
+
+span .footer {
+    line-height: 1rem;
+    margin-bottom: .2rem;
 }
 
 .links {

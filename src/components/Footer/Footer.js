@@ -18,8 +18,8 @@ const footer = (props) => {
                             New Haven, CT 06511<br/>
                             (203) 432-8987
                         </span>
-                        <br/>
-                        <span>Open today: 10:30 am–6 pm</span>
+                        <p></p>
+                        <span><b>Open today: 10:30 am–6 pm</b></span>
                     </div>
                     {/* links  */}
                     <div className={styles.links}>
@@ -42,6 +42,7 @@ const footer = (props) => {
                         {/* third col */}
                         {/* <div> */}
 
+                            <span className={styles.link}>Press</span>
                             <span className={styles.link}>Press</span>
                             <span className={styles.link}>Accessibility</span>
                             <span className={styles.link}>Privacy Policy</span>
