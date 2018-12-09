@@ -15,7 +15,7 @@ const staff = (props) => {
         <Aux>
             <h1>Design Team</h1> 
             <br/>  
-            <div>
+            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Sarim Abbas</b>
                         <br/>Computer Science
@@ -37,8 +37,6 @@ const staff = (props) => {
                         <br/>kevin.koste@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Julia Ma</b>
                         <br/>Art, Mechanical Engineering
@@ -53,13 +51,11 @@ const staff = (props) => {
                         <br/>rebecca.reza@yale.edu
                     </p>
                 </div>
-                <div>
-                </div>
             </div>
             <br/>
             <h1>Administrative Staff</h1> 
             <br/>  
-            <div>
+            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>David Skelly</b>
                         <br/>Director, Yale Peabody Museum of Natural History
@@ -85,7 +81,7 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div>
+            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Jonathan Rohner</b>
                         <br/>Director of Finance and Administration
@@ -110,8 +106,6 @@ const staff = (props) => {
                         <br/>susan.rodrigues@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Carol DeNatale</b>
                         <br/>Project Director
@@ -120,15 +114,11 @@ const staff = (props) => {
                         <br/>carol.denatale@yale.edu
                     </p>
                 </div>
-                <div>
-                </div>
-                <div>
-                </div>
             </div>
             <br/> 
             <h1>Curatorial Staff</h1>
             <br/>    
-            <div>
+            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Michael Anderson</b>
                         <br/>Preparator, Exhibitions
@@ -150,8 +140,6 @@ const staff = (props) => {
                         <br/>walter.brenckle@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Melanie Brigockas</b>
                         <br/>Public Relations and Marketing Manager
@@ -173,8 +161,6 @@ const staff = (props) => {
                         <br/>dean.corcoran@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Luiz Cordeiro</b>
                         <br/>Financial Assistant
@@ -196,8 +182,6 @@ const staff = (props) => {
                         <br/>maishe.dickman@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Shannon Giacobbe</b>
                         <br/>Publication Assistant
@@ -219,8 +203,6 @@ const staff = (props) => {
                         <br/>erin.gredell@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Christine Hanks</b>
                         <br/>Sponsored Projects Administrator
@@ -242,8 +224,6 @@ const staff = (props) => {
                         <br/>kenneth.kuester@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Alana Ladson</b>
                         <br/>After School Program Operations Assistant
@@ -265,8 +245,6 @@ const staff = (props) => {
                         <br/>mark.masi@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Andy Melien</b>
                         <br/>Digital Media Specialist
@@ -288,8 +266,6 @@ const staff = (props) => {
                         <br/>armand.morgan@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Sarah Morrill</b>
                         <br/>Assistant Director, Grants Management
@@ -311,8 +287,6 @@ const staff = (props) => {
                         <br/>nicole.palffy-muhoray@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Sally Pallatto</b>
                         <br/>Graphic Designer, Exhibits and Graphics	
@@ -334,8 +308,6 @@ const staff = (props) => {
                         <br/>hang.pham@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Chris Renton</b>
                         <br/>Assistant Director of Development	
@@ -357,8 +329,6 @@ const staff = (props) => {
                         <br/>latoya.sealycotto@yale.edu
                     </p>
                 </div>
-            </div>
-            <div>
                 <div>
                     <p> <b>Catherine Sease</b>
                         <br/>Senior Conservator		
@@ -380,8 +350,6 @@ const staff = (props) => {
                         <br/>elizabeth.steele@yale.edu
                     </p>
                 </div>
-            </div> 
-            <div>
                 <div>
                     <p> <b>Rosemary Volpe</b>
                         <br/>Publications Manager	
@@ -403,8 +371,6 @@ const staff = (props) => {
                         <br/>stephanie.wratten@yale.edu
                     </p>
                 </div>
-            </div>  
-            <div>
                 <div>
                     <p> <b>Sung H. Yun</b>
                         <br/>Development Coordinator	
@@ -418,8 +384,6 @@ const staff = (props) => {
                         <br/>(203) 432-9897	
                         <br/>kimberley.zolvik@yale.edu
                     </p>
-                </div>
-                <div>
                 </div>
             </div>  
         </Aux>

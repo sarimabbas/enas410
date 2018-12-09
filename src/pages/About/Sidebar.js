@@ -9,11 +9,11 @@ const sidebar = (props) => {
     return (
         <Aux>
             <div className={classNames(styles.sidebar)}>
-                <h2 className={classNames(styles.heading)}>
+                <h3 className={classNames(styles.heading)}>
                     {/* heading */}
                     About
                     {/* end heading */}
-                </h2>
+                </h3>
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/about/mission"><span>Mission {'&'} History</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/about/highlights"><span>Peabody Highlights</span></NavLink>

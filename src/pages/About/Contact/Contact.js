@@ -13,33 +13,27 @@ const contact = (props) => {
     return (    
         <Aux>
             <h1>Contact Us</h1>
-            <br/> 
             <p>
                 The Yale Peabody Museum is supported by nearly 100 full and part-time administrative 
                 and divisional staff, including curators and associate curators who are faculty 
                 members in related Yale University academic departments, and curators emeriti, as 
                 well as several dozen curatorial affiliates and a large corps of Museum volunteers.
             </p>
-            <br/> 
             <p>
                 Call our Admissions Desk (203) 432-8987 for any questions about your visit.
             </p>
-            <br/> 
             <p> 
                 Direct inquiries to the appropriate Yale Peabody Museum department or division.
             </p>
-            <br/> 
             <p>
                 Information about employment at Yale University is available from the University’s 
                 Placement and Staff Relations.
             </p>
-            <br/> 
             <p>
                 The Peabody Museum of Natural History at Yale University is located in the Science 
                 Hill section of the Yale campus, at Whitney Avenue and Sachem Street in New Haven, 
                 Connecticut.
             </p> 
-            <br/>  
             <br/>   
             <div class="columns">
                 <div class="column">

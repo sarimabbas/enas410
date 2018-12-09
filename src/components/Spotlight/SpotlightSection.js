@@ -8,7 +8,7 @@ const spotlightsection = (props) => {
             <div className="container">
                 <div className={styles.top}>
                     <h1 className={styles.title}>Peabody Spotlights</h1>
-                    <a href="/about/highlights" className={styles.more}>See More</a>
+                    <p><a href="/about/highlights" className={styles.more}>See More</a></p>
                 </div>
                 <SpotlightCardRow />
             </div>
