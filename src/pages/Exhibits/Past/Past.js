@@ -17,7 +17,8 @@ const past = (props) => {
             <img className="imageKing" src="http://1.bp.blogspot.com/-RKkbHSKyBPI/T9FSM4MMLAI/AAAAAAAADLc/fdA1PEeoQtE/s1600/Marsh+PMGH3b.jpg" alt ="Great Hall"></img>
                 <h3>Student Gallery</h3>
                 <p><i>Dinosaurs Take Flight</i> presents not only the history and science behind Archaeopteryx but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.</p>
-
+            <br/>
+            <br/>
             <img className="imageKing" src="http://1.bp.blogspot.com/-RKkbHSKyBPI/T9FSM4MMLAI/AAAAAAAADLc/fdA1PEeoQtE/s1600/Marsh+PMGH3b.jpg" alt ="Great Hall"></img>
                 <h3>Egypt</h3>
         </Aux>
