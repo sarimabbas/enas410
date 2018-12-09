@@ -28,7 +28,7 @@ const about = (props) => {
                         <Route path={'/about/mission'} component={History} />
                         <Route path={'/about/contact'} component={Contact} />
                         <Route path={'/about/staff'} component={Staff} />
-                        <Route path={'/about/classpage'} component={Classpage} />
+                        <Route path={'/about/class'} component={Classpage} />
                         <Route path={'/about/highlights'} component={History} />
                     { /* end sub pages components here */ }
                     </div>

@@ -18,6 +18,7 @@ const sidebar = (props) => {
                     <NavLink activeClassName={styles.activeLink} to="/about/mission"><span>Mission {'&'} History</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/about/highlights"><span>Peabody Highlights</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/about/staff"><span>Staff</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/about/class"><span>Class</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/about/contact"><span>Contact Us</span></NavLink>
                 </div>
             </div>
