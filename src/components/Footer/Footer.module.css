@@ -11,17 +11,13 @@
 
 .links {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, auto); */
-    /* grid-auto-rows: 0px; */
-
+    /* each column can be 5 rows long */
     grid-template-rows: repeat(5, auto);
-
-
+    /* each row is variable no of columns wide, each atleast 100 px */
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
-    /* grid-auto-columns: 20px; */
-
+    /* place content by column */
     grid-auto-flow: column;
-    /* grid-row-gap: 30px; */
+    /*  space between columns */
     grid-column-gap: 10px;
 }
 
