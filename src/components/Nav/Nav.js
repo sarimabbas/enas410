@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux';
 import Overlay from './Overlay';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 // styles
 import styles from './Nav.module.css'
@@ -22,12 +24,12 @@ class nav extends Component {
 
     showSettings = (event) => {
         if (this.state.showOverlay) {
-            document.body.style.overflow = "";
+            disableBodyScroll()
             this.setState({
                 showOverlay: false,
             })
         } else {
-            document.body.style.overflow = "hidden";
+            enableBodyScroll()
             this.setState({
                 showOverlay: true,
             })
