@@ -4,7 +4,7 @@
     /* top: how far from the top of screen */
  
 
-    left: 20px;
+    left: 50px;
     z-index: 15;
 
     /* expand to height of masthead */
@@ -18,13 +18,13 @@
 
 .text {
     /* add padding against the top of the parent */
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 
     /* font style */
     color: white;
     font-family: "Peabody Variable", sans-serif;
     font-variation-settings: "wdth" 1000, "wght" 800;
-    font-size: 16vh;
+    font-size: 15vh;
 
     /* text orientation */
     text-orientation: sideways-right;
