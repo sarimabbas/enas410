@@ -15,6 +15,7 @@ const cafe = (props) => {
     return (
         <Aux>
             <h1>Peabody Café</h1>
+            <p></p>
             <div className={classNames(styles.imageContainer)}>
                 <img className={classNames(styles.image)} src={CAFE}></img>
             </div>

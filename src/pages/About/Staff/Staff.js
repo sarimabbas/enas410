@@ -15,22 +15,22 @@ const staff = (props) => {
         <Aux>
             <h1>Design Team</h1> 
             <br/>  
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Sarim Abbas</b>
                         <br/>Computer Science
                         <br/>Pauli Murray '20
                         <br/>sarim.abbas@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Seamus Houlihan</b>
                         <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
                         <br/>Trumbull '19
                         <br/>seamus.houlihan@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Kevin Koste</b>
                         <br/>Mechanical Engineering
                         <br/>Ezra Stiles '19
@@ -38,29 +38,29 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Julia Ma</b>
                         <br/>Art, Mechanical Engineering
                         <br/>Jonathan Edwards '19
                         <br/>julia.ma@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Rebecca Reza</b>
                         <br/>Mechanical Engineering
                         <br/>Saybrook '19
                         <br/>rebecca.reza@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                 </div>
             </div>
             <br/>
             <h1>Administrative Staff</h1> 
             <br/>  
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>David Skelly</b>
                         <br/>Director, Yale Peabody Museum of Natural History
                         <br/>(203) 432-3752
@@ -68,7 +68,7 @@ const staff = (props) => {
                         <br/>peabody.director@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>David Heiser</b>
                         <br/>Director of Student Programs
                         <br/>(203) 432-9545
@@ -76,7 +76,7 @@ const staff = (props) => {
                         <br/>david.heiser@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Tim White</b>
                         <br/>Director of Collections and Research
                         <br/>(203) 432-3767
@@ -85,8 +85,8 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Jonathan Rohner</b>
                         <br/>Director of Finance and Administration
                         <br/>(203) 432-3757
@@ -94,7 +94,7 @@ const staff = (props) => {
                         <br/>jonathan.rohner@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Monty Shepardson</b>
                         <br/>Director of Development
                         <br/>(203) 432-6567
@@ -102,7 +102,7 @@ const staff = (props) => {
                         <br/>monty.shepardson@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Susan Rodrigues</b>
                         <br/>Chief of Staff
                         <br/>(203) 432-3753
@@ -111,8 +111,8 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Carol DeNatale</b>
                         <br/>Project Director
                         <br/>(203) 432-9856
@@ -120,30 +120,30 @@ const staff = (props) => {
                         <br/>carol.denatale@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                 </div>
-                <div class="column">
+                <div>
                 </div>
             </div>
             <br/> 
             <h1>Curatorial Staff</h1>
             <br/>    
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Michael Anderson</b>
                         <br/>Preparator, Exhibitions
                         <br/>(203) 432-9848
                         <br/>michael.anderson@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Rich Boardman</b>
                         <br/>Operations Manager
                         <br/>(203) 432-3782
                         <br/>richard.boardman@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Walter Brenckle</b>
                         <br/>Museum Technician
                         <br/>(203) 432-3792
@@ -151,22 +151,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Melanie Brigockas</b>
                         <br/>Public Relations and Marketing Manager
                         <br/>(203) 432-5099
                         <br/>melanie.brigockas@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Robert Charlesworth</b>
                         <br/>Museum Technician
                         <br/>(203) 432-3792
                         <br/>robert.charlesworth@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Dean Corcoran</b>
                         <br/>Materials Assistant
                         <br/>(203) 919-6852
@@ -174,22 +174,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Luiz Cordeiro</b>
                         <br/>Financial Assistant
                         <br/>(203) 432-3762
                         <br/>luiz.cordeiro@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Danka Dadic</b>
                         <br/>Security Attendant
                         <br/>(203) 432-3738
                         <br/>danka.dadic@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Maishe Dickman</b>
                         <br/>Museum Technician
                         <br/>((203) 432-3792
@@ -197,22 +197,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Shannon Giacobbe</b>
                         <br/>Publication Assistant
                         <br/>(203) 432-3154
                         <br/>shannon.giacobbe@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Adrienne Gottlieb</b>
                         <br/>Assistant Manager, Museum Store
                         <br/>(203) 432-3740
                         <br/>adrienne.gottlieb@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Erin Gredell</b>
                         <br/>Registrar
                         <br/>(203) 737-4695
@@ -220,22 +220,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Christine Hanks</b>
                         <br/>Sponsored Projects Administrator
                         <br/>(203) 436-8499
                         <br/>christine.hanks@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>TBD</b>
                         <br/>Volunteer Coordinator
                         <br/>(203) 432-3731
                         <br/>TBD
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Ken Kuester</b>
                         <br/>Materials Assistant
                         <br/>(203) 432-3759
@@ -243,22 +243,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Alana Ladson</b>
                         <br/>After School Program Operations Assistant
                         <br/>(203) 436-4862
                         <br/>alana.ladson@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Bonnie Mahmood</b>
                         <br/>Senior Administrative Assistant, Director's Office
                         <br/>(203) 432-3752
                         <br/>bonnie.mahmood@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Mark Masi</b>
                         <br/>Security Attendant
                         <br/>(203) 432-3738
@@ -266,22 +266,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Andy Melien</b>
                         <br/>Digital Media Specialist
                         <br/>(203) 436-9428
                         <br/>andrew.melien@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Hannah Meyer</b>
                         <br/>Assistant Director, Visitor Experience and Special Events
                         <br/>(203) 432-3065
                         <br/>hannah.meyer@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Armand Morgan</b>
                         <br/>Senior Instructor, Public Education
                         <br/>(203) 432-3297	
@@ -289,22 +289,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Sarah Morrill</b>
                         <br/>Assistant Director, Grants Management
                         <br/>(203) 432-3452	
                         <br/>sarah.morrill@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Andrea Motto</b>
                         <br/>Manager, Public and Youth Engagement
                         <br/>Afterschool Program Director
                         <br/>andrea.motto@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Nicole Palffy-Muhoray</b>
                         <br/>Assistant Director, Student Programs
                         <br/>(203) 432-6115	 
@@ -312,22 +312,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Sally Pallatto</b>
                         <br/>Graphic Designer, Exhibits and Graphics	
                         <br/>(203) 432-5004	
                         <br/>sally.pallatto@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Tom Parlapiano</b>
                         <br/>Manager,Student and Teacher Engagement
                         <br/>(203) 432-0944
                         <br/>thomas.parlapiano@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Apple Pham</b>
                         <br/>Sci.CORPS Coordinator
                         <br/>(203) 432-9589	
@@ -335,22 +335,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Chris Renton</b>
                         <br/>Assistant Director of Development	
                         <br/>(203) 432-8837	
                         <br/>christopher.renton@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Nelson Rios</b>
                         <br/>Head, Biodiversity Informatics and Data Science
                         <br/>(203) 432-1844	
                         <br/>nelson.rios@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>LaToya Sealy Cotto</b>
                         <br/>Manager of Finance and Administration
                         <br/>(203) 432-9857
@@ -358,22 +358,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Catherine Sease</b>
                         <br/>Senior Conservator		
                         <br/>(203) 432-3965
                         <br/>catherine.sease@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>James Sirch</b>
                         <br/>Coordinator, Public Education
                         <br/>(203) 432-6919	
                         <br/>james.sirch@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Elizabeth Steele</b>
                         <br/>Scheduler, School Programs and Birthday Parties
                         <br/>(203) 432-3775 (8:30 - 1:30)
@@ -381,22 +381,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div> 
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Rosemary Volpe</b>
                         <br/>Publications Manager	
                         <br/>(203) 432-9804	
                         <br/>rosemary.volpe@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Darnell Walker</b>
                         <br/>Security Attendant
                         <br/>(203) 432-3738	
                         <br/>darnell.walker@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Stephanie Wratten</b>
                         <br/>Student Programs Educator
                         <br/>(203) 432-6115	
@@ -404,22 +404,22 @@ const staff = (props) => {
                     </p>
                 </div>
             </div>  
-            <div class="columns">
-                <div class="column">
+            <div>
+                <div>
                     <p> <b>Sung H. Yun</b>
                         <br/>Development Coordinator	
                         <br/>(203) 432-6844
                         <br/>sung.yun@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                     <p> <b>Kimberley Zolvik</b>
                         <br/>Graphic Designer, Exhibits and Graphics
                         <br/>(203) 432-9897	
                         <br/>kimberley.zolvik@yale.edu
                     </p>
                 </div>
-                <div class="column">
+                <div>
                 </div>
             </div>  
         </Aux>
