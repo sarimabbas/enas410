@@ -20,7 +20,7 @@ const onview = (props) => {
             <h1>On View</h1>
             <p></p>
             <img className={classNames("imageKing",styles.exhibitImg)} src="http://1.bp.blogspot.com/-RKkbHSKyBPI/T9FSM4MMLAI/AAAAAAAADLc/fdA1PEeoQtE/s1600/Marsh+PMGH3b.jpg" alt ="Great Hall"></img>
-            <h3>The Great Hall </h3>
+            <h3>The Great Hall of Dinosaurs</h3>
             <p>The Great Hall of Dinosaurs is the centerpiece of the Yale Peabody Museum. Featuring skeletons from the Museum’s world-renowned paleontology collections, it is also home to Rudolph Zallinger’s famous mural The Age of Reptiles. The hall contains the dinosaurs Deinonychus, Camarasaurus, Stegosaurus, Camptosaurus, and of course the Brontosaurus.  </p>
 
             <br/>
@@ -39,6 +39,7 @@ const onview = (props) => {
             <br/>                          
             <img className={classNames("imageKing",styles.exhibitImg)} src="http://1.bp.blogspot.com/-RKkbHSKyBPI/T9FSM4MMLAI/AAAAAAAADLc/fdA1PEeoQtE/s1600/Marsh+PMGH3b.jpg" alt ="Great Hall"></img>
             <h3>Hall of Ancient Oceans</h3>
+            <p>From the Archelon and the Mososaur swimming above, to the jars of phytoplankton below, you can view the wide variety of ocean life present in the Peabody's collection. The collections of Hall of Ancient Oceans includes specimens from the oceans of the Mesozoic Era (248 to 65 million years ago). </p>
 
             <br/>
             <br/>
