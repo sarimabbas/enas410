@@ -16,7 +16,7 @@ const overlay = (props) => {
                     <div className={classNames(styles.groups)}>
                         <div className={classNames(styles.group)}>
                             <span className={classNames(styles.heading)}>
-                                Visit
+                               <Link to="/visit">Visit</Link>
                             </span>
                             <div className={classNames(styles.links)}>
                                 <Link to="/visit/admission">Admission {'&'} Hours</Link>
