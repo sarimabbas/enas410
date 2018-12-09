@@ -77,7 +77,12 @@ class navmanager extends Component {
     render() {
         return(
             <Aux>
-                {/* <Floto handleScroll={this.handleScroll}/> */}
+                <Floto 
+                    scrollThresholdMet={this.state.scrollThresholdMet}
+                    positionType={this.state.positionType}
+                    top={this.state.top}
+                    width={this.state.width}
+                />
                 <Nav scrollThresholdMet={this.state.scrollThresholdMet} 
                      fadedOnce={this.state.fadedOnce}/>
             </Aux>
