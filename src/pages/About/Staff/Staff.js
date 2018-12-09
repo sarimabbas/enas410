@@ -40,8 +40,6 @@ const staff = (props) => {
                         <br/>tim.white@yale.edu
                     </p>
                 </div>
-            </div>
-            <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Jonathan Rohner</b>
                         <br/>Director of Finance and Administration
