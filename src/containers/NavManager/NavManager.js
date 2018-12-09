@@ -12,7 +12,8 @@ class navmanager extends Component {
             scrollThresholdMet: false,
             width: "'wdth' 1000",
             positionType: "fixed",
-            top: 0
+            top: 0,
+            fadedOnce: false,
         }
     }
 
@@ -60,6 +61,7 @@ class navmanager extends Component {
         if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
             this.setState({
                 scrollThresholdMet: true,
+                fadedOnce: true,
             })
         }
 
@@ -76,7 +78,8 @@ class navmanager extends Component {
         return(
             <Aux>
                 {/* <Floto handleScroll={this.handleScroll}/> */}
-                <Nav scrollThresholdMet={this.state.scrollThresholdMet}/>
+                <Nav scrollThresholdMet={this.state.scrollThresholdMet} 
+                     fadedOnce={this.state.fadedOnce}/>
             </Aux>
         )
      

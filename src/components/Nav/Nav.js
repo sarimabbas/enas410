@@ -14,7 +14,6 @@ class nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            fadedOnce: false,
             showOverlay: false,
         }
 
@@ -39,7 +38,7 @@ class nav extends Component {
 
         // fade logic
         let barFade, logoFade= NaN;
-        if (this.state.fadedOnce) {
+        if (this.props.fadedOnce) {
             barFade = this.props.scrollThresholdMet ? styles.barOpaque : styles.barTransparent;
             logoFade = this.props.scrollThresholdMet ? styles.logoOpaque : styles.logoTransparent;
         }
