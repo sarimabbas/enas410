@@ -4,7 +4,7 @@
     /* top: how far from the top of screen */
  
 
-    left: 0;
+    left: 20px;
     z-index: 15;
 
     /* expand to height of masthead */
@@ -23,8 +23,8 @@
     /* font style */
     color: white;
     font-family: "Peabody Variable", sans-serif;
-    font-variation-settings: "wdth" 1000;
-    font-size: 14vh;
+    font-variation-settings: "wdth" 1000, "wght" 800;
+    font-size: 16vh;
 
     /* text orientation */
     text-orientation: sideways-right;
