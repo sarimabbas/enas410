@@ -10,7 +10,7 @@ class navmanager extends Component {
         super(props)
         this.state = {
             scrollThresholdMet: false,
-            width: "'wdth' 1000",
+            width: "'wdth' 1000" + ", 'wght' 800",
             positionType: "fixed",
             top: 0,
             fadedOnce: false,
@@ -28,14 +28,14 @@ class navmanager extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight;
-        const shrinkSpeed = 5;
+        const shrinkSpeed = 4;
 
         // set the font-width as a function of scroll and max font width
         const fontMax = 1000;
         let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
        
         let widthNo = ((1 - normalized) * fontMax).toString();
-        let width = "'wdth' " + widthNo
+        let width = "'wdth' " + widthNo + ", 'wght' 800"; 
 
         this.setState({
             width : width,

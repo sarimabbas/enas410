@@ -65,6 +65,11 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Peabody Variable';
+    src: url('./fonts/peabodymeta-VF.ttf') format('truetype');
+}
+
 /* remove a link decoration sitewide */
 
 p > a {
