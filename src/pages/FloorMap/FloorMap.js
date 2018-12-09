@@ -71,7 +71,8 @@ class floormap extends Component {
                 <Menu   isOpen={this.state.roomSelected} 
                         noOverlay
                         right
-                        onStateChange={ this.handleMenuChange }>
+                        onStateChange={ this.handleMenuChange }
+                        >
                     <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                     <div className={classNames(styles.content)}>
                         <h1 className={classNames(styles.title)}>{this.state.title}</h1> 

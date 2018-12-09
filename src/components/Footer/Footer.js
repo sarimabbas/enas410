@@ -24,29 +24,29 @@ const footer = (props) => {
                     {/* links  */}
                     <div className={styles.links}>
                         {/* first col */}
-                        <div>
+                        {/* <div> */}
                             <span className={styles.link}>Visit</span>
                             <span className={styles.link}>Exhibits</span>
                             <span className={styles.link}>Learn</span>
                             <span className={styles.link}>Collections</span>
                             <span className={styles.link}>About</span>
-                        </div>
+                        {/* </div> */}
                         {/* second col */}
-                        <div>
+                        {/* <div> */}
                             <span className={styles.link}>FAQs</span>
                             <span className={styles.link}>Membership</span>
                             <span className={styles.link}>Volunteering</span>
                             <span className={styles.link}>Employment</span>
                             <span className={styles.link}>Internships</span>
-                        </div>
+                        {/* </div> */}
                         {/* third col */}
-                        <div>
+                        {/* <div> */}
 
                             <span className={styles.link}>Press</span>
                             <span className={styles.link}>Accessibility</span>
                             <span className={styles.link}>Terms {"&"} Conditions</span>
                             <span className={styles.link}>Privacy Policy</span>
-                        </div>
+                        {/* </div> */}
                     </div>
                     {/* social & copyright */}
                     <div className={styles.social}>
