@@ -43,7 +43,7 @@ const footer = (props) => {
                         {/* <div> */}
 
                             <span className={styles.link}>Press</span>
-                            <span className={styles.link}>Press</span>
+                            <span className={styles.link}>Support</span>
                             <span className={styles.link}>Accessibility</span>
                             <span className={styles.link}>Privacy Policy</span>
                             <span className={styles.link}>Terms {"&"} Conditions</span>
