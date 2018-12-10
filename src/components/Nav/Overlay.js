@@ -73,6 +73,7 @@ class overlay extends Component {
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/learn/k12">K-12 Programs</Link>
+                                        <Link to="/learn/summer-camps">Summer Camps</Link>
                                         <Link to="https://evolutions.peabody.yale.edu/">Peabody Evolutions</Link>
                                         <Link to="/learn/yale">Yale Student Opportunities</Link>
                                         <Link to="/learn/adult">Adult Programs</Link>
@@ -95,10 +96,11 @@ class overlay extends Component {
                                         <Link to="/about">About</Link>
                                     </span>
                                     <div className={classNames(styles.links)}>
-                                        <Link to="/about/highlights">Peabody Highlights</Link>
                                         <Link to="/about/mission">Mission {'&'} History</Link>
-                                        <Link to="/about/contact">Contact Us</Link>
+                                        <Link to="/about/highlights">Peabody Highlights</Link>
                                         <Link to="/about/staff">Staff</Link>
+                                         <Link to="/about/class">Class</Link>
+                                        <Link to="/about/contact">Contact Us</Link>
                                     </div>
                                 </div>
 

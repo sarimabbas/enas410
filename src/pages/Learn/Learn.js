@@ -29,7 +29,7 @@ const learn = (props) => {
                             <Redirect exact from="/learn" to="/learn/k12"/>
                             <Route path={'/learn/adult'} component={Adult} />
                             <Route path={'/learn/k12'} component={Group} />
-                            <Route path={'/learn/summercamps'} component={Camps} />
+                            <Route path={'/learn/summer-camps'} component={Camps} />
                             <Route path={'/learn/yale'} component={Yale} />
                         </Switch>
                     </div>
