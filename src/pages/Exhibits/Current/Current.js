@@ -11,17 +11,17 @@ import { Link } from 'react-router-dom';
 
 // assets
 import egypt from './Egyptiangallery.png';
-import NAdioramas from './NAdioramas.jpg';
-import davidfriend from './David-Friend-Hall.jpg';
-import mammals from './HallofMammals.jpg';
-import discover from './Discovery-Room.jpg';
-import anthro from './anthropology.jpg';
-import introanthro from './introanthro.jpg';
-import dinostakeflight from './dinostakeflight.jpg';
-import central from './study_space.jpg';
-import oceans from './ancientoceans.jpg';
-import science from './historyofscience.jpg';
-import greathall from './greathall.jpg';
+import NAdioramas from './NAdioramas.png';
+import davidfriend from './David-Friend-Hall.png';
+import mammals from './HallofMammals.png';
+import discover from './Discovery-Room.png';
+import anthro from './anthropology.png';
+import introanthro from './introanthro.png';
+import dinostakeflight from './dinostakeflight.png';
+import central from './study_space.png';
+import oceans from './ancientoceans.png';
+import science from './historyofscience.png';
+import greathall from './greathall.png';
 
 const onview = (props) => {
     return (
