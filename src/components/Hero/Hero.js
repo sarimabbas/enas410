@@ -79,10 +79,10 @@ class hero extends Component {
                     <div className={styles.text}>
                         <h1 className={styles.title}>{this.state.title}</h1>
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
-                        <div className={styles.controls}>
-                            <input type="radio" name="slider" id="slider-1" onClick={this.handleControls} defaultChecked />
-                            <input type="radio" name="slider" id="slider-2" onClick={this.handleControls}/>
-                        </div>
+                    </div>
+                    <div className={styles.controls}>
+                        <div name="slider" id="slider-1" className={styles.radio} onClick={this.handleControls}/>
+                        <div name="slider" id="slider-2" className={styles.radio} onClick={this.handleControls}/>
                     </div>
                 </div>
             </Hero>

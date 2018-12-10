@@ -255,6 +255,9 @@ const firstfloor = (props) => {
                             <path className="cls-4" d="M969.5449,893.44V854.52h22.1758l-1.0078,6.3838H977.4966V869.92h11.0317v6.3838H977.4966V886.72h14.728v6.72Zm5.9356-40.1513-2.2959-4.1446,11.5918-7.28,3.248,5.8242Z" transform="translate(-701.9849 -435.4366)"/>
                         </g>
                     </g>
+                    <g id="hover-100">
+                        <rect className="cls-100" height="345.9783" width="305.866" transform="translate(-765.1885 -362.0839) rotate(-4.3125)" x="789.567" y="703.0108"/>
+                    </g>
                 </g>
             </svg>
         </Aux>

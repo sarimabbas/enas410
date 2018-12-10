@@ -33,24 +33,65 @@
     animation-name: fadeIn;
 }
 
+.heroInner {
+    width: 60vw;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
 .text {
-    margin-right: 50px;
-    margin-bottom: 50px;
-    
     color: white;
     text-align: right;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 0;
 }
 
 .subtitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /* radio buttons */
 
+.controls {
+    text-align: right;
+    align-self: end;
+}
+
 .controls > * {
-    margin-left: 10px;
+    /*margin-left: 10px;*/
+}
+
+.radio {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: inline-block;
+    margin: 1px 5px;
+}
+
+.radioSelected{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    .heroInner {
+        display: grid;
+        grid-template-columns: auto 25px;
+        grid-column-gap: 10px;
+    }
 }
