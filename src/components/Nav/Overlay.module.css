@@ -6,10 +6,44 @@
     z-index: 15;
     height: 100%;
     width: 100%;
-    overflow: hidden; 
-
     /* overlay background */
     background-color: rgba(0,0,0, 0.9); 
+}
+
+.overlayContent {
+  position: relative;
+  /* top: 25%;  */
+  /* 25% from the top */
+  /* width: 100%;  */
+  /* 100% width */
+}
+
+/* close the menu */
+
+.controls {
+    margin-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.cross {
+    color: white;
+}
+
+/* organize into left and right */
+
+.leftRight {
+    position: relative;
+    display: flex;
+}
+
+/* the left is the big PEABODY */
+
+.left {
+    margin-left: 50px;
 }
 
 .text {
@@ -23,43 +57,22 @@
     text-orientation: sideways-right;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-
-
 }
 
-.controls {
-    margin-top: 20px;
-    padding-right: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+/* the right is a grid of links */
 
-}
-
-.cross {
-    color: white;
-}
-
-.leftRight {
-    display: flex;
-}
-
-.left {
-    margin-left: 50px;
+.right {
+    margin-left: 80px;
+    margin-right: 20px;
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
 }
 
 @media screen and (max-width: 768px) {
     .right {
-      margin-left: 50px!important;
-    }   
-}
-
-.right {
-    margin-left: 80px;
-    width: 100%;
-    height: 100%;
-    
-    overflow:auto;
+        margin-left: 50px !important;
+    }
 }
 
 .grid {
@@ -72,18 +85,17 @@
     color: white;
 }
 
-.links {
-    margin-top: 20px;
-    font-weight: 400;
-}
-
-
-.heading > * {
+.heading>* {
     margin-bottom: 20px;
     font-weight: 600;
 
     color: inherit;
     text-decoration: none;
+}
+
+.links {
+    margin-top: 20px;
+    font-weight: 400;
 }
 
 
@@ -93,6 +105,8 @@
     color: inherit;
     text-decoration: none;
 }
+
+/* this hides and shows the overlay via React */
 
 .transparent {
     opacity: 0;

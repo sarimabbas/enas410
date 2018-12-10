@@ -1,7 +1,9 @@
 .floto {
     /* fixed: follow on scroll */
+    position: absolute;
     /* absolute: stay in place */
     /* top: how far from the top of screen */
+
  
 
     left: 50px;
@@ -13,7 +15,7 @@
     /* set child inside flexbox */
     display: flex;
     justify-content: center; /* left-right alignment */
-    align-items: flex-start;  /* top-down alignment */
+    align-items: center;  /* top-down alignment */
 }
 
 .text {
