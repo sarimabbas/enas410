@@ -26,7 +26,14 @@ const onview = (props) => {
     return (
         <Aux>
             <h1>Current Exhibits</h1>
-            <p></p>
+            <br/>
+            <br/>
+            <img className={classNames("imageKing")} src={anthro} alt ="Main Anthropology"></img>
+            <h3>Egyptian Gallery</h3>
+            <p>Our recently rennovated Egyptian Gallery allows visitors an immersive trip into an Egyptian tomb. The entrance to the gallery features specimens that span Egyptian civilization from the royal to the common. The highlight of the exhibition is the 30'&nbsp;'foot interactive tomb.  Using a unique combination of infrared sensing and visible light projection it allows visitors to explore—discovering specimens and viewing mural scenes within. The end of the tomb holds the Peabody's mummy. Based on the tomb of Vizier Nespakashuty, this is the only fully reconstructed Late Period Egyptian tomb in North America.</p>
+            
+            <br/>
+            <br/>
             <img className={classNames("imageKing")} src={greathall} alt ="Great Hall"></img>
             <h3>The Great Hall of Dinosaurs</h3>
             <p>The Great Hall of Dinosaurs is the centerpiece of the Yale Peabody Museum. Featuring skeletons from the Museum’s world-renowned paleontology collections, it is also home to Rudolph Zallinger’s famous mural The Age of Reptiles. The hall contains the dinosaurs Deinonychus, Camarasaurus, Stegosaurus, Camptosaurus, and of course the Brontosaurus.  </p>
