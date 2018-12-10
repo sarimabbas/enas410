@@ -25,7 +25,7 @@ const learn = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                        <Redirect to="/learn/k12"/>
+                        <Redirect exact from="/learn" to="/learn/k12"/>
                         <Route path={'/learn/adult'} component={Adult} />
                         <Route path={'/learn/k12'} component={Group} />
                         <Route path={'/learn/summercamps'} component={Camps} />
