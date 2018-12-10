@@ -4,17 +4,19 @@
     line-height: 1.2rem;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column-gap: 50px;
     grid-row-gap: 30px;
 }
 
 span .footer {
     line-height: 1rem;
-    margin-bottom: .2rem;
+    margin-bottom:0;
 }
 
 .links {
+    grid-column: auto / span 2;
+
     display: grid;
     /* each column can be 5 rows long */
     grid-template-rows: repeat(5, auto);
@@ -36,4 +38,5 @@ span .footer {
 
 .separator {
     border-top: 1px solid navy;
+    margin-bottom: 20px;
 }

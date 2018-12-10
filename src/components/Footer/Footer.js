@@ -13,7 +13,7 @@ const footer = (props) => {
                     {/* info */}
                     <div className={styles.info}>
                         <span>
-                            <b>Yale Peabody Museum of Natural History</b><br/>
+                            <b>Yale Peabody Museum <br/> of Natural History</b><br/>
                             170 Whitney Ave<br/>
                             New Haven, CT 06511<br/>
                             (203) 432-8987
@@ -48,6 +48,7 @@ const footer = (props) => {
                             <span className={styles.link}>Privacy Policy</span>
                             <span className={styles.link}>Terms {"&"} Conditions</span>
                         {/* </div> */}
+
                     </div>
                     {/* social & copyright */}
                     <div className={styles.social}>
@@ -57,9 +58,10 @@ const footer = (props) => {
                             <FontAwesomeIcon icon={["fab", "twitter"]} size="2x"></FontAwesomeIcon>
                             <FontAwesomeIcon icon={["fab", "youtube"]} size="2x"></FontAwesomeIcon>
                         </div>
-                        <br/>
-                        <span>Copyright &copy; 2018<br/>Yale Peabody Museum of Natural History</span>
+                        <br/><br/>
+                        <span>Copyright &copy; 2018<br/>Yale Peabody Museum <br/> of Natural History</span>
                     </div>
+                    <div></div>
                 {/* end footer */}
                 </div>
             </div>

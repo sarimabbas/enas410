@@ -18,7 +18,7 @@ const admission = (props) => {
             <h3>Hours</h3>
             <p>
                 Monday: Closed
-                <br/>Tuesday - Saturday 10:00 am to 5:00 pm
+                <br/>Tuesday–Saturday 10:00 am to 5:00 pm
                 <br/>Sunday: 12:00 pm to 5:00 pm
                 <br/>
                 <br/><i>The Museum is open on the following Mondays: Martin Luther King, Jr. Day, Presidents Day, Yale Commencement, and Columbus Day.</i>
