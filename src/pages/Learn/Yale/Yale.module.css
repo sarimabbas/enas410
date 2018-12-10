@@ -1,33 +1,31 @@
 .row {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
-    grid-column-gap: 20px;
 }
 
 .title {
-    font-size: 1.6rem;
-    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .image {
     object-fit: cover;
-    margin: 10px;
-    margin-bottom: 0px;
-    width: 95%;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 100%;
     max-height: 300px;
 }
 
 .caption{
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin: 0px;
+    margin-bottom: 15px;
 }
 
 .description {
-    margin: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
