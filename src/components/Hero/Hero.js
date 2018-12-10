@@ -26,6 +26,7 @@ class hero extends Component {
             image: slide1,
             title: "Behind the Giant Squid",
             subtitle: "Peabody Spotlights",
+            selected: "slider-1",
         }
 
         // controls handler binding
@@ -61,8 +62,11 @@ class hero extends Component {
         this.setState({
             image: image,
             title: title,
-            subtitle: subtitle
+            subtitle: subtitle,
+            selected: e.currentTarget.id,
         })
+        
+        console.log(this.state)
     }
 
     render() {
@@ -70,6 +74,10 @@ class hero extends Component {
         // prepare image
         let vignette = "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), "
         let url = vignette + "url('" + this.state.image + "')"
+
+        // which is selected?
+        const slider1Selected = this.state.selected === "slider-1" ? styles.radioSelected : NaN
+        const slider2Selected = this.state.selected === "slider-2" ? styles.radioSelected : NaN
 
         return (
             <Hero 
@@ -81,8 +89,13 @@ class hero extends Component {
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
                     </div>
                     <div className={styles.controls}>
-                        <div name="slider" id="slider-1" className={styles.radio} onClick={this.handleControls}/>
-                        <div name="slider" id="slider-2" className={styles.radio} onClick={this.handleControls}/>
+                        <div name="slider" id="slider-1" 
+                             className={classNames(styles.radio, slider1Selected)} 
+                             onClick={this.handleControls}/>
+                        <div name="slider" 
+                             id="slider-2" 
+                             className={classNames(styles.radio, slider2Selected)} 
+                             onClick={this.handleControls}/>
                     </div>
                 </div>
             </Hero>
