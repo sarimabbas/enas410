@@ -16,6 +16,10 @@
     .links {
         display: none;
     }
+
+    .right {
+        border-bottom: 0px!important;
+    }
 }
 
 

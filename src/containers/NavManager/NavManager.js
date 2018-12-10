@@ -27,7 +27,7 @@ class navmanager extends Component {
 
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
-        const scrollThreshold = window.innerHeight;
+        const scrollThreshold = window.innerHeight - 64;
         const shrinkSpeed = 3.8;
 
         // set the font-width as a function of scroll and max font width
