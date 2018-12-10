@@ -20,6 +20,7 @@ const sidebar = (props) => {
                     <NavLink activeClassName={styles.activeLink} to="/map"><span>Floor Plan {'&'} Virtual Tour</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/visit/cafe"><span>Peabody Café</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/visit/directions"><span>Directions {'&'} Parking</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/visit/groupvisits"><span>Group Visits</span></NavLink>
                 </div>
             </div>
         </Aux>

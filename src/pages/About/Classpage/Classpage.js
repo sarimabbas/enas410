@@ -66,22 +66,22 @@ const classpage = (props) => {
                 </div>
                 <div>
                     <p> <b>Maddie Hoffmann</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
+                        <br/>Chemistry, Mechanical Engineering
                         <br/>Trumbull '19
                         <br/>madeline.hoffmann@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Deniz Saip</b>
-                        <br/>Mechanical Engineering
-                        <br/>Ezra Stiles '19
+                        <br/>Architecture
+                        <br/>Trumbull '19
                         <br/>deniz.saip@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Jenny Xiao</b>
-                        <br/>Art, Mechanical Engineering
-                        <br/>Jonathan Edwards '19
+                        <br/>Economics, Mechanical Engineering
+                        <br/>Pierson '19
                         <br/>jenny.xiao@yale.edu
                     </p>
                 </div>

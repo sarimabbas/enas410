@@ -9,6 +9,7 @@ import Generic from '../Generic/Generic';
 import Directions from './Directions/Directions';
 import Admission from './Admission/Admission';
 import Cafe from './Cafe/Cafe';
+import GroupVisits from './GroupVisits/GroupVisits'
  
 
 // styles
@@ -29,6 +30,7 @@ const visit = (props) => {
                         <Route path={'/visit/directions'} component={Directions} />
                         <Route path={'/visit/admission'} component={Admission} />
                         <Route path={'/visit/cafe'} component={Cafe} />
+                        <Route path={'/visit/groupvisits'} component={GroupVisits} />
                     </div>
                     <div></div>
                 </div>
