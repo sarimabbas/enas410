@@ -23,6 +23,8 @@
     text-orientation: sideways-right;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+
 }
 
 .controls {
@@ -48,8 +50,8 @@
 
 @media screen and (max-width: 768px) {
     .right {
-      overflow-y:auto!important;
-    }
+      margin-left: 50px!important;
+    }   
 }
 
 .right {
@@ -76,7 +78,7 @@
 }
 
 
-.heading {
+.heading > * {
     margin-bottom: 20px;
     font-weight: 600;
 
