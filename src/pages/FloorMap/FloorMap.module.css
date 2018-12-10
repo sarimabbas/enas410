@@ -1,20 +1,24 @@
-.wrapper {
-    width: 100vw;
-    height: 100vh;
+/* Page organization */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-column-gap: 50px;
 }
 
-.wrapper svg {
-    padding-top:7%;
-    padding-bottom:2%;
-    width: 100%;
+.gridRight {
+    grid-column: auto / span 3;
+    min-height: 35vh;
+}
+
+.floor {
+    padding-bottom: 100px;
     height: 100%;
 }
 
-.content {
+/* Menu */
+
+.menuContent {
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -35,11 +39,11 @@
     color: white;
 }
 
-.more {
-    padding-top: 20px;
-}
-
 .description {
     font-size: 16px;
     color: rgb(199, 194, 194);
+}
+
+.more {
+    padding-top: 20px;
 }
