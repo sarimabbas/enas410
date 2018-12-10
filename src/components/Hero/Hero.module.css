@@ -5,7 +5,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    
+
     /* make each slide image be responsive */
     background-size: cover;
     background-position: center center;
