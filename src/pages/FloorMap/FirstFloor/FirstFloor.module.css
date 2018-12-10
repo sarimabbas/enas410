@@ -1,0 +1,66 @@
+/* add the base layer */
+.cls7 {
+    fill: black;
+}
+
+/* make the base layer hoverable */
+.cls7:hover {
+    fill: rgb(27, 103, 218);
+    cursor: pointer;
+}
+
+/* add the screen */
+.cls100 {
+    fill: #939598;
+    mix-blend-mode: screen;
+}
+
+/* make the screen hoverable */
+.cls100:hover {
+    fill: rgb(27, 103, 218);
+    cursor: pointer;
+}
+
+/* not relevant for us */
+
+.cls1 {
+    fill: #939598;
+}
+
+.cls1,
+.cls2 {
+    stroke: #000;
+    stroke-width: 0.01px;
+}
+
+.cls1,
+.cls2,
+.cls6 {
+    stroke-miterlimit: 10;
+}
+
+.cls2,
+.cls3 {
+    fill: #58595b;
+}
+
+.cls4 {
+    fill: #fff;
+}
+
+.cls5,
+.cls6 {
+    fill: none;
+}
+
+.cls5 {
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3px;
+}
+
+.cls6 {
+    stroke: #939598;
+    stroke-width: 5px;
+}
