@@ -12,6 +12,7 @@ import NavSimple from '../../components/Nav/NavSimple';
 // import Footer from '../../components/Footer/Footer';
 import FirstFloor from './FirstFloor/FirstFloor';
 import SecondFloor from './SecondFloor/SecondFloor';
+import ThirdFloor from './ThirdFloor/ThirdFloor';
 import Sidebar from './Sidebar';
 
 // styling
@@ -98,6 +99,8 @@ class floormap extends Component {
                                     render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/map/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
+                                <Route path='/map/third-floor' 
+                                    render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
                             </Switch>
                             </div>
                         </div>
