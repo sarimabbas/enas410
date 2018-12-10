@@ -24,12 +24,10 @@ class nav extends Component {
 
     showSettings = (event) => {
         if (this.state.showOverlay) {
-            disableBodyScroll()
             this.setState({
                 showOverlay: false,
             })
         } else {
-            enableBodyScroll()
             this.setState({
                 showOverlay: true,
             })

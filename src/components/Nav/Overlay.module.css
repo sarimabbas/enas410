@@ -10,17 +10,23 @@
 
     /* overlay background */
     background-color: rgba(0,0,0, 0.9); 
- 
 }
 
-/* Position the content inside the overlay */
-.content {
-    position: relative;
-    width: 100%; /* 100% width */
-    margin-top: 25px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+.text {
+    /* font style */
+    color: white;
+    font-family: "Peabody Variable", sans-serif;
+    font-variation-settings: "wdth" 1000, "wght" 800;
+    font-size: 15vh;
+
+    /* text orientation */
+    text-orientation: sideways-right;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
 }
 
 .controls {
+    margin-top: 20px;
     padding-right: 50px;
     display: flex;
     align-items: center;
@@ -32,27 +38,29 @@
     color: white;
 }
 
-.right {
-    height: 100vh;
-    overflow-y:auto;
+.leftRight {
+    display: flex;
 }
 
-.groups {
+.left {
+    margin-left: 50px;
+}
+
+.right {
+    margin-left: 100px;
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;  
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-flow: row;
     grid-row-gap: 20px;
-    /* grid-template-rows: repeat(auto, 1fr); */
-
-
+    grid-column-gap: 20px;
     justify-content: space-between;
     color: white;
-
-    /* padding on the edges */
-    padding-left: 150px;
-    padding-right: 2%;
-    /* padding-bottom: 500px; */
-
 }
 
 .links {
