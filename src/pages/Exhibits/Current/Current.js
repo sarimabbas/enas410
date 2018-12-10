@@ -3,7 +3,7 @@ import Aux from '../../../hoc/Aux';
 
 
 import classNames from 'classnames';
-import styles from './OnView.module.css';
+import styles from './Current.module.css';
 
 // routing
 import { Link } from 'react-router-dom';
@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 // assets
 import NAdioramas from './NAdioramas.jpg';
 import davidfriend from './David-Friend-Hall.jpg';
-import tempGallery from './temporary-gallery.jpg';
 import mammals from './HallofMammals.jpg';
 import discover from './Discovery-Room.jpg';
 import anthro from './anthropology.jpg';
@@ -26,7 +25,7 @@ import greathall from './greathall.jpg';
 const onview = (props) => {
     return (
         <Aux>
-            <h1>On View</h1>
+            <h1>Current Exhibits</h1>
             <p></p>
             <img className={classNames("imageKing")} src={greathall} alt ="Great Hall"></img>
             <h3>The Great Hall of Dinosaurs</h3>

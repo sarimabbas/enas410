@@ -9,7 +9,7 @@ import Sidebar from './Sidebar';
 
 // import sub pages here
 import Calendar from './Calendar/Calendar';
-import OnView from './OnView/OnView';
+import Current from './Current/Current';
 import Past from './Past/Past';
 import Temporary from './Temporary/Temporary';
 
@@ -26,7 +26,7 @@ const exhibits = (props) => {
                         <Switch>
                             <Redirect exact from="/exhibits" to="/exhibits/on-view"/>
                             <Route path={'/exhibits/calendar'} component={Calendar} />
-                            <Route path={'/exhibits/on-view'} component={OnView} />
+                            <Route path={'/exhibits/on-view'} component={Current} />
                             <Route path={'/exhibits/past'} component={Past} />
                             <Route path={'/exhibits/temporary'} component={Temporary} />
                         </Switch>
