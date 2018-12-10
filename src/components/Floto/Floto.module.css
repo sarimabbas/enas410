@@ -5,7 +5,7 @@
  
 
     left: 50px;
-    z-index: 15;
+    z-index: 10;
 
     /* expand to height of masthead */
     height: 100vh;

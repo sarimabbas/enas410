@@ -3,7 +3,6 @@ import Aux from '../../hoc/Aux';
 import { Link } from 'react-router-dom';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-
 // styles
 import styles from './Overlay.module.css'
 import classNames from 'classnames';
