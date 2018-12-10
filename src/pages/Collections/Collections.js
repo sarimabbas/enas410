@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import classNames from 'classnames';
 
 // components
@@ -22,10 +22,12 @@ const collections = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    <Redirect to="/collections/search"/>
-                    <Route path={'/collections/search'} component={Search} />
-                    <Route path={'/collections/daily-object'} component={Random} />
-                    <Route path={'/collections/how-to-use'} component={Use} />
+                    <Switch>
+                        <Redirect exact from="/collections" to="/collections/search"/>
+                        <Route path={'/collections/search'} component={Search} />
+                        <Route path={'/collections/daily-object'} component={Random} />
+                        <Route path={'/collections/how-to-use'} component={Use} />
+                    </Switch>
                     </div>
                     <div></div>
                 </div>

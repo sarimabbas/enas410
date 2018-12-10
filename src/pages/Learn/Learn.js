@@ -16,7 +16,7 @@ import styles from './Learn.module.css'
 import classNames from 'classnames';
 
 // routing
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 
 const learn = (props) => {
     return (    
