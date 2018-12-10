@@ -31,7 +31,7 @@ const visit = (props) => {
                             <Route path={'/visit/directions'} component={Directions} />
                             <Route path={'/visit/admission'} component={Admission} />
                             <Route path={'/visit/cafe'} component={Cafe} />
-                            <Route path={'/visit/groupvisits'} component={GroupVisits} />
+                            <Route path={'/visit/group-visits'} component={GroupVisits} />
                         </Switch>
                     </div>
                     <div></div>

@@ -51,6 +51,7 @@ class overlay extends Component {
                                         <Link to="/map">Floor Plan {'&'} Virtual Tour</Link>
                                         <Link to="/visit/cafe">Peabody Café</Link>
                                         <Link to="/visit/directions">Directions {'&'} Parking</Link>
+                                        <Link to="/visit/group-visits">Group Visits</Link>
                                     </div>
                                 </div>
 
