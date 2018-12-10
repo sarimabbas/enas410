@@ -60,14 +60,14 @@ const classpage = (props) => {
                 <div>
                     <p> <b>Antonio Cao</b>
                         <br/>Computer Science
-                        <br/>Pauli Murray '20
+                        <br/>
                         <br/>antonio.cao@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Maddie Hoffmann</b>
                         <br/>Chemistry, Mechanical Engineering
-                        <br/>Trumbull '19
+                        <br/>
                         <br/>madeline.hoffmann@yale.edu
                     </p>
                 </div>
@@ -93,15 +93,15 @@ const classpage = (props) => {
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Emily Chu</b>
-                        <br/>Computer Science
+                        <br/>
                         <br/>Pauli Murray '20
                         <br/>emily.chu@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Jacob Payne</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
-                        <br/>Trumbull '19
+                        <br/>
+                        <br/>
                         <br/>jacob.payne@yale.edu
                     </p>
                 </div>
@@ -113,15 +113,15 @@ const classpage = (props) => {
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Avital Smotrich-Barr</b>
-                        <br/>Computer Science
-                        <br/>Pauli Murray '20
+                        <br/>
+                        <br/>
                         <br/>avital.smotrich-barr@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Ben Weiss</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
-                        <br/>Trumbull '19
+                        <br/>Mechanical Engineering
+                        <br/>Saybrook '20
                         <br/>benjamin.s.weiss@yale.edu
                     </p>
                 </div>
@@ -133,15 +133,15 @@ const classpage = (props) => {
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Collin Bentley</b>
-                        <br/>Computer Science
-                        <br/>Pauli Murray '20
+                        <br/>
+                        <br/>Jonathan Edwards'19
                         <br/>collin.bentley@yale.edu
                     </p>
                 </div>
                 <div>
                     <p> <b>Evan Smith</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Ecology {'&'} Evolutionary Biology
-                        <br/>Trumbull '19
+                        <br/>
+                        <br/>Jonathan Edwards '19s'
                         <br/>evan.smith@yale.edu
                     </p>
                 </div>
