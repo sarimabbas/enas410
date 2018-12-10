@@ -25,7 +25,7 @@ class hero extends Component {
         this.state = {
             image: slide1,
             title: "Behind the Giant Squid",
-            subtitle: "Peabody Spotlights",
+            subtitle: "Peabody Highlights",
             selected: "slider-1",
         }
 
@@ -44,7 +44,7 @@ class hero extends Component {
             case "slider-1":
                 image = slide1
                 title = "Behind the Giant Squid"
-                subtitle = "Peabody Spotlights"
+                subtitle = "Peabody Highlights"
                 break;
             case "slider-2":
                 image = slide2
@@ -54,7 +54,7 @@ class hero extends Component {
             default:
                 image = slide1
                 title = "Behind the Giant Squid"
-                subtitle = "Peabody Spotlights"
+                subtitle = "Peabody Highlights"
                 break;
         }
 

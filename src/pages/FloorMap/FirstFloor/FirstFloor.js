@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Aux from '../../../hoc/Aux';
 // import classNames from 'classnames';
 // import styles from './FirstFloor.module.css';
-import './FirstFloor.css'
+import '../FloorMap.css';
 
 const firstfloor = (props) => {
     return (
