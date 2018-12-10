@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 
 
 // assets
+import egypt from './Egyptiangallery.png';
 import NAdioramas from './NAdioramas.jpg';
 import davidfriend from './David-Friend-Hall.jpg';
 import mammals from './HallofMammals.jpg';
@@ -28,7 +29,7 @@ const onview = (props) => {
             <h1>Current Exhibits</h1>
             <br/>
             <br/>
-            <img className={classNames("imageKing")} src={anthro} alt ="Main Anthropology"></img>
+            <img className={classNames("imageKing")} src={egypt} alt ="Egyptian Gallery"></img>
             <h3>Egyptian Gallery</h3>
             <p>Our recently rennovated Egyptian Gallery allows visitors an immersive trip into an Egyptian tomb. The entrance to the gallery features specimens that span Egyptian civilization from the royal to the common. The highlight of the exhibition is the 30'&nbsp;'foot interactive tomb.  Using a unique combination of infrared sensing and visible light projection it allows visitors to explore—discovering specimens and viewing mural scenes within. The end of the tomb holds the Peabody's mummy. Based on the tomb of Vizier Nespakashuty, this is the only fully reconstructed Late Period Egyptian tomb in North America.</p>
             
@@ -48,7 +49,7 @@ const onview = (props) => {
             <br/>
             <img className={classNames("imageKing")} src={mammals} alt ="Mammal Evolution"></img>
             <h3>Whitney Hall: Mammal Evolution</h3>
-            <p>After the extinction of the dinosaurs, the mammals  began to dominate the Earth. The fossils in this hall, from the Yale Peabody Museum’s collections in the Division of Vertebrate Paleontology, belong to the main groups of mammals that evolved during the Cenozoic Era (65 million years ago to the present), after the extinction of the dinosaurs.  These animals can be traced to modern mammals, like horses, camels, and dogs.  This gallery also contains the Otisville Mastodon (Mammut americanus) and the huge Brontotherium, both acquired in the 19th century by Yale’s O.C. Marsh.</p>
+            <p>After the extinction of the dinosaurs, the mammals began to dominate the Earth. The fossils in this hall, from the Yale Peabody Museum’s collections in the Division of Vertebrate Paleontology, belong to the main groups of mammals that evolved during the Cenozoic Era (65 npmmillion years ago to the present), after the extinction of the dinosaurs.  These animals can be traced to modern mammals, like horses, camels, and dogs.  This gallery also contains the Otisville Mastodon (Mammut americanus) and the huge Brontotherium, both acquired in the 19th century by Yale’s O.C. Marsh.</p>
 
             <br/> 
             <br/>                          
