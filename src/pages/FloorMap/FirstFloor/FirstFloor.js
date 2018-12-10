@@ -119,7 +119,7 @@ const firstfloor = (props) => {
                         <polyline className={styles.cls6} points="1911.515 513.063 1911.515 1564.063 875.515 1564.063 875.515 1775.063 549.515 1775.063 548.515 1484.063 459.515 1484.259 459.515 1552.563"/>
                     </g>
                 </g>
-                <g id="north_hall">
+                <g id="north_hall" onClick={props.handleRoom}>
                     <g id="hover">
                         <rect className={styles.cls7} height="795" width="312" x="1588.0151" y="757.5634"/>
                     </g>
@@ -140,7 +140,7 @@ const firstfloor = (props) => {
                         <rect className={styles.cls100} height="795" width="312" x="1588.0151" y="757.5634"/>
                     </g>
                 </g>
-                <g id="great_hall">
+                <g id="great_hall" onClick={props.handleRoom}>
                     <g id="hover-2">
                         <rect className={styles.cls7} height="457" width="1017" x="560.0151" y="757.5634"/>
                     </g>
@@ -161,7 +161,7 @@ const firstfloor = (props) => {
                         <rect className={styles.cls100} height="457" width="1017" x="560.0151" y="757.5634"/>
                     </g>
                 </g>
-                <g id="whitney_hall">
+                <g id="whitney_hall" onClick={props.handleRoom}>
                     <g id="hover-3">
                         <rect className={styles.cls7} height="327" width="702" x="875.0151" y="1225.5634"/>
                     </g>
@@ -184,7 +184,7 @@ const firstfloor = (props) => {
                         <rect className={styles.cls100} height="327" width="702" x="875.0151" y="1225.5634"/>
                     </g>
                 </g>
-                <g id="hall_of_ancient_oceans">
+                <g id="hall_of_ancient_oceans" onClick={props.handleRoom}>
                     <g id="hover-4">
                         <rect className={styles.cls7} height="327" width="304" x="560.0151" y="1225.5634"/>
                     </g>
@@ -215,7 +215,7 @@ const firstfloor = (props) => {
                         <rect className={styles.cls100} height="327" width="304" x="560.0151" y="1225.5634"/>
                     </g>
                 </g>
-                <g id="central_gallery">
+                <g id="central_gallery" onClick={props.handleRoom}>
                     <g id="hover-5">
                         <polygon className={styles.cls7} points="1915.292 500.563 1915.292 380.563 560.015 480.563 560.015 746.563 1520.015 746.563 1520.015 546.563 1915.292 500.563"/>
                     </g>
@@ -241,7 +241,7 @@ const firstfloor = (props) => {
                         <polygon className={styles.cls100} points="1915.292 500.563 1915.292 380.563 560.015 480.563 560.015 746.563 1520.015 746.563 1520.015 546.563 1915.292 500.563"/>
                     </g>
                 </g>
-                <g id="lobby">
+                <g id="lobby" onClick={props.handleRoom}>
                     <g id="hover-6">
                         <polygon className={styles.cls7} points="123.015 900.563 133.015 1018.563 258.015 1009.563 284.015 1326.563 222.015 1326.563 222.015 1472.563 315.015 1472.563 315.015 1552.563 448.015 1552.563 448.015 1472.563 549.015 1472.563 549.015 757.563 430.015 757.563 439.015 876.563 123.015 900.563"/>
                     </g>
@@ -258,7 +258,7 @@ const firstfloor = (props) => {
                         <polygon className={styles.cls100} points="123.015 900.563 133.015 1018.563 258.015 1009.563 284.015 1326.563 222.015 1326.563 222.015 1472.563 315.015 1472.563 315.015 1552.563 448.015 1552.563 448.015 1472.563 549.015 1472.563 549.015 757.563 430.015 757.563 439.015 876.563 123.015 900.563"/>
                     </g>
                 </g>
-                <g id="cafe">
+                <g id="cafe" onClick={props.handleRoom}>
                     <g id="hover-7">
                         <rect className={styles.cls7} height="345.9783" width="305.866" transform="translate(-765.1885 -362.0839) rotate(-4.3125)" x="789.567" y="703.0108"/>
                     </g>
