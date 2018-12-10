@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Aux from '../../../hoc/Aux';
 
 // import sub pages here
-import silliman from './Silliman.jpg'
+import silliman from './Silliman.png'
 
 // styles
 import styles from './History.module.css'
