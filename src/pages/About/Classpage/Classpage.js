@@ -99,6 +99,13 @@ const classpage = (props) => {
                     </p>
                 </div>
                 <div>
+                    <p> <b>Cole Fandrich</b>
+                        <br/>Architecture
+                        <br/>Davenport '20
+                        <br/>elena.fandrich@yale.edu
+                    </p>
+                </div>
+                <div>
                     <p> <b>Jacob Payne</b>
                         <br/>Architecture
                         <br/>Timothy Dwight '21
@@ -113,7 +120,7 @@ const classpage = (props) => {
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Avital Smotrich-Barr</b>
-                        <br/>History, <br/>Mechanical Engineering
+                        <br/>History, Mechanical Engineering
                         <br/>Timothy Dwight '19
                         <br/>avital.smotrich-barr@yale.edu
                     </p>
