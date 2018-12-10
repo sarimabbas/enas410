@@ -15,15 +15,13 @@ class overlay extends Component {
         return (
             <Aux>
                 <div className={classNames(styles.overlay)}>
-                <div className={classNames(styles.overlayContent)}>
 
                     {/* controls */}
                     <div className={classNames(styles.controls)}>
                         <div className={classNames(styles.cross)}>
                             <FontAwesomeIcon onClick={this.props.clickHandler}
                                             href="#" 
-                                            icon={["fas", "times"]}
-                                            size="md">
+                                            icon={["fas", "times"]}>
                             </FontAwesomeIcon>
                         </div>
                     </div>
@@ -70,7 +68,7 @@ class overlay extends Component {
 
                                 <div>
                                     <span className={classNames(styles.heading)}>
-                                        Learn
+                                        <Link to="/learn">Learn</Link>
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/learn/k12">K-12 Programs</Link>
@@ -82,7 +80,7 @@ class overlay extends Component {
 
                                 <div>
                                     <span className={classNames(styles.heading)}>
-                                        Collections
+                                        <Link to="/collections">Collections</Link>
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/collections/search">Search the Collections</Link>
@@ -93,7 +91,7 @@ class overlay extends Component {
 
                                 <div>
                                     <span className={classNames(styles.heading)}>
-                                        About
+                                        <Link to="/about">About</Link>
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/about/highlights">Peabody Highlights</Link>
@@ -113,7 +111,6 @@ class overlay extends Component {
 
 
                    
-                </div>
                 </div>
             </Aux>
         )
