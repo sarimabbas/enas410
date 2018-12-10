@@ -1,0 +1,22 @@
+.title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.section {
+    margin-top: 60px;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}

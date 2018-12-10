@@ -9,6 +9,7 @@ import Generic from '../Generic/Generic';
 import Adult from './Adult/Adult';
 import Group from './Group/Group';
 import Yale from './Yale/Yale';
+import Camps from './Camps/Camps';
 
 // styles
 import styles from './Learn.module.css'
@@ -27,6 +28,7 @@ const learn = (props) => {
                         <Redirect to="/learn/k12"/>
                         <Route path={'/learn/adult'} component={Adult} />
                         <Route path={'/learn/k12'} component={Group} />
+                        <Route path={'/learn/summercamps'} component={Camps} />
                         <Route path={'/learn/yale'} component={Yale} />
                     </div>
                     <div></div>
