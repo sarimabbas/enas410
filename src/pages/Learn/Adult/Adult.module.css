@@ -1,28 +1,27 @@
 .row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 20px;
 }
 
 .title {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 .subtitle {
-    margin: 10px;
-    font-size: 20px;
-    min-height: 60px;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    min-height: 80px;
+    line-height: 2rem;
 }
 
 .image {
     object-fit: cover;
-    margin: 10px;
+    margin-right: 10px;
     width: 95%;
     max-height: 300px;
 }
 
 .description {
-    margin: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }

@@ -15,7 +15,7 @@ import natsci from './assets/adult_natsci.jpg';
 const adult = (props) => {
     return (
         <Aux>
-            <h1>Adult Programs</h1>
+            <h1 className={classNames(styles.title)}>Adult Programs</h1>
             <section className={classNames(styles.row)}>
                 <div className={classNames("workshop")}>
                     <h1 className={styles.subtitle}>Workshops, Classes {'&'} General Interest</h1>
