@@ -16,43 +16,43 @@ const data = {
     roomName: {
 
         "cafe" : {
-            title: "Peabody Cafe", 
-            description: "Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.",
+            title: "Peabody Café", 
+            description: "The café will be a space in the museum for visitors to take a break and refuel in addition to a study spot for Yale and New Haven students. The cafe features seven decorated booths, one for each of the Museum's main halls.",
             image: cafeOverlayImg,
             more: "",
         } ,
 
         "lobby" : {
             title: "Lobby",
-            description: "An sincerity so extremity he additions. Her yet there truth merit. Mrs all projecting favourable now unpleasing. Son law garden chatty temper. Oh children provided to mr elegance marriage strongly. Off can admiration prosperous now devonshire diminution law.",
+            description: "Welcome to the Peabody! Through the lobby, you can access the coatroom, the admissions desk and the first floor galleries. Bathrooms are available beyond the admission desk and past the central gallery. A coatroom is immediately to the left of the admissions desk. In the air above the lobby is the first life-size model of a giant squid, <i>Architeuthis dux </i>created in 1960s using the Peabody's own specimen of a giant squid tentacle. ",
             image: lobbyOverlayImg,
             more: "",
         },
 
         "central_gallery": {
             title: "Central Gallery",
-            description: "In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just wish next put. Led all visitor musical calling nor her. Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. No gate dare rose he. Eyes year if miss he as upon.",
+            description: "The central gallery is an open space to relax and study.  The gallery floor contains work tables and collaboartive meeting spaces. Along the walls, there are displays from each of the Museum's ten divisions.",
             image: centralGalleryOverlayImg,
             more: "",
         },
 
         "great_hall" : {
             title: "The Great Hall",
-            description: "Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he. Could death since do we hoped is in. Exquisite no my attention extensive. The determine conveying moonlight age. Avoid for see marry sorry child. Sitting so totally forbade hundred to.",
+            description: "The Great Hall of Dinosaurs is the centerpiece of the Yale Peabody Museum. Featuring skeletons from the Museum’s world-renowned paleontology collections, it is also home to Rudolph Zallinger’s famous mural The Age of Reptiles. The hall contains the dinosaurs <i>Deinonychus, Camarasaurus, Stegosaurus, Camptosaurus, </i>and of course the <i>Brontosaurus.</i>",
             image: greatHallOverlayImg,
             more: "/map/first-floor/great-hall",
         },
 
         "hall_of_ancient_oceans": {
             title: "Hall of Ancient Oceans",
-            description: "Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known. But preserved advantage are but and certainty earnestly enjoyment. Passage weather as up am exposed. And natural related man subject. Eagerness get situation his was delighted.",
+            description: "From the Archelon and the Mososaur swimming above, to the jars of phytoplankton below, you can view the wide variety of ocean life present in the Peabody's collection. The collections of Hall of Ancient Oceans includes specimens from the oceans of the Mesozoic Era (248 to 65&nbsp;million years ago). ",
             image: hallOceansOverlayImg,
             more: "",
         },
 
         "whitney_hall": {
             title: "Whitney Hall",
-            description: "Same an quit most an. Admitting an mr disposing sportsmen. Tried on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages expression themselves partiality so me at. West none hope if sing oh sent tell is.",
+            description: "After the extinction of the dinosaurs, the mammals  began to dominate the Earth. The fossils in this hall, from the Yale Peabody Museum’s collections in the Division of Vertebrate Paleontology, belong to the main groups of mammals that evolved during the Cenozoic Era (65 million years ago to the present), after the extinction of the dinosaurs.  These animals can be traced to modern mammals, like horses, camels, and dogs.  This gallery also contains the Otisville Mastodon (Mammut americanus) and the huge Brontotherium, both acquired in the 19th century by Yale’s O.C. Marsh.",
             image: whitneyHallOverlayImg,
             more: "",
         },
@@ -60,7 +60,7 @@ const data = {
 
         "north_hall": {
             title: "North Hall",
-            description: "Man request adapted spirits set pressed. Up to denoting subjects sensible feelings it indulged directly. We dwelling elegance do shutters appetite yourself diverted. Our next drew much you with rank. Tore many held age hold rose than our. She literature sentiments any contrasted. Set aware joy sense young now tears china shy.",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
             image: northHallOverlayImg,
             more: "",
         },
