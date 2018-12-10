@@ -13,7 +13,6 @@ import FloorMap from './pages/FloorMap/FloorMap'
 
 // styles
 import './App.css';
-// import 'bulma/css/bulma.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faSearch, faTimes } from '@fortawesome/free-solid-svg-icons'
@@ -22,24 +21,19 @@ library.add(faFacebook, faTwitter, faInstagram, faYoutube, faBars, faSearch, faT
 class App extends Component {
     render() {
         return (
-            <Router>
-                <div className="App">
-                    <Route path="/" exact component={Home} />
-
+            <div className="App">
+                <Router>
                     <Switch>
+                        <Route path="/" exact component={Home} />
                         <Route path="/visit" component={Visit} />
-
+                        <Route path="/exhibits" component={Exhibits} />
+                        <Route path="/learn" component={Learn} />
+                        <Route path="/collections" component={Collections} />
+                        <Route path="/about" component={About} />
+                        <Route path="/map" component={FloorMap} />
                     </Switch>
-
-
-
-                    <Route path="/exhibits" component={Exhibits} />
-                    <Route path="/learn" component={Learn} />
-                    <Route path="/collections" component={Collections} />
-                    <Route path="/about" component={About} />
-                    <Route path="/map" component={FloorMap} />
-                </div>
-            </Router>
+                </Router>
+            </div>
         );
     }
 }

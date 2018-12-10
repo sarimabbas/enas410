@@ -15,7 +15,7 @@ import styles from './Learn.module.css'
 import classNames from 'classnames';
 
 // routing
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 
 const learn = (props) => {
     return (    
@@ -24,10 +24,12 @@ const learn = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                        <Redirect to="/learn/k12"/>
-                        <Route path={'/learn/adult'} component={Adult} />
-                        <Route path={'/learn/k12'} component={Group} />
-                        <Route path={'/learn/yale'} component={Yale} />
+                        <Switch>
+                            <Redirect exact from="/learn" to="/learn/k12"/>
+                            <Route path={'/learn/adult'} component={Adult} />
+                            <Route path={'/learn/k12'} component={Group} />
+                            <Route path={'/learn/yale'} component={Yale} />
+                        </Switch>
                     </div>
                     <div></div>
                 </div>

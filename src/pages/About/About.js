@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
+import { Route, Redirect, Switch } from 'react-router-dom';
 import classNames from 'classnames';
 
 // components
@@ -23,14 +23,14 @@ const about = (props) => {
                 <div className={classNames(styles.grid)}>
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
-                    {/* start sub pages components here */}
-                        <Redirect to="/about/mission"/>
-                        <Route path={'/about/mission'} component={History} />
-                        <Route path={'/about/contact'} component={Contact} />
-                        <Route path={'/about/staff'} component={Staff} />
-                        <Route path={'/about/class'} component={Classpage} />
-                        <Route path={'/about/highlights'} component={History} />
-                    { /* end sub pages components here */ }
+                        <Switch>
+                            <Redirect exact from="/about" to="/about/mission"/>
+                            <Route path={'/about/mission'} component={History} />
+                            <Route path={'/about/contact'} component={Contact} />
+                            <Route path={'/about/staff'} component={Staff} />
+                            <Route path={'/about/class'} component={Classpage} />
+                            <Route path={'/about/highlights'} component={History} />
+                        </Switch>
                     </div>
                     <div></div>
                 </div>
