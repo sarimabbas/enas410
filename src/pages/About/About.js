@@ -12,6 +12,7 @@ import History from './History/History'
 import Contact from './Contact/Contact'
 import Staff from './Staff/Staff'
 import Classpage from './Classpage/Classpage'
+import Highlights from './Highlights/Highlights'
 
 // styles
 import styles from './About.module.css'
@@ -29,7 +30,7 @@ const about = (props) => {
                             <Route path={'/about/contact'} component={Contact} />
                             <Route path={'/about/staff'} component={Staff} />
                             <Route path={'/about/class'} component={Classpage} />
-                            <Route path={'/about/highlights'} component={History} />
+                            <Route path={'/about/highlights'} component={Highlights} />
                         </Switch>
                     </div>
                     <div></div>

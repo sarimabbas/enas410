@@ -9,7 +9,7 @@ import Aux from '../../../hoc/Aux';
 // styles
 import styles from './Highlights.module.css'
 
-const history = (props) => {
+const highlights = (props) => {
     return (    
         <Aux>
             
