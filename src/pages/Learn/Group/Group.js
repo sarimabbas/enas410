@@ -8,9 +8,6 @@ import classNames from 'classnames';
 import styles from './Group.module.css'
 
 // images
-import workshop from './assets/adult_workshop.jpg';
-import talks from './assets/adult_talks.jpg';
-import natsci from './assets/adult_natsci.jpg';
 
 const group = (props) => {
     return (

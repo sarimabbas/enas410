@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 // components
 import Aux from '../../hoc/Aux';
 import Overlay from './Overlay';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 // styles
 import styles from './Nav.module.css'
@@ -22,14 +24,30 @@ class navSimple extends Component {
     }
 
     showSettings = (event) => {
-        this.setState({
-            showOverlay: true,
-        })
+        console.log(event);
+
+        if (this.state.showOverlay) {
+            enableBodyScroll(this.targetElement);
+            document.ontouchmove = function (e) {
+                return true;
+            }
+            this.setState({
+                showOverlay: false,
+            })
+        } else {
+            disableBodyScroll(this.targetElement);
+            document.ontouchmove = function (e) {
+                e.preventDefault();
+            }
+            this.setState({
+                showOverlay: true,
+            })
+        }
     }
 
     render() {
 
-        let overlay = this.state.showOverlay ? <Overlay /> : null;
+        let overlay = this.state.showOverlay ? <Overlay clickHandler={this.showSettings}/> : null;
         let overlayFade = this.state.showOverlay ? styles.logoTransparent : null;
 
         return (
@@ -37,7 +55,7 @@ class navSimple extends Component {
                 <div className={classNames(styles.nav, styles.barOpaque, overlayFade)} >
                     <div className={classNames(styles.logo, styles.logoOpaque)}>
                         <a href="/" className={classNames(styles.link)}>
-                            Yale Peabody Museum of Natural History
+                            Peabody Museum of Natural History
                         </a>
                     </div>
                     <div className={classNames(styles.right)}>
