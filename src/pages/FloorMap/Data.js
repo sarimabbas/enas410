@@ -184,7 +184,14 @@ const data = {
 
         // great hall cases
         
+        "GH1" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
 
+        // make more like the above
 
 
     }

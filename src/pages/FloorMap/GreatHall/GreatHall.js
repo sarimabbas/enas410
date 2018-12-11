@@ -6,42 +6,88 @@ import styles from './GreatHall.module.css';
 const greathall = (props) => {
     return (
         <Aux>
-            <svg viewBox="0 0 2009.7765 1777.5634">
+            <svg id="greathalldetail" viewBox="0 0 1009 461">
                 <defs/>
                 <g id="nohover">
-                    <rect className={styles.cls1} x="2" y="2" width="995" height="447"/>
-                    <rect className={styles.cls2} x="220" y="123.588" width="306.7441" height="201.412"/>
-                    <rect className={styles.cls2} x="526.7441" y="123.588" width="196.0181" height="201.412"/>
+                    <rect className={styles.cls1} height="447" id="background" width="995" x="7" y="7"/>
+                    <rect className={styles.cls2} height="457" id="border" width="1005" x="2" y="2"/>
                 </g>
-                <g id="GH_01" onClick={props.handleRoom}>
-                    <g id="hover">
-                        {/* paste all rects below into these things.. may have a matching issue*/}
-                        <rect className={styles.cls2} x="2" y="2" width="76" height="32"/>
+                <g id="hover">
+                    <g id="GH1" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="32" width="76" x="7" y="7"/>
                     </g>
+                    <g id="GH2" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="32" width="121" x="225" y="7"/>   
+                    </g>
+                    <g id="GH3" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="50" width="239" x="346" y="7"/>
+                    </g>
+                    <g id="GH4" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="32" width="121" x="585" y="7"/>
+                    </g>
+                    <g id="GH5" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="32" width="135" x="766" y="7"/>
+                    </g>  
+                    <g id="GH6" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="73" width="97" x="905" y="229"/>
+                    </g>
+                    <g id="GH7" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="73" width="97" x="905" y="229"/>
+                    </g>
+                    <g id="GH8" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="73" width="97" x="905" y="302"/>
+                    </g>
+                    <g id="GH9" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="103" width="50" x="7" y="154"/>
+                    </g>
+                    <g id="GH10" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="103" width="50" x="7" y="154"/>
+                    </g>
+                    <g id="GH11" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="73" width="32" x="7" y="257"/>
+                    </g>
+                    <g id="GH12" onClick={props.handleRoom}>
+                        <rect className={styles.cls3} height="74" width="32" x="7" y="380"/>
+                    </g>
+
+
+
+
+
+
+
+                    {/* convert the stuff below, to the stuff above */}
+
+
+
+
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    <rect className={styles.cls3} height="32" width="98" x="39" y="422"/>
+                    <rect className={styles.cls3} height="32" width="76" x="83" y="7"/>
+                    <rect className={styles.cls3} height="32" width="98" x="137" y="422"/>
+                    <rect className={styles.cls3} height="50" width="92" x="235" y="404"/>
+                    <rect className={styles.cls3} height="32" width="91" x="327" y="422"/>
+                    <rect className={styles.cls3} height="32" width="91" x="418" y="422"/>
+                    <rect className={styles.cls3} height="32" width="91" x="509" y="422"/>
+                    <rect className={styles.cls3} height="50" width="105" x="600" y="404"/>
+                    <rect className={styles.cls3} height="32" width="99" x="705" y="422"/>
+                    <rect className={styles.cls3} height="32" width="101" x="804" y="422"/>
+                    <rect className={styles.cls3} height="32" width="97" x="905" y="422"/>
+                    <rect className={styles.cls3} height="73" width="32" x="7" y="81"/>
+                    <rect className={styles.cls3} height="73" width="97" x="905" y="156"/>
+                    <rect className={styles.cls3} height="73" width="97" x="905" y="83"/>
+                    <rect className={styles.cls3} height="201.41" width="306.74" x="225" y="128.59"/>
+                    <rect className={styles.cls3} height="201.41" width="196.02" x="531.74" y="128.59"/>
                 </g>
-                <rect className={styles.cls2} x="220" y="2" width="121" height="32"/>
-                <rect className={styles.cls2} x="341" y="2" width="239" height="50"/>
-                <rect className={styles.cls2} x="580" y="2" width="121" height="32"/>
-                <rect className={styles.cls2} x="761" y="2" width="135" height="32"/>
-                <rect className={styles.cls2} x="900" y="224" width="97" height="73"/>
-                <rect className={styles.cls2} x="900" y="297" width="97" height="73"/>
-                <rect className={styles.cls2} x="2" y="149" width="50" height="103"/>
-                <rect className={styles.cls2} x="2" y="252" width="32" height="73"/>
-                <rect className={styles.cls2} x="2" y="375" width="32" height="74"/>
-                <rect className={styles.cls2} x="34" y="417" width="98" height="32"/>
-                <rect className={styles.cls2} x="78" y="2" width="76" height="32"/>
-                <rect className={styles.cls2} x="132" y="417" width="98" height="32"/>
-                <rect className={styles.cls2} x="230" y="399" width="92" height="50"/>
-                <rect className={styles.cls2} x="322" y="417" width="91" height="32"/>
-                <rect className={styles.cls2} x="413" y="417" width="91" height="32"/>
-                <rect className={styles.cls2} x="504" y="417" width="91" height="32"/>
-                <rect className={styles.cls2} x="595" y="399" width="105" height="50"/>
-                <rect className={styles.cls2} x="700" y="417" width="99" height="32"/>
-                <rect className={styles.cls2} x="799" y="417" width="101" height="32"/>
-                <rect className={styles.cls2} x="900" y="417" width="97" height="32"/>
-                <rect className={styles.cls2} x="2" y="76" width="32" height="73"/>
-                <rect className={styles.cls2} x="900" y="151" width="97" height="73"/>
-                <rect className={styles.cls2} x="900" y="78" width="97" height="73"/>
             </svg>
         </Aux>
     )

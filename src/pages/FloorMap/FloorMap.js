@@ -56,7 +56,6 @@ class floormap extends Component {
     }
 
 
-
     handleMenuChange = (state) => {
         this.setState({
             roomSelected: state.isOpen,
@@ -65,6 +64,7 @@ class floormap extends Component {
 
     handleRoom = (event) => {
         let name = "" + event.currentTarget.id
+        console.log(name)
         this.setState({
             roomSelected: true,
             roomName: name,
@@ -99,13 +99,6 @@ class floormap extends Component {
         }
 
         let currentPath = this.props.location.pathname;
-        // if (currentPath !== this.state.currentPath) {
-        //     this.handleRoom({
-        //         currentTarget : {
-        //             id : "cafe"
-        //         }
-        //     })
-        // }
 
         return (
             <Aux>
