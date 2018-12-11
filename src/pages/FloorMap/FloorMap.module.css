@@ -4,11 +4,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     grid-column-gap: 50px;
+    grid-template-rows: 1fr;
 }
 
 .gridRight {
     grid-column: auto / span 3;
-    min-height: 35vh;
+    /* min-height: 35vh; */
 }
 
 .floor {

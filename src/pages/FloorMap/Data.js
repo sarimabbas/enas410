@@ -7,10 +7,10 @@ import hallOceansOverlayImg from './/images/hallOceansOverlay.png'
 import whitneyHallOverlayImg from './/images/whitneyHallOverlay.png'
 import northHallOverlayImg from './/images/northHallOverlay.png'
 
-// second floor images
-import cafeOverlayImg from './/images/cafeOverlay.png'
-import lobbyOverlayImg from './/images/lobbyOverlay.png'
-import centralGalleryOverlayImg from './/images/centralGalleryOverlay.png'
+// // second floor images
+// import cafeOverlayImg from './/images/cafeOverlay.png'
+// import lobbyOverlayImg from './/images/lobbyOverlay.png'
+// import centralGalleryOverlayImg from './/images/centralGalleryOverlay.png'
 
 // third floor images
 
