@@ -4,8 +4,8 @@ import briggs from './assets/image1.jpg'
 
 const data = [
 
-
-        "/01012019/bhullar" : {
+        {
+            id: "/01012019/bhullar",
             title: "Bhart-Anjan Bhullar", 
             subtitle: "Researcher Highlight",
             image: bhullar,
