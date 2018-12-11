@@ -4,10 +4,6 @@
     text-transform: uppercase;
 }
 
-.description {
-}
-
 .image {
-    object-fit: cover;
-    max-height: 300px;
+    height: 300px;
 }
