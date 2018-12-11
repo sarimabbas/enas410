@@ -6,10 +6,10 @@ import bag from './assets/bag.jpg'
 import tablet from './assets/tablet.jpg'
 import cylinder from './assets/cylinderseal.jpg'
 import abies from './assets/abies.jpg'
-import bison from './assets/bison.jpeg'
-import grass from './assets/grass.jpeg'
-import jacques from './assets/jacques.jpg'
-import muskox from './assets/musk-ox-1900-ii.jpg'
+import algae from './assets/algae.jpeg'
+import cinnamomum from './assets/cinnamomum.jpeg'
+import Liriodendron from './assets/Liriodendron.jpg'
+import Abisara from './assets/Abisara.jpg'
 import paleolithic_females from './paleolithic_females.jpg'
 import printing_insects from './assets/printing_insects.jpg'
 import sea_scorpions from './sea_scorpion.jpg'
@@ -74,11 +74,11 @@ const data = [
             subtitle: "Babylonian Collection",
             image: cylinder,
             short: "YPM BC 029880",
-            long: "NA",
+            long: "",
         } ,
 
        {
-        	id: "/2018/11/16/sea-scorpions",
+        	id: "/2018/11/16/abies",
             title: "Abies concolor (Gord. & Glend.) Lindl. ex Hildebr.", 
             subtitle: "Botany",
             image: abies,
@@ -87,39 +87,39 @@ const data = [
         } ,
 
         {
-        	id: "/2018/06/12/bison",
-            title: "Bison Fur", 
-            subtitle: "Behind the Dioramas",
-            image: "bison",
-            short: "RYU.104586",
-            long: "I went online to look at images of female bison and whether they have fur on their forelegs. It appears there is a significant variation. I could find some with short fur over the foreleg and others with long, darker fur covering the foreleg like a male. I decided that the mount would look better with longer fur, so I “harvested” fur from the neck and leg on the non-show side, felted it into Remay fabric, and glued them on, one on top of the other on the foreleg.<br/>Now, I will start again recoloring the female and move to the male. I hope to be done with all the recoloring on the mounts by the end of next week. That will leave only the preparation work of the grasses and the fabrication of the Scarlet Globemallow flowers. In addition to the Bison, we got the OK to recolor the Alaskan Brown Bear and the Mule Deer while the enclosure is up. The glass will be removed from these other dioramas on June 20th if all goes as planned.<br/>I have only been able to dream that I could restore these taxidermy mounts, the “stars” of the Peabody dioramas. By early July, the taxidermy mounts for these three dioramas will be fully restored!",
+        	id: "/2018/06/12/algae",
+            title: "Algae", 
+            subtitle: "Botany",
+            image: algae,
+            short: "YU.053645",
+            long: "",
         } ,
 
         {
-        	id: "/2018/11/28/musk-ox",
-            title: "Musk Ox Diorama Renovation", 
-            subtitle: "Behind the Dioramas",
-            image: "muskox",
-            short: "Read about the details that Michael Anderson and his team considered in the renovation of the Musk Ox Diorama!",
-            long: "After the Bison diorama was finished and the barrier removed, I started working on the Musk Ox diorama. The big pieces of glass on front of most of our dioramas are hinged at the top and it is possible for me to open them by myself with just a screwdriver. I remove the screws and swing the glass up onto stanchions to hold it so I can slip into the diorama. It’s a good design except we have had one diorama where the hinges rusted over time and the glass cracked as we tried to pull it open. In the Musk Ox we didn’t have this problem.<br/>The musk ox, like the bison mounts are historic. They were taken off display and decommissioned by the American Museum of Natural History in New York City in the mid 1940’s, which is when the Peabody brought them to New Haven. The musk ox mounts were done by John Rowley, an apprentice of Jenness Richardson, the taxidermist of the Peabody’s bison. Rowley was a full-blown student of diorama construction. In 1898, he wrote about newly innovated sculptural techniques in taxidermy and some early descriptions of how to fabricate lifelike foliage with wax and paper. Rowley had much to do with the development of museum dioramas just as those ideas were starting to coalesce in others like Carl Akeley and James L. Clark.<br/>By repairing both the bison and the musk ox mounts, I have noticed there was a difference between Rowley’s tanning methods vs his teacher’s. The Richardson 1889 bison mounts were cracked on the midline both on top and underneath. There were transverse cracks on the flanks and every leg had large splits in the skin. In contrast, the Rowley musk ox were only cracked underneath and two out of four legs were open on the female and the male. Clearly, Rowley had used a different tanning recipe that, I believe didn’t include sulfuric acid, which continues to degrade the composition of the skin over the years.<br/>Therefore, the repair process on the musk ox wasn’t as extensive as the bison and since the cracks were not visible, I didn’t have to “felt” fur into the cracks as I did with the bison. The biggest problem was keeping the long hair out of my face while working underneath them! Once the repairs were made, I mixed the Orasol dyes to a couple of dark brown blends and recolored all three mounts.<br/>The final task was to replace all of the old “snow” (ground limestone and shredded theatrical plastic) with finely ground up white conservator’s foam called ethafoam. This new innovation came from the conservators at the American Museum of Natural History during the renovation of the North American Mammal Hall. As with other Peabody dioramas, I consulted Julia Sybalski, AMNH conservator. She also told me about a white ceramic batting they used as an under-layer in place of the cotton. Both the ceramic batting and the ethafoam have a much longer life and won’t turn yellow. I removed all the old cotton and “snow”, I put down a layer of ceramic batting on top of the plaster base, and sprinkled the ground ethafoam over that to finish up this diorama. The before and after differences due to the renovation in this diorama are not that dramatic, but it makes me happy to know that the mounts are stable, the darker color of the fur won’t fade, and that the foreground snow should stay white for many years to come.",
+        	id: "/2018/11/28/Cinnamomum",
+            title: "Cinnamomum hesperium Van Boskirk", 
+            subtitle: "Paleobotany",
+            image: cinnamomum,
+            short: "YPM PB 045048.A",
+            long: "North America; USA; Wyoming; Park County; Elk Basin; Elk Basin",
         } ,
 
         {
-        	id: "/2018/11/26/grass",
-            title: "Installing Grass", 
-            subtitle: "Behind the Dioramas",
-            image: "grass",
-            short: "Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: grass!",
-            long: "I am in up to my neck in Bison grass! The glycerine treatment is over and the grass is dry. I have made little tufts of grass by gluing grass into pieces of wire mesh. I have sprayed a highly keyed pastel acrylic paint onto the grass to match the color that we notated when the grass arrived fresh from Wyoming.<br/>I use plaster to install them permanently into the foreground. I was worried I might have to break into the surface of the foreground to get the grass placed naturally, but I shaved the protruding grass under the mesh to about 1/2″ or less and the plaster blends it nicely into the existing foreground. As a final step, I will glue single blades of grass between the tufts to help blend them together.<br/>The plaster will be painted to blend in with the color of the foreground and extra dirt will be spread over that to make the new grass blend in with the old surface. I will be using the Wyoming grass in the most prominent spots since I don’t have enough to extend back into the less visible area behind the bison.<br/>In areas not easily seen, I have re-installed the old Connecticut grass clumps from when the diorama was first built. So we now have a composite collection of grasses-some from Connecticut and some from Wyoming. The authenticity moves from back to front with the grass.",
+        	id: "/2018/11/26/liriodendron",
+            title: "Liriodendron laramiense Ward", 
+            subtitle: "Paleobotany",
+            image: Liriodendron,
+            short: "YPM PB 006361",
+            long: "	North America; USA; North Dakota; Bowman County; 1400mS 1525mE NW corner of sec, 15m below K/T datum",
         } ,
 
         {
-        	id: "/2017/12/20/scorpion-painting",
-            title: "Live Model for Scorpion Painting", 
-            subtitle: "Behind the Dioramas",
-            image: "scorpion",
-            short: "Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: scorpions!",
-            long: "Our live scorpions arrived today. My volunteer Stefan Hurlburt, works at a pet store and was able to order the exact species displayed in the diorama, Hadrurus arizonensis and Vaejovis spinigerus.<br/>Collin is painting them and we are talking about how to get the translucency seen in the real specimens when the 3D print is opaque blue! We noticed in the live specimen that the legs are smallest and lightest, the pincers are a bit bigger and slightly darker, the tail bigger still and darker. Collin has matched the colors so that when we put the model next to the live specimen, there is little difference. Collin is committed to pushing it as far as he can even though the models will not be seen close up.<br/><br/>Thursday, Dec 21:<br/>Stefan came in to feed the scorpions this morning and he couldn’t find the smaller scorpion. They sometimes burrow into the dirt, but after going through it over and over, he still couldn’t find it. I joked that the big one probably ate him. Just then, Stefan looked into the other side with the larger scorpion and he said that’s exactly what happened. He found a small portion of the distal end of the tail with the stinger right next to the mouth of the larger scorpion. Stefan thinks that the smaller scorpion burrowed down to the plastic partition and nudged it up enough to slip into the other side. Not a good choice Mr. Vaejovis! Luckily Collin got good color notes on him yesterday.",
+        	id: "/2017/12/20/Abisara",
+            title: "Abisara echerius (Stoll)", 
+            subtitle: "Entomology",
+            image: Abisara,
+            short: "YPM ENT 756334",
+            long: "Asia; Hong Kong; Cheung Chau Islands",
         } ,
 
         {
