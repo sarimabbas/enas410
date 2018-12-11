@@ -1,0 +1,60 @@
+<svg id="greathalldetail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1009 461">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #58595b;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #939598;
+      }
+
+      .cls-3 {
+        fill: #939598;
+      }
+    </style>
+  </defs>
+  <title>greathalldetail</title>
+  <g id="nohover">
+    <rect id="background" class="cls-1" x="7" y="7" width="995" height="447"/>
+    <rect id="border" class="cls-2" x="2" y="2" width="1005" height="457"/>
+  </g>
+  <g id="hover">
+    <rect class="cls-3" x="7" y="7" width="76" height="32"/>
+    <rect class="cls-3" x="225" y="7" width="121" height="32"/>
+    <rect class="cls-3" x="346" y="7" width="239" height="50"/>
+    <rect class="cls-3" x="585" y="7" width="121" height="32"/>
+    <rect class="cls-3" x="766" y="7" width="135" height="32"/>
+    <rect class="cls-3" x="905" y="229" width="97" height="73"/>
+    <rect class="cls-3" x="905" y="302" width="97" height="73"/>
+    <rect class="cls-3" x="7" y="154" width="50" height="103"/>
+    <rect class="cls-3" x="7" y="257" width="32" height="73"/>
+    <rect class="cls-3" x="7" y="380" width="32" height="74"/>
+    <rect class="cls-3" x="39" y="422" width="98" height="32"/>
+    <rect class="cls-3" x="83" y="7" width="76" height="32"/>
+    <rect class="cls-3" x="137" y="422" width="98" height="32"/>
+    <rect class="cls-3" x="235" y="404" width="92" height="50"/>
+    <rect class="cls-3" x="327" y="422" width="91" height="32"/>
+    <rect class="cls-3" x="418" y="422" width="91" height="32"/>
+    <rect class="cls-3" x="509" y="422" width="91" height="32"/>
+    <rect class="cls-3" x="600" y="404" width="105" height="50"/>
+    <rect class="cls-3" x="705" y="422" width="99" height="32"/>
+    <rect class="cls-3" x="804" y="422" width="101" height="32"/>
+    <rect class="cls-3" x="905" y="422" width="97" height="32"/>
+    <rect class="cls-3" x="7" y="81" width="32" height="73"/>
+    <rect class="cls-3" x="905" y="156" width="97" height="73"/>
+    <rect class="cls-3" x="905" y="83" width="97" height="73"/>
+    <rect class="cls-3" x="225" y="128.59" width="306.74" height="201.41"/>
+    <rect class="cls-3" x="531.74" y="128.59" width="196.02" height="201.41"/>
+  </g>
+</svg>
