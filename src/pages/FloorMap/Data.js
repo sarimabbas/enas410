@@ -8,9 +8,10 @@ import whitneyHallOverlayImg from './/images/whitneyHallOverlay.png'
 import northHallOverlayImg from './/images/northHallOverlay.png'
 
 // second floor images
-import cafeOverlayImg from './/images/cafeOverlay.png'
-import lobbyOverlayImg from './/images/lobbyOverlay.png'
-import centralGalleryOverlayImg from './/images/centralGalleryOverlay.png'
+import tempOverlayImg from './/images/tempGalleryOverlay.png'
+import introAnthroOverlayImg from './/images/introAnthroOverlay.png'
+import anthroOverlayImg from './/images/anthroOverlay.png'
+import histOverlayImg from './/images/histOverlay.png'
 
 // third floor images
 
@@ -21,7 +22,6 @@ const data = {
     roomName: {
 
         // first floor 
-
         "cafe" : {
             title: "Peabody Café", 
             description: "The café will be a space in the museum for visitors to take a break and refuel in addition to a study spot for Yale and New Haven students. The cafe features seven decorated booths, one for each of the Museum's main halls.",
@@ -76,8 +76,8 @@ const data = {
     
         "temp_gallery": {
             title: "Temporary Gallery",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
-            image: northHallOverlayImg,
+            description: "Our recently rennovated Temporary Gallery allows visitors an immersive trip into an Egyptian tomb. The entrance to the gallery features specimens that span Egyptian civilization from the royal to the common. The highlight of the exhibition is the 30&nbsp;foot interactive tomb.  Using a unique combination of infrared sensing and visible light projection it allows visitors to explore—discovering specimens and viewing mural scenes within. The end of the tomb holds the Peabody's mummy. Based on the tomb of Vizier Nespakashuty, this is the only fully reconstructed Late Period Egyptian tomb in North America.",
+            image: tempOverlayImg,
             more: "",
         },
 
@@ -85,35 +85,35 @@ const data = {
         "intro_anthro": {
             title: "Introduction to Anthropology",
             description: "This gallery contains an introduction to the sceince and art of anthropology.  The establishment of the Division of Anthropology at the Yale Peabody Museum in 1902 by George Grant MacCurdybrought together the Museum’s archaeological, ethnological and physical anthropology collections under a single authority. Since then, through the University’s scientific expeditions and donations from Yale alumni and friends, the holdings of the Division have grown to over 280,000 catalogued lots ranging from around the world.",
-            image: northHallOverlayImg,
+            image: introAnthroOverlayImg,
             more: "",
         },  
 
         "anthro_gallery": {
             title: "Anthropology Gallery",
             description: "Featuring more than 150 spectacular artifacts from four Yale collections—the Peabody Museum, Yale University Art Gallery, Yale Collection of Musical Instruments, and the Sterling Memorial Library—the exhibition will also introduce you to hungry emperors; drowned warriors reborn as small crabs; commoners alternately fearful of samurai violence but swept up in its romance; artists and writers conjuring scenes of adventure and wit; families reaching out to departed kin across the chasm of death; parents deciding whether to raise or reject a newborn baby; underground Christians hiding their faith behind a Buddhist icon; and Japanese artifacts that take on new meanings in Ainu villages and the parlors of New England collectors.",
-            image: northHallOverlayImg,
+            image: anthroOverlayImg,
             more: "",
         },  
 
         "history_science_hall": {
             title: "History of Science and Technology",
             description: "The Peabody Museum was founded 1886, but science at Yale started much before this.  The Yale Peabody Museum’s Division of Historical Scientific Instruments boasts several astronomical, navigational and survey instruments of notoriety, including a Hartmann astrolabe from the 16th century. The exhibit about the histroy of scienctific equipment also contains the first microscope purchased by Yale, from 1735. The collection also houses three 18th century armillary spheres and two tellurions.",
-            image: northHallOverlayImg,
+            image: histOverlayImg,
             more: "",
         },  
 
         // third floor
 
         "new_england_dioramas": {
-            title: "History of Science and Technology",
+            title: "New England Dioramas",
             description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
             image: northHallOverlayImg,
             more: "",
         },  
 
         "student_exhibit": {
-            title: "History of Science and Technology",
+            title: "Student Gallery",
             description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
             image: northHallOverlayImg,
             more: "",
