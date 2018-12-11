@@ -8,6 +8,11 @@ import whitneyHallOverlayImg from './/images/whitneyHallOverlay.png'
 import northHallOverlayImg from './/images/northHallOverlay.png'
 
 // second floor images
+import cafeOverlayImg from './/images/cafeOverlay.png'
+import lobbyOverlayImg from './/images/lobbyOverlay.png'
+import centralGalleryOverlayImg from './/images/centralGalleryOverlay.png'
+
+// third floor images
 
 // great hall images
 
@@ -79,21 +84,21 @@ const data = {
 
         "intro_anthro": {
             title: "Introduction to Anthropology",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "This gallery contains an introduction to the sceince and art of anthropology.  The establishment of the Division of Anthropology at the Yale Peabody Museum in 1902 by George Grant MacCurdybrought together the Museum’s archaeological, ethnological and physical anthropology collections under a single authority. Since then, through the University’s scientific expeditions and donations from Yale alumni and friends, the holdings of the Division have grown to over 280,000 catalogued lots ranging from around the world.",
             image: northHallOverlayImg,
             more: "",
         },  
 
         "anthro_gallery": {
             title: "Anthropology Gallery",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "Featuring more than 150 spectacular artifacts from four Yale collections—the Peabody Museum, Yale University Art Gallery, Yale Collection of Musical Instruments, and the Sterling Memorial Library—the exhibition will also introduce you to hungry emperors; drowned warriors reborn as small crabs; commoners alternately fearful of samurai violence but swept up in its romance; artists and writers conjuring scenes of adventure and wit; families reaching out to departed kin across the chasm of death; parents deciding whether to raise or reject a newborn baby; underground Christians hiding their faith behind a Buddhist icon; and Japanese artifacts that take on new meanings in Ainu villages and the parlors of New England collectors.",
             image: northHallOverlayImg,
             more: "",
         },  
 
         "history_science_hall": {
             title: "History of Science and Technology",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "The Peabody Museum was founded 1886, but science at Yale started much before this.  The Yale Peabody Museum’s Division of Historical Scientific Instruments boasts several astronomical, navigational and survey instruments of notoriety, including a Hartmann astrolabe from the 16th century. The exhibit about the histroy of scienctific equipment also contains the first microscope purchased by Yale, from 1735. The collection also houses three 18th century armillary spheres and two tellurions.",
             image: northHallOverlayImg,
             more: "",
         },  
@@ -123,14 +128,14 @@ const data = {
 
         "north_american_dioramas": {
             title: "North American Dioramas",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "The North American dioramas capture three scenes of the nature on our continent. In the museum world, the Yale Peabody Museum’s dioramas are considered masterpieces. In them our eye moves effortlessly from the specimens in the foreground to the background through the veil of atmosphere, into a vista that seems to stretch endlessly beyond the horizon. We accept the diorama as casually as if it were a window into the natural world.",
             image: northHallOverlayImg,
             more: "",
         },  
 
         "david_friend_hall": {
             title: "David Friend Hall",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "Explore the beauty and color of the natural in the David Friend Hall.  The gallery, opened in 2016, alows viewers to appreciate the austere beauty of gems and minerals. The 2,300-square-foot, state-of-the-art gem and mineral gallery features more than 150 premier specimens from the Museum's collection and also significant private collections from across the United States. Dynamic displays integrate free-standing, large-scale minerals with small-scale specimens, and customized lighting showcases each specimen’s beauty.",
             image: northHallOverlayImg,
             more: "",
         },  
