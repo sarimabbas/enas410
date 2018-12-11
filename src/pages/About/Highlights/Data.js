@@ -6,7 +6,6 @@ import egypthall from './assets/image2.jpg'
 
 const data = [
 
-
         {
             id: "/01012019/bhullar",
             title: "Bhart-Anjan Bhullar", 
