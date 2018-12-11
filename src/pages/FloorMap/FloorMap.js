@@ -8,9 +8,9 @@ import Generic from '../Generic/Generic';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 // all the components that make up the page
-import NavSimple from '../../components/Nav/NavSimple';
-// import Footer from '../../components/Footer/Footer';
 import FirstFloor from './FirstFloor/FirstFloor';
+import GreatHall from './GreatHall/GreatHall';
+
 import SecondFloor from './SecondFloor/SecondFloor';
 import ThirdFloor from './ThirdFloor/ThirdFloor';
 import Sidebar from './Sidebar';
@@ -95,7 +95,7 @@ class floormap extends Component {
 
         let more = <div></div>
         if (this.state.more !== "") {
-            more = <Link to={this.state.more}>View Room</Link>
+            more = <Link to={this.state.more}>View Room &rsaquo;</Link>
         }
 
         let currentPath = this.props.location.pathname;
@@ -118,12 +118,14 @@ class floormap extends Component {
                         <div className={styles.gridMiddle}>
                             <Switch>
                                 <Redirect exact from="/map" to="/map/first-floor"/>
-                                <Route path='/map/first-floor' 
+                                <Route exact path='/map/first-floor' 
                                     render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/map/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/map/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
+                                <Route path='/map/first-floor/great-hall' 
+                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom} />}/>
                             </Switch>
                         </div>
                         {/* content */}
@@ -134,7 +136,7 @@ class floormap extends Component {
                             <div className={classNames(styles.menuContent)}>
                                 <h3 className={classNames(styles.title)}>{this.state.title}</h3> 
                                 <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
-                                <div className={classNames(styles.more)}>{ more }</div>
+                                <p className={classNames(styles.more)}>{ more }</p>
                             </div>
                             </div> :
                             <div></div>
