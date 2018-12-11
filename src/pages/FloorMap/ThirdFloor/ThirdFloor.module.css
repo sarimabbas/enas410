@@ -1,5 +1,29 @@
-.cls1,
+
+/* add the base layer */
 .cls6 {
+    fill: black;
+}
+
+/* make the base layer hoverable */
+.cls6:hover {
+    fill: rgb(27, 103, 218);
+    cursor: pointer;
+}
+
+/* add the screen */
+.cls100 {
+    fill: #939598;
+    mix-blend-mode: screen;
+}
+
+/* make the screen hoverable */
+.cls100:hover {
+    fill: rgb(27, 103, 218);
+    cursor: pointer;
+}
+
+/* not relevant for us */
+.cls1 {
     fill: #939598;
 }
 
