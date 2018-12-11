@@ -14,6 +14,7 @@ const spotlightcardrow = (props) => {
         <div className={classNames(styles.row)}>
             <div><SpotlightCard
                 image={sample1}
+                subtitle="Smithsonian Gardens"
                 title="Peabody Evolved"
                 description="Following the Museum’s sesquicentennial
                 in 2016, we are pleased to announce a
