@@ -5,29 +5,39 @@ import classNames from 'classnames';
 import Aux from '../../../hoc/Aux';
 import SpotlightCard from '../../../components/Spotlight/SpotlightCard';
 
-// import sub pages here
+// data
+import Data from './Data';
 
 // styles
 import styles from './Highlights.module.css'
 
-//images
-// import dinosnore from './dinosnores_nhm.jpg';
-
 class highlights extends Component {
 
     pullPosts = () => {
-        
-    }
 
+        console.log(Data.length)
+        let posts_array = []
+        for (let i = 0; i < Data.length; i++) {
+            posts_array.push(
+                <div>
+                    <SpotlightCard
+                        title={Data[i].title}
+                        subtitle={Data[i].subtitle}
+                        image={Data[i].image}
+                        description={Data[i].short}>
+                    </SpotlightCard>
+                </div>
+            )
+        }
+        return posts_array;
+    }
 
     render() {
         return (    
             <Aux> 
                 <h1>Peabody Highlights</h1> 
-                <div className={classNames(styles.row)}>
-                    <SpotlightCard
-                        title=""
-                    />
+                <div className={classNames(styles.grid)}>
+                    { this.pullPosts() }
                 </div>
             </Aux>
         )
