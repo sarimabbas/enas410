@@ -14,7 +14,7 @@ class navmanager extends Component {
             positionType: "fixed",
             top: 0,
             fadedOnce: false,
-            paddingBottom: 50,
+            paddingBottom: "7vh",
         }
     }
 
@@ -42,12 +42,12 @@ class navmanager extends Component {
 
         
         let width = "'wdth' " + widthNo + ", 'wght' " + fontWeight; 
-        let paddingBottom = 50 - (40 / window.innerHeight * scrollTop);
+        let paddingBottom = 7 - (7 / window.innerHeight * scrollTop);
     
 
         this.setState({
             width : width,
-            paddingBottom : paddingBottom,
+            paddingBottom : paddingBottom + "vh",
         })
 
         // console.log(width)

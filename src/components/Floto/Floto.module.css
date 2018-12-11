@@ -9,7 +9,8 @@
 
  
 
-    left: 50px;
+    left: 7vh;
+    
     z-index: 10;
 
     /* expand to height of masthead */
@@ -25,7 +26,7 @@
 
 .text {
     /* add padding against the top of the parent */
-    padding-bottom: 50px;
+    padding-bottom: 7vh;
 
     /* font style */
     color: white;
