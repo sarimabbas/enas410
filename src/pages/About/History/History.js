@@ -8,8 +8,8 @@ import Aux from '../../../hoc/Aux';
 import silliman from './Silliman.png'
 
 // styles
-import styles from './History.module.css'
-import { scale } from 'style-value-types';
+// import styles from './History.module.css'
+// import { scale } from 'style-value-types';
 
 const history = (props) => {
     return (    
