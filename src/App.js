@@ -1,6 +1,7 @@
 // react
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import ScrollToTop from './hoc/ScrollToTop';
 
 // pages
 import Home from './pages/Home/Home'
@@ -23,15 +24,17 @@ class App extends Component {
         return (
             <div className="App">
                 <Router>
-                    <Switch>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/visit" component={Visit} />
-                        <Route path="/exhibits" component={Exhibits} />
-                        <Route path="/learn" component={Learn} />
-                        <Route path="/collections" component={Collections} />
-                        <Route path="/about" component={About} />
-                        <Route path="/map" component={FloorMap} />
-                    </Switch>
+                    <ScrollToTop>
+                        <Switch>
+                            <Route path="/" exact component={Home} />
+                            <Route path="/visit" component={Visit} />
+                            <Route path="/exhibits" component={Exhibits} />
+                            <Route path="/learn" component={Learn} />
+                            <Route path="/collections" component={Collections} />
+                            <Route path="/about" component={About} />
+                            <Route path="/map" component={FloorMap} />
+                        </Switch>
+                    </ScrollToTop>
                 </Router>
             </div>
         );
