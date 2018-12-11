@@ -21,6 +21,8 @@ import NEOverlayImg from
 './/images/NEOverlay.png'
 import DFHOverlayImg from
 './/images/DFHOverlay.png'
+import lifesciOverlayImg from
+'.//images/lifesciOverlay.png'
 
 // great hall images
 
@@ -129,7 +131,7 @@ const data = {
         "life_sciences": {
             title: "Life Sciences",
             description: "no text",
-            image: northHallOverlayImg,
+            image: lifesciOverlayImg,
             more: "",
         },  
 
