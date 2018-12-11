@@ -35,10 +35,21 @@ class floormap extends Component {
             description: "",
             image: "",
             more: "",
+
+            isMobile: false,
         }
 
         this.handleRoom = this.handleRoom.bind(this);
         this.handleMenuChange = this.handleMenuChange.bind(this);
+        this.monitorScreenWidth = this.monitorScreenWidth.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.monitorScreenWidth);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.monitorScreenWidth);
     }
 
     handleMenuChange = (state) => {
@@ -60,14 +71,24 @@ class floormap extends Component {
         })
     }
 
+    monitorScreenWidth = () => {
+        if (window.innerWidth < 768) {
+            if (!this.isMobile) {
+                this.setState({
+                    isMobile: true,
+                })
+            }
+        } else {
+            this.setState({
+                isMobile: false,
+            })
+        }
+    }
  
     render() {
 
-        const firstFloor = <FirstFloor handleRoom={this.handleRoom}/>;
-
         let more = <div></div>
         if (this.state.more !== "") {
-            console.log('wihf')
             more = <Link to={this.state.more}>View Room</Link>
         }
 
@@ -77,10 +98,10 @@ class floormap extends Component {
                 <Generic>
                     {/* Menu overlay */}
                     <Menu   isOpen={this.state.roomSelected} 
-                        noOverlay
-                        right
-                        onStateChange={ this.handleMenuChange }
-                        >
+                            noOverlay
+                            right
+                            onStateChange={ this.handleMenuChange }
+                            width={this.state.isMobile ? "100vw" : 300}>
                         <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                         <div className={classNames(styles.menuContent)}>
                             <h1 className={classNames(styles.title)}>{this.state.title}</h1> 
