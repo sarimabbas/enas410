@@ -84,7 +84,7 @@ class floormap extends Component {
                         <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                         <div className={classNames(styles.menuContent)}>
                             <h1 className={classNames(styles.title)}>{this.state.title}</h1> 
-                            <p className={classNames(styles.description)}>{this.state.description}</p>
+                            <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
                             <div className={classNames(styles.more)}>{ more }</div>
                         </div>
                     </Menu>
