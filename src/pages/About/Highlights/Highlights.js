@@ -18,13 +18,13 @@ const highlights = (props) => {
             <h1>Peabody Highlights</h1>
             <section className={classNames(styles.row)}>
                 <div className={classNames("workshop")}>
-                    <h1 className={styles.subtitle}>‘Dino-Snore’ enlivens history for children</h1>
+                    <h2 className={styles.subtitle}>‘Dino-Snore’ enlivens history for children</h2>
                     <img src={dinosnore} className={classNames("imageKing")} alt="Dino-Snore"></img>
                     <p className={styles.description}>
                     The Great Hall of the Peabody Museum of Natural History came alive the night of Nov. 13 with running children and tired parents from the greater New Haven area at the semiannual “Dino-Snore.” Sleeping bags, air mattresses and tents surrounded the dinosaur bones, and the museum was teeming with children in pajamas and slippers...</p>
                 </div>
                 <div className={classNames("talks")}>
-                    <h1 className={styles.subtitle}>Talks {'&'} Lectures</h1>
+                    <h2 className={styles.subtitle}>Talks {'&'} Lectures</h2>
                     {/* <img src={talks} alt="talks" className={styles.image}></img> */}
                     <p className={styles.description}>
                         The Peabody Museum hosts talks and lectures on a regular basis, featuring Museum staff,
@@ -37,7 +37,7 @@ const highlights = (props) => {
                         unless otherwise noted.</p>
                 </div>
                 <div className={classNames("natsci")}>
-                    <h1 className={styles.subtitle}>Natural Science Illustration Program</h1>
+                    <h2 className={styles.subtitle}>Natural Science Illustration Program</h2>
                     {/* <img src={natsci} alt="natsci" className={styles.image}></img> */}
                     <p className={styles.description}>
                         Be a part of an ongoing series of unique art classes and workshops held at the Peabody
