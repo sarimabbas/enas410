@@ -40,9 +40,9 @@
 }
 
 .title {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 0px;
-    line-height: 0;
+    /* line-height: 0; */
     text-transform: uppercase;
 }
 
