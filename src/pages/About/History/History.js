@@ -9,6 +9,7 @@ import silliman from './Silliman.png'
 
 // styles
 import styles from './History.module.css'
+import { scale } from 'style-value-types';
 
 const history = (props) => {
     return (    
@@ -38,7 +39,10 @@ const history = (props) => {
                         entertainment and one of the principal attractions for visitors to New Haven.
                     </p>
 
-                    <img src={silliman} className={classNames("imageKing")} alt="Silliman"></img>
+                    <img src={silliman} 
+                        className={classNames("imageKing")} 
+                        style={ {maxHeight: "300px", objectFit: "scale-down"} }
+                        alt="Silliman"></img>
                     <p className={classNames("caption")}>Benjamin Silliman</p>
      
                     <p>
@@ -53,7 +57,9 @@ const history = (props) => {
                         the museum and its collections.
                     </p>
                     
-                    <img className={classNames("imageKing")} src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
+                    <img className={classNames("imageKing")} 
+                        style={ {maxHeight: "400px", objectFit: "scale-down"} }
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/01/Othniel_Charles_Marsh_-_Brady-Handy.jpg" alt="OC Marsh"></img>
                     <p className={classNames("caption")}>A photograph of O.C. Marsh</p>
 
                     <p> 
