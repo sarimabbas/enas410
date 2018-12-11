@@ -73,9 +73,11 @@ class floormap extends Component {
 
     monitorScreenWidth = () => {
         if (window.innerWidth < 768) {
-            this.setState({
-                isMobile: true,
-            })
+            if (!this.isMobile) {
+                this.setState({
+                    isMobile: true,
+                })
+            }
         } else {
             this.setState({
                 isMobile: false,
@@ -84,8 +86,6 @@ class floormap extends Component {
     }
  
     render() {
-
-        console.log(this.state)
 
         let more = <div></div>
         if (this.state.more !== "") {
