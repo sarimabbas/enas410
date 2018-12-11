@@ -114,7 +114,7 @@ const data = {
 
         "new_england_dioramas": {
             title: "New England Dioramas",
-            description: "no text",
+            description: "The dioramas feature scenes from Southern New England The dioramas feature scenes of life in the regions of Connecticut near New Haven, including the impressive 35 foot Coastal Region diorama. The dioramas were originally painted in 1944 by Perry Wilson and Ralph Morris.",
             image: NEOverlayImg,
             more: "",
         },  
