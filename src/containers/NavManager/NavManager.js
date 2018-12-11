@@ -14,6 +14,7 @@ class navmanager extends Component {
             positionType: "fixed",
             top: 0,
             fadedOnce: false,
+            paddingBottom: 50,
         }
     }
 
@@ -28,44 +29,52 @@ class navmanager extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight - 64;
-        const shrinkSpeed = 3.8;
+        const shrinkSpeed = 5.20;
 
         // set the font-width as a function of scroll and max font width
         const fontMax = 1000;
         let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
        
         let widthNo = ((1 - normalized) * fontMax).toString();
-        let width = "'wdth' " + widthNo + ", 'wght' 800"; 
+
+        let fontWeight = 800 - (200 / window.innerHeight * scrollTop);
+
+
+        
+        let width = "'wdth' " + widthNo + ", 'wght' " + fontWeight; 
+        let paddingBottom = 50 - (40 / window.innerHeight * scrollTop);
+    
 
         this.setState({
             width : width,
+            paddingBottom : paddingBottom,
         })
 
         // console.log(width)
 
         // don't follow on scroll once width threshold has been met
         const pos = scrollThreshold / 1.8;
-        if (scrollTop > pos) {
-            this.setState({
-                positionType: "absolute",
-                top: pos
-            })
-        } else {
-            this.setState({
-                positionType: "fixed",
-                top: 0
-            })
-        }
+        // if (scrollTop > pos) {
+        //     this.setState({
+        //         positionType: "absolute",
+        //         top: pos
+        //     })
+        // } else {
+        //     this.setState({
+        //         positionType: "fixed",
+        //         top: 0
+        //     })
+        // }
 
         // hiding the logo completely after a threshold
-        if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold) {
+        if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold - 280) {
             this.setState({
                 scrollThresholdMet: true,
                 fadedOnce: true,
             })
         }
 
-        if (this.state.scrollThresholdMet && scrollTop <= scrollThreshold) {
+        if (this.state.scrollThresholdMet && scrollTop <= scrollThreshold - 280) {
             this.setState({
                 scrollThresholdMet: false,
             })
@@ -82,6 +91,7 @@ class navmanager extends Component {
                     positionType={this.state.positionType}
                     top={this.state.top}
                     width={this.state.width}
+                    paddingBottom={this.state.paddingBottom}
                 />
                 <Nav scrollThresholdMet={this.state.scrollThresholdMet} 
                      fadedOnce={this.state.fadedOnce}/>

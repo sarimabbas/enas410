@@ -63,7 +63,7 @@ class overlay extends Component {
                                         <Link to="/exhibits/current">Exhibits On View</Link>
                                         <Link to="/exhibits/temporary">Temporary Exhibits</Link>
                                         <Link to="/exhibits/upcoming">Past Exhibits</Link>
-                                        <Link to="/exhibits/calendar">Events Calendar</Link>
+                                        {/* <Link to="/exhibits/calendar">Events Calendar</Link> */}
                                     </div>
                                 </div>
 
@@ -86,7 +86,7 @@ class overlay extends Component {
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/collections/search">Search the Collections</Link>
-                                        <Link to="/collections/how-to-use">How to Use</Link>
+                                        {/* <Link to="/collections/how-to-use">How to Use</Link> */}
                                         <Link to="/collections/daily-object">Object of the Day</Link>
                                     </div>
                                 </div>

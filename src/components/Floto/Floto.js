@@ -13,6 +13,8 @@ class floto extends Component {
     // }
     
     render() {
+
+        console.log(this.props)
         // hiding the logo completely
         let fade = this.props.scrollThresholdMet ? styles.transparent : styles.opaque;
 
@@ -25,6 +27,7 @@ class floto extends Component {
                     }}>
                     <h1 className={classNames(styles.text)} 
                         style={{
+                            paddingBottom: this.props.paddingBottom,
                             fontVariationSettings: this.props.width,
                         }}>
                         Peabody
