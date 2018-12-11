@@ -26,6 +26,30 @@ import lifesciOverlayImg from
 import discoveryRoomOverlayImg from './images/discoveryRoomOverlay.png';
 
 // great hall images
+import GH01 from './GreatHall/images/GH01.png';
+import GH02 from './GreatHall/images/GH02.png';
+import GH03 from './GreatHall/images/GH03.png';
+import GH04 from './GreatHall/images/GH04.png';
+import GH05 from './GreatHall/images/GH05.png';
+import GH06 from './GreatHall/images/GH06.png';
+import GH07 from './GreatHall/images/GH07.png';
+import GH08 from './GreatHall/images/GH08.png';
+import GH09 from './GreatHall/images/GH09.png';
+import GH10 from './GreatHall/images/GH10.png';
+import GH11 from './GreatHall/images/GH11.png';
+import GH12 from './GreatHall/images/GH12.png';
+import GH13 from './GreatHall/images/GH13.png';
+import GH14 from './GreatHall/images/GH14.png';
+import GH15 from './GreatHall/images/GH15.png';
+import GH16 from './GreatHall/images/GH16.png';
+import GH17 from './GreatHall/images/GH17.png';
+import GH18 from './GreatHall/images/GH18.png';
+import GH19 from './GreatHall/images/GH19.png';
+import GH20 from './GreatHall/images/GH20.png';
+import GH24 from './GreatHall/images/GH24.png';
+import GH25 from './GreatHall/images/GH25.png';
+import GH26 from './GreatHall/images/GH26.png';
+import GH27 from './GreatHall/images/GH27.png';
 
 const data = {
 
@@ -159,6 +183,7 @@ const data = {
         },
 
         // great hall cases
+        
 
 
 
