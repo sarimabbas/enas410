@@ -17,7 +17,7 @@ const sidebar = (props) => {
                 </h3>
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/collections/search"><span>Search the Collections</span></NavLink>
-                    <NavLink activeClassName={styles.activeLink} to="/collections/how-to-use"><span>How to Use</span></NavLink>
+                    {/*<NavLink activeClassName={styles.activeLink} to="/collections/how-to-use"><span>How to Use</span></NavLink>*/}
                     <NavLink activeClassName={styles.activeLink} to="/collections/daily-object"><span>Object of the Day</span></NavLink>
                 </div>
             </div>
