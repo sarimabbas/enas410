@@ -13,7 +13,7 @@ const sidebar = (props) => {
         <Aux>
             <div className={classNames(styles.sidebar)}>
                 <h3 className={classNames(styles.heading)}>
-                    Floors
+                    Interactive Floor Plan
                 </h3>
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/map/first-floor"><span>First Floor</span></NavLink>

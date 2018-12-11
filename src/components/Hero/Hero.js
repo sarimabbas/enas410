@@ -48,7 +48,7 @@ class hero extends Component {
                 break;
             case "slider-2":
                 image = slide2
-                title = "The Bronze Torosaurus"
+                title = "The Bronze Toro&shy;saurus"
                 subtitle = "From the Anderson Lab"
                 break;
             default:
@@ -72,7 +72,7 @@ class hero extends Component {
     render() {
 
         // prepare image
-        let vignette = "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), "
+        let vignette = "linear-gradient(to right, rgba(51, 47, 109, 0.3), rgba(51, 47, 109, 0.3)), "
         let url = vignette + "url('" + this.state.image + "')"
 
         // which is selected?
@@ -85,7 +85,7 @@ class hero extends Component {
                 style={{backgroundImage: url}}>
                 <div className={styles.heroInner}>
                     <div className={styles.text}>
-                        <h1 className={styles.title}>{this.state.title}</h1>
+                        <h1 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h1>
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
                     </div>
                     <div className={styles.controls}>

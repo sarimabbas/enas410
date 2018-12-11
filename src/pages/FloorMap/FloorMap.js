@@ -97,7 +97,7 @@ class floormap extends Component {
             <Aux>
                 <Generic>
                     {/* Menu overlay */}
-                    <Menu   isOpen={this.state.roomSelected} 
+                    {/* <Menu   isOpen={this.state.roomSelected} 
                             noOverlay
                             right
                             onStateChange={ this.handleMenuChange }
@@ -108,11 +108,11 @@ class floormap extends Component {
                             <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
                             <div className={classNames(styles.more)}>{ more }</div>
                         </div>
-                    </Menu>
+                    </Menu> */}
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         <Sidebar></Sidebar>
-                        <div className={classNames(styles.gridRight)}>
+                        <div className={classNames(styles.gridMiddle)}>
                             <div className={styles.floor}>
                             <Switch>
                                 <Redirect exact from="/map" to="/map/first-floor"/>
@@ -125,8 +125,15 @@ class floormap extends Component {
                             </Switch>
                             </div>
                         </div>
-                        {/* empty div */}
-                        <div></div>
+                        {/* content */}
+                        <div>
+                            <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
+                            <div className={classNames(styles.menuContent)}>
+                                <h3 className={classNames(styles.title)}>{this.state.title}</h3> 
+                                <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
+                                <div className={classNames(styles.more)}>{ more }</div>
+                            </div>
+                        </div>
                     </div>
                 </Generic>
             </Aux>

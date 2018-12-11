@@ -2,14 +2,15 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 200px auto 300px;
+    /* repeat(auto-fit, minmax(180px, 1fr)); */
     grid-column-gap: 50px;
     grid-template-rows: 1fr;
 }
 
-.gridRight {
-    grid-column: auto / span 3;
-    /* min-height: 35vh; */
+.gridMiddle {
+    /* grid-column: auto / span 3; */
+    min-height: 35vh;
 }
 
 .floor {
@@ -20,9 +21,9 @@
 /* Menu */
 
 .menuContent {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-top: 20px; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
 
     display: flex!important;
     flex-direction: column;
@@ -36,13 +37,14 @@
 }
 
 .title {
-    font-size: 20px;
-    color: white;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    text-transform: uppercase;
 }
 
 .description {
-    font-size: 16px;
-    color: rgb(199, 194, 194);
+    /* font-size: 16px; */
+    /* color: rgb(199, 194, 194); */
 }
 
 .more {
