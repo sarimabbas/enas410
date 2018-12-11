@@ -65,7 +65,7 @@ const thirdfloor = (props) => {
                         <polygon className={styles.cls5} points="560.041 482.745 560.041 756.739 430.166 756.739 464.524 1213.702 1577.041 1213.702 1577.041 756.702 1520.041 756.702 1520.041 406.159 560.041 482.745"/>
                     </g>
                 </g>
-                <g id="new_england_dioramas">
+                <g id="new_england_dioramas" onClick={props.handleRoom}>
                     <g id="hover">
                         <rect className={styles.cls6} height="462.6584" width="312" x="1588.0151" y="1089.0437"/>
                     </g>
@@ -92,7 +92,7 @@ const thirdfloor = (props) => {
                         </g>
                     </g>
                 </g>
-                <g id="student_exhibit">
+                <g id="student_exhibit" onClick={props.handleRoom}>
                     <g id="hover-2">
                         <polygon className={styles.cls6} points="1613.394 387.102 769.053 455.21 743.015 104.702 1614.456 36.073 1613.394 387.102"/>
                     </g>
@@ -115,7 +115,7 @@ const thirdfloor = (props) => {
                         </g>
                     </g>
                 </g>
-                <g id="discovery_room">
+                <g id="discovery_room" onClick={props.handleRoom}>
                     <g id="hover-3">
                         <rect className={styles.cls6} height="322.0435" width="312" x="1588.0151" y="756.0973"/>
                     </g>
@@ -137,7 +137,7 @@ const thirdfloor = (props) => {
                         </g>
                     </g>
                 </g>
-                <g id="life_sciences">
+                <g id="life_sciences" onClick={props.handleRoom}>
                     <g id="hover-4">
                         <rect className={styles.cls6} height="327" width="702" x="875.0151" y="1224.7021"/>
                     </g>
@@ -158,7 +158,7 @@ const thirdfloor = (props) => {
                         </g>
                     </g>
                 </g>
-                <g id="diorama">
+                <g id="north_american_dioramas" onClick={props.handleRoom}>
                     <g id="hover-5">
                         <rect className={styles.cls6} height="538.0848" width="304" x="560.0151" y="1224.7021"/>
                     </g>
@@ -188,7 +188,7 @@ const thirdfloor = (props) => {
                         </g>
                     </g>
                 </g>
-                <g id="david_friend_hall">
+                <g id="david_friend_hall" onClick={props.handleRoom}>
                     <g id="hover-6">
                         <polygon className={styles.cls6} points="439.012 992.386 134.012 1015.386 75.015 278.702 380.015 255.702 439.012 992.386"/>
                     </g>

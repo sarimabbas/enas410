@@ -15,6 +15,8 @@ const data = {
 
     roomName: {
 
+        // first floor 
+
         "cafe" : {
             title: "Peabody Café", 
             description: "The café will be a space in the museum for visitors to take a break and refuel in addition to a study spot for Yale and New Haven students. The cafe features seven decorated booths, one for each of the Museum's main halls.",
@@ -64,6 +66,75 @@ const data = {
             image: northHallOverlayImg,
             more: "",
         },
+
+        // second floor
+    
+        "temp_gallery": {
+            title: "Temporary Gallery",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },
+
+
+        "intro_anthro": {
+            title: "Introduction to Anthropology",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "anthro_gallery": {
+            title: "Anthropology Gallery",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "history_science_hall": {
+            title: "History of Science and Technology",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        // third floor
+
+        "new_england_dioramas": {
+            title: "History of Science and Technology",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "student_exhibit": {
+            title: "History of Science and Technology",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "life_sciences": {
+            title: "Life Sciences",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "north_american_dioramas": {
+            title: "North American Dioramas",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
+        "david_friend_hall": {
+            title: "David Friend Hall",
+            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            image: northHallOverlayImg,
+            more: "",
+        },  
+
     }
 }
 

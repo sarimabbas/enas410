@@ -77,7 +77,7 @@ const secondfloor = (props) => {
                         <polygon className={styles.cls6} points="560.041 482.745 560.041 1213.702 1577.041 1213.702 1577.041 756.702 1520.041 756.702 1520.041 406.159 560.041 482.745"/>
                     </g>
                 </g>
-                <g id="history_science_hall">
+                <g id="history_science_hall" onClick={props.handleRoom}>
                     <g id="hover">
                         <rect className={styles.cls7} height="795" width="312" x="1588.0151" y="756.7021"/>
                     </g>
@@ -118,7 +118,7 @@ const secondfloor = (props) => {
                         <rect className={styles.cls100} height="795" width="312" x="1588.0151" y="756.7021"/>
                     </g>
                 </g>
-                <g id="anthro_gallery">
+                <g id="anthro_gallery" onClick={props.handleRoom}>
                     <g id="hover-2">
                         <rect className={styles.cls7} height="327" width="702" x="875.0151" y="1224.7021"/>
                     </g>
@@ -149,7 +149,7 @@ const secondfloor = (props) => {
                         <rect className={styles.cls100} height="327" width="702" x="875.0151" y="1224.7021"/>
                     </g>
                 </g>
-                <g id="intro_anthro">
+                <g id="intro_anthro" onClick={props.handleRoom}>
                     <g id="hover-3">
                         <rect className={styles.cls7} height="538.0848" width="304" x="560.0151" y="1224.7021"/>
                     </g>
@@ -181,7 +181,7 @@ const secondfloor = (props) => {
                         <rect className={styles.cls100} height="538.0848" width="304" x="560.0151" y="1224.7021"/>
                     </g>
                 </g>
-                <g id="temp_gallery">
+                <g id="temp_gallery" onClick={props.handleRoom}>
                     <g id="hover-4">
                         <polygon className={styles.cls7} points="439.012 992.386 134.012 1015.386 75.015 278.702 380.015 255.702 439.012 992.386"/>
                     </g>
