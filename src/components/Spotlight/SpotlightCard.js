@@ -8,6 +8,7 @@ const spotlightcard = (props) => {
             <div className={styles.imageContainer}>
                 <img src={props.image} alt="Spotlight" className="imageKing"></img>
             </div>
+            <p>{props.subtitle}</p>
             <h3 className={styles.title}>{props.title}</h3>
             <p className={styles.description}>{props.description}</p>
         </div>
