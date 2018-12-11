@@ -7,3 +7,7 @@
 .description {
 }
 
+.image {
+    object-fit: cover;
+    max-height: 300px;
+}
