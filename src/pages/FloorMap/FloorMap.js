@@ -27,6 +27,9 @@ class floormap extends Component {
     constructor(props) {
         super(props);
 
+
+        // console.log(this.props.location.pathname)
+
         this.state = {
             roomSelected : false,
             roomName : "",
@@ -72,6 +75,7 @@ class floormap extends Component {
     }
 
     monitorScreenWidth = () => {
+        console.log(window.innerWidth);
         if (window.innerWidth < 768) {
             if (!this.isMobile) {
                 this.setState({
@@ -96,19 +100,6 @@ class floormap extends Component {
         return (
             <Aux>
                 <Generic>
-                    {/* Menu overlay */}
-                    {/* <Menu   isOpen={this.state.roomSelected} 
-                            noOverlay
-                            right
-                            onStateChange={ this.handleMenuChange }
-                            width={this.state.isMobile ? "100vw" : 300}>
-                        <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
-                        <div className={classNames(styles.menuContent)}>
-                            <h1 className={classNames(styles.title)}>{this.state.title}</h1> 
-                            <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
-                            <div className={classNames(styles.more)}>{ more }</div>
-                        </div>
-                    </Menu> */}
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         {/* left sidebar */}

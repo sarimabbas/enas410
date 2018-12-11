@@ -12,7 +12,7 @@ import sample3 from './assets/sample3.png';
 const spotlightcardrow = (props) => {
     return (
         <div className={classNames(styles.row)}>
-            <SpotlightCard
+            <div><SpotlightCard
                 image={sample1}
                 title="Peabody Evolved"
                 description="Following the Museum’s sesquicentennial
@@ -23,8 +23,8 @@ const spotlightcardrow = (props) => {
                 as a home for cutting-edge research,
                 extraordinary education, and breathtaking
                 exhibitions."
-            ></SpotlightCard>
-            <SpotlightCard
+            ></SpotlightCard></div>
+            <div><SpotlightCard
                 image={sample2}
                 title="History of the Dinosaur Hall"
                 description="Dedicated in December 1925, the new
@@ -33,8 +33,8 @@ const spotlightcardrow = (props) => {
                 some of O.C. Marsh’s dinosaurs, such
                 the mounting of the giant Brontosaurus,
                 completed in 1931 after six years of labor. "
-            ></SpotlightCard>
-            <SpotlightCard
+            ></SpotlightCard></div>
+            <div><SpotlightCard
                 image={sample3}
                 title="Behind the Giant Squid"
                 description="Many Peabody memories start with the
@@ -45,7 +45,44 @@ const spotlightcardrow = (props) => {
                 Division of Invertebrate Zoology. The giant
                 squid is one of over 13 million specimens in
                 the Museum’s scientific collections."
-            ></SpotlightCard>
+            ></SpotlightCard></div>
+            <div className={styles.hideSecond}><SpotlightCard
+                image={sample3}
+                title="Behind the Giant Squid"
+                description="Many Peabody memories start with the
+                giant squid hanging in the lobby. The model
+                is based on the first giant squid that was
+                ever discovered, part of which—a tentacled
+                arm—is stored in the collections of the
+                Division of Invertebrate Zoology. The giant
+                squid is one of over 13 million specimens in
+                the Museum’s scientific collections."
+            ></SpotlightCard></div>
+            <div className={styles.hideFirst}><SpotlightCard
+                image={sample3}
+                title="Behind the Giant Squid"
+                description="Many Peabody memories start with the
+                giant squid hanging in the lobby. The model
+                is based on the first giant squid that was
+                ever discovered, part of which—a tentacled
+                arm—is stored in the collections of the
+                Division of Invertebrate Zoology. The giant
+                squid is one of over 13 million specimens in
+                the Museum’s scientific collections."
+            ></SpotlightCard></div>
+            <div className={styles.hideFirst}><SpotlightCard
+                className={styles.rory}
+                image={sample3}
+                title="Behind the Giant Squid"
+                description="Many Peabody memories start with the
+                giant squid hanging in the lobby. The model
+                is based on the first giant squid that was
+                ever discovered, part of which—a tentacled
+                arm—is stored in the collections of the
+                Division of Invertebrate Zoology. The giant
+                squid is one of over 13 million specimens in
+                the Museum’s scientific collections."
+            ></SpotlightCard></div>
         </div>
     )
 }
