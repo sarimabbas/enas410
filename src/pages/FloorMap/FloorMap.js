@@ -39,7 +39,7 @@ class floormap extends Component {
             image: "",
             more: "",
 
-            isMobile: false,
+            currentPath: "",
         }
 
         this.handleRoom = this.handleRoom.bind(this);
@@ -54,6 +54,8 @@ class floormap extends Component {
     componentWillUnmount() {
         window.removeEventListener('resize', this.monitorScreenWidth);
     }
+
+
 
     handleMenuChange = (state) => {
         this.setState({
@@ -96,6 +98,14 @@ class floormap extends Component {
             more = <Link to={this.state.more}>View Room</Link>
         }
 
+        let currentPath = this.props.location.pathname;
+        // if (currentPath !== this.state.currentPath) {
+        //     this.handleRoom({
+        //         currentTarget : {
+        //             id : "cafe"
+        //         }
+        //     })
+        // }
 
         return (
             <Aux>
@@ -117,14 +127,18 @@ class floormap extends Component {
                             </Switch>
                         </div>
                         {/* content */}
-                        <div className={styles.gridRight}>
+                        {
+                            this.state.roomSelected ? 
+                            <div className={styles.gridRight}>
                             <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                             <div className={classNames(styles.menuContent)}>
                                 <h3 className={classNames(styles.title)}>{this.state.title}</h3> 
                                 <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
                                 <div className={classNames(styles.more)}>{ more }</div>
                             </div>
-                        </div>
+                            </div> :
+                            <div></div>
+                        }
                     </div>
                 </Generic>
             </Aux>
