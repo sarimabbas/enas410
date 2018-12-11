@@ -2,20 +2,23 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 200px auto 300px;
-    /* repeat(auto-fit, minmax(180px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     grid-column-gap: 50px;
-    grid-template-rows: 1fr;
+    grid-row-gap: 30px;
+}
+
+.gridLeft {
+    /* grid-column: auto / span 1; */
 }
 
 .gridMiddle {
-    /* grid-column: auto / span 3; */
-    min-height: 35vh;
+    grid-column: auto / span 4;
 }
 
-.floor {
-    padding-bottom: 100px;
-    height: 100%;
+.gridRight {
+    grid-column: auto / span 2;
+
+    width: 100%;
 }
 
 /* Menu */
@@ -37,8 +40,9 @@
 }
 
 .title {
-    margin-top: 10px;
-    /* margin-bottom: 5px; */
+    margin-top: 20px;
+    margin-bottom: 0px;
+    line-height: 0;
     text-transform: uppercase;
 }
 

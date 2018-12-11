@@ -111,9 +111,10 @@ class floormap extends Component {
                     </Menu> */}
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
+                        {/* left sidebar */}
                         <Sidebar></Sidebar>
-                        <div className={classNames(styles.gridMiddle)}>
-                            <div className={styles.floor}>
+                        {/* middle floor */}
+                        <div className={styles.gridMiddle}>
                             <Switch>
                                 <Redirect exact from="/map" to="/map/first-floor"/>
                                 <Route path='/map/first-floor' 
@@ -123,10 +124,9 @@ class floormap extends Component {
                                 <Route path='/map/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
                             </Switch>
-                            </div>
                         </div>
                         {/* content */}
-                        <div>
+                        <div className={styles.gridRight}>
                             <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                             <div className={classNames(styles.menuContent)}>
                                 <h3 className={classNames(styles.title)}>{this.state.title}</h3> 

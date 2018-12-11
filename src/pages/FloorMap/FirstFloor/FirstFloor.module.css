@@ -5,26 +5,26 @@
 
 /* make the base layer hoverable */
 .cls7:hover {
-    fill: rgb(27, 103, 218);
+    fill: #3653b6;
     cursor: pointer;
 }
 
 /* add the screen */
 .cls100 {
-    fill: #939598;
+    fill: #939597;
     mix-blend-mode: screen;
 }
 
 /* make the screen hoverable */
 .cls100:hover {
-    fill: rgb(27, 103, 218);
+    fill: #3653b6;
     cursor: pointer;
 }
 
 /* not relevant for us */
 
 .cls1 {
-    fill: #939598;
+    fill: #939597;
 }
 
 .cls1,
@@ -41,7 +41,7 @@
 
 .cls2,
 .cls3 {
-    fill: #58595b;
+    fill: #58585b;
 }
 
 .cls4 {
@@ -61,6 +61,6 @@
 }
 
 .cls6 {
-    stroke: #939598;
+    stroke: #939597;
     stroke-width: 5px;
 }
