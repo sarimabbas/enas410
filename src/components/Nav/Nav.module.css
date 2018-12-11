@@ -38,6 +38,12 @@
 
 }
 
+.museumTitle{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
 
 .right {
     /* text style */

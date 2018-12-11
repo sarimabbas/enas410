@@ -54,7 +54,7 @@ class navSimple extends Component {
             <Aux>
                 <div className={classNames(styles.nav, styles.barOpaque, overlayFade)} >
                     <div className={classNames(styles.logo, styles.logoOpaque)}>
-                        <a href="/" className={classNames(styles.link)}>
+                        <a href="/" className={classNames(styles.link, styles.museumTitle)}>
                             Peabody Museum of Natural History
                         </a>
                     </div>
