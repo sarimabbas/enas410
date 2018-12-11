@@ -15,6 +15,13 @@ import histOverlayImg from './/images/histOverlay.png'
 
 // third floor images
 import studentOverlayImg from './/images/studentOverlay.png'
+import NAOverlayImg from
+'.//images/NAOverlay.png'
+import NEOverlayImg from
+'.//images/NEOverlay.png'
+import DFHOverlayImg from
+'.//images/DFHOverlay.png'
+
 // great hall images
 
 const data = {
@@ -108,7 +115,7 @@ const data = {
         "new_england_dioramas": {
             title: "New England Dioramas",
             description: "no text",
-            image: northHallOverlayImg,
+            image: NEOverlayImg,
             more: "",
         },  
 
@@ -121,7 +128,7 @@ const data = {
 
         "life_sciences": {
             title: "Life Sciences",
-            description: "<i>Dinosaurs Take Flight </i>presents not only the history and science behind <i>Archaeopteryx</i> but also engages visitors at the intersection of art and science. Throughout the gallery, six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic “missing link” back to life.",
+            description: "no text",
             image: northHallOverlayImg,
             more: "",
         },  
@@ -129,14 +136,14 @@ const data = {
         "north_american_dioramas": {
             title: "North American Dioramas",
             description: "The North American dioramas capture three scenes of the nature on our continent. In the museum world, the Yale Peabody Museum’s dioramas are considered masterpieces. In them our eye moves effortlessly from the specimens in the foreground to the background through the veil of atmosphere, into a vista that seems to stretch endlessly beyond the horizon. We accept the diorama as casually as if it were a window into the natural world.",
-            image: northHallOverlayImg,
+            image: NAOverlayImg,
             more: "",
         },  
 
         "david_friend_hall": {
             title: "David Friend Hall",
             description: "Explore the beauty and color of the natural in the David Friend Hall.  The gallery, opened in 2016, alows viewers to appreciate the austere beauty of gems and minerals. The 2,300-square-foot, state-of-the-art gem and mineral gallery features more than 150 premier specimens from the Museum's collection and also significant private collections from across the United States. Dynamic displays integrate free-standing, large-scale minerals with small-scale specimens, and customized lighting showcases each specimen’s beauty.",
-            image: northHallOverlayImg,
+            image: DFHOverlayImg,
             more: "",
         },  
 
