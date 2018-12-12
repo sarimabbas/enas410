@@ -9,9 +9,9 @@ import posed from 'react-pose';
 
 // assets
 import slide1 from './assets/slide1.jpg';
-import slide2 from './assets/slide2.png';
+import slide2 from './assets/slide2.jpg';
 import slide3 from './assets/slide3.jpg';
-// import slide4 from './assets/slide4.jpg';
+import slide4 from './assets/slide4.jpg';
 
 const Hero = posed.div({
     visible: { opacity: 1 },
@@ -49,24 +49,24 @@ class hero extends Component {
                 subtitle = "Specimen Highlight"
                 break;
             case "slider-2":
-                image = slide2
-                title = "New Interactive Floor Plan"
+                image = slide4
+                title = "Peabody Expands After Donation"
                 subtitle = "Event News"
-                break;
+                break;            
             case "slider-3":
+                image = slide2
+                title = "New Inter&shy;active Floor Plan"
+                subtitle = "Click to Visit"
+                break;
+            case "slider-4":
                 image = slide3
                 title = "New Ancient Egypt Hall"
                 subtitle = "Exhibit Update"
                 break;
-            // case "slider-4":
-            //     image = slide4
-            //     title = "The Bronze Toro&shy;saurus"
-            //     subtitle = "From the Anderson Lab"
-            //     break;            
             default:
                 image = slide1
                 title = "Behind the Giant Squid"
-                subtitle = "Peabody Highlights"
+                subtitle = "Specimen Highlight"
                 break;
         }
 
@@ -90,8 +90,8 @@ class hero extends Component {
         // which is selected?
         const slider1Selected = this.state.selected === "slider-1" ? styles.radioSelected : NaN
         const slider2Selected = this.state.selected === "slider-2" ? styles.radioSelected : NaN
-        const slider3Selected = this.state.selected === "slider-2" ? styles.radioSelected : NaN
-        const slider4Selected = this.state.selected === "slider-2" ? styles.radioSelected : NaN
+        const slider3Selected = this.state.selected === "slider-3" ? styles.radioSelected : NaN
+        const slider4Selected = this.state.selected === "slider-4" ? styles.radioSelected : NaN
 
         return (
             <Hero 
@@ -111,12 +111,12 @@ class hero extends Component {
                              className={classNames(styles.radio, slider2Selected)} 
                              onClick={this.handleControls}/>
                         <div name="slider" 
-                             id="slider-2" 
-                             className={classNames(styles.radio, slider2Selected)} 
+                             id="slider-3" 
+                             className={classNames(styles.radio, slider3Selected)} 
                              onClick={this.handleControls}/>
                         <div name="slider" 
-                             id="slider-2" 
-                             className={classNames(styles.radio, slider2Selected)} 
+                             id="slider-4" 
+                             className={classNames(styles.radio, slider4Selected)} 
                              onClick={this.handleControls}/>
                     </div>
                 </div>
