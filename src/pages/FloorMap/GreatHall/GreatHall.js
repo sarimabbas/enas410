@@ -6,6 +6,7 @@ import styles from './GreatHall.module.css';
 const greathall = (props) => {
     return (
         <Aux>
+            <h2>Great Hall</h2>
             <svg id="greathalldetail" viewBox="0 0 1009 461">
                 <defs/>
                 <g id="nohover">
