@@ -21,7 +21,7 @@ const directions = (props) => {
             </p>
             <p>
                 <b>By Train</b> 
-                <br/>The Yale Peabody Museum is convenient to <a href="https://www.amtrak.com/home">Amtrak</a>, <a href="http://www.mta.info/">MTA Metro-North Railroad</a> and <a href="Shore Line East">Shore Line East</a> passenger rail service in New Haven.
+                <br/>The Yale Peabody Museum is convenient to <a href="https://www.amtrak.com/home">Amtrak</a>, <a href="http://www.mta.info/">MTA Metro-North Railroad</a> and <a href="http://shorelineeast.com">Shore Line East</a> passenger rail service in New Haven.
             </p>
             <p>
                 <a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Yale+Peabody+Museum+of+Natural+History,+New+Haven,+CT&sll=41.242874,-73.200669&sspn=0.190516,0.445976&ie=UTF8&hq=Yale+Peabody+Museum+of+Natural+History,&hnear=New+Haven,+Connecticut&ll=41.31611,-72.920938&spn=0.022982,0.055747&z=15&iwloc=A">Google Maps directions</a> to the Yale Peabody Museum.
