@@ -12,10 +12,10 @@ import styles from './Group.module.css'
 const group = (props) => {
     return (
         <Aux>
-            <h1>School and Group Visits</h1>
+            <h1>School Programs by Topic</h1>
             <div className={classNames("workshop")}>
                 {/* <img src={workshop} alt="workshop" className={styles.image}></img> */}
-                <h2>School Programs by Topic</h2>
+                {/* <h2>School Programs by Topic</h2> */}
                 <h3>Anthropology</h3>
                 <p>
                     <b>Ancient Egypt</b>
