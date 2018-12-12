@@ -58,9 +58,6 @@ class nav extends Component {
     } 
 
     render() {
-
-        console.log(this.props);
-
         // fade logic
         let barFade, logoFade= NaN;
         if (this.props.fadedOnce) {

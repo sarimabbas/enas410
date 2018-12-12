@@ -50,6 +50,9 @@ import GH23 from './GreatHall/images/GH23.png';
 import GH24 from './GreatHall/images/GH24.png';
 import GH25 from './GreatHall/images/GH25.png';
 import GH27 from './GreatHall/images/GH27.png';
+import GH28 from './GreatHall/images/GH28.png';
+import GH29 from './GreatHall/images/GH29.png';
+
 
 const data = {
 
@@ -192,15 +195,15 @@ const data = {
         }, 
 
         "GH02" : {
-            title: "Brontosaurus",
+            title: "Apatosaurus Skull Restoration",
             description: "This is the original skull mounted on the Apatosaurus in the Great Hall in 1931 and provided the basis for Zallinger's Age of Reptiles mural. This plaster skull is a restoration which contains part of jaw now known to be part of a Camarusaurus.",
             image: GH02,
             more: "",
         }, 
 
         "GH03" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "<i>Tyrannosaurus rex</i>",
+            description: "The Peabody contains the first T-Rex ever discovered.",
             image: GH03,
             more: "",
         }, 
@@ -269,22 +272,22 @@ const data = {
         },
 
         "GH13" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "<i>Torosaurus</i> skull",
+            description: "Torosaurus — like Bronotosaurus, Stegosaurus and Triceratops — is a classic dinosaur whose name is intimately linked to the Yale Peabody Museum. Yet, unlike those other famous Peabody dinosaurs, the meaning of the name Torosaurus has generated much confusion for professional paleontologists and amateur natural historians alike.",
             image: GH13,
             more: "",
         },
 
         "GH14" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "<i>Deinonychus</i>",
+            description: "For decades, dinosaurs were thought to be big, dumb, slow reptiles. Then came Deinonychus. This Cretaceous carnivore, discovered by Yale’s own paleontologist John Ostrom, catalyzed a new view of the “terrible lizards” as agile, active animals that were dramatically different from what experts had expected.",
             image: GH14,
             more: "",
         },
 
         "GH15" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "<i>Cycadeoid</i>",
+            description: "In the early 1890s O.C. Marsh became interested in an extinct group of Mesozoic plants known as the cycadeoids and instructed his agent, H.F. Wells, to begin acquiring them for Yale. Aiding Marsh in this collecting was George R. Wieland, the Peabody’s first paleobotanist. Wieland’s scientific interest in these enigmatic fossil trunks flourished, and it is principally through his efforts that the Museum accumulated over 1,000 specimens—the world’s largest collection of cycadeoids.",
             image: GH15,
             more: "",
         },
@@ -311,22 +314,22 @@ const data = {
         },
 
         "GH21" : {
-            title: "Exhibit 1",
-            description: "xxxx",
+            title: "Petrified Wood",
+            description: "The gem-like cross section and petrified logs displayed in the Yale Peabody Museum’s paleobotany exhibition Petrified Wood: Rainbows in Stone in the Great Hall are portions of the trunks of towering trees belonging to a family of conifers known as the araucarians.",
             image: GH21,
             more: "",
         },
 
         "GH22" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "Dermochelys",
+            description: "Modern sea turtles are omnivorous, eating seaweed and algae as well as invertebrates and fish. Dermochelys lives predominantly on a diet of jellyfish.",
             image: GH22,
             more: "",
         },
 
         "GH23" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "Evolution of Fishes",
+            description: "A new exhibition opening at the Yale Peabody Museum of Natural History blends science and art with something distinctly fishy.",
             image: GH23,
             more: "",
         },
@@ -354,15 +357,15 @@ const data = {
 
         "GH28" : {
             title: "Brontosaurus",
-            description: "What a nice object!",
-            image: GH03,
+            description: "The Brotosaurus was the first mounted dinosaur to be featured in a university museum, in 1901.",
+            image: GH28,
             more: "",
         },
 
         "GH29" : {
-            title: "Stegosaurus??",
-            description: "What a nice object!",
-            image: GH03,
+            title: "Stegosaurus",
+            description: "In 1877 O.C. Marsh described and named Stegosaurus ungulatus from bones collected in the Morrison Formation at Como Bluff, Wyoming, some of which is included in the mounted skeleton on display in the Yale Peabody Museum’s Great Hall. This skeleton is reconstructed from the fossil bones of at least five individuals, possibly including more than one species and different sexes.",
+            image: GH29,
             more: "",
         },
 
