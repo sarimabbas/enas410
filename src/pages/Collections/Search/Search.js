@@ -19,8 +19,14 @@ class search extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            gridView : true,
+        if (window.location.pathname !== "/collections/search") {
+            this.state = {
+                gridView : false,
+            }
+        } else {
+            this.state = {
+                gridView : true,
+            }
         }
 
         this.handleClick = this.handleClick.bind(this);
