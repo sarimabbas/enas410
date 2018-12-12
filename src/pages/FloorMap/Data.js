@@ -41,14 +41,11 @@ import GH12 from './GreatHall/images/GH12.png';
 import GH13 from './GreatHall/images/GH13.png';
 import GH14 from './GreatHall/images/GH14.png';
 import GH15 from './GreatHall/images/GH15.png';
-import GH16 from './GreatHall/images/GH16.png';
 import GH17 from './GreatHall/images/GH17.png';
 import GH18 from './GreatHall/images/GH18.png';
-import GH19 from './GreatHall/images/GH19.png';
 import GH20 from './GreatHall/images/GH20.png';
 import GH24 from './GreatHall/images/GH24.png';
 import GH25 from './GreatHall/images/GH25.png';
-import GH26 from './GreatHall/images/GH26.png';
 import GH27 from './GreatHall/images/GH27.png';
 
 const data = {
@@ -184,6 +181,62 @@ const data = {
 
         // great hall cases
         
+        "GH01" : {
+            title: "<i>Poposaurus</i>",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH02" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH02,
+            more: "",
+        }, 
+
+        "GH03" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH04" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH05" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH1" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH1" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
+        "GH1" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH01,
+            more: "",
+        }, 
+
         "GH1" : {
             title: "Exhibit 1",
             description: "What a nice object!",
