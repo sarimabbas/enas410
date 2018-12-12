@@ -44,6 +44,9 @@ import GH15 from './GreatHall/images/GH15.png';
 import GH17 from './GreatHall/images/GH17.png';
 import GH18 from './GreatHall/images/GH18.png';
 import GH20 from './GreatHall/images/GH20.png';
+import GH21 from './GreatHall/images/GH21.png';
+import GH22 from './GreatHall/images/GH22.png';
+import GH23 from './GreatHall/images/GH23.png';
 import GH24 from './GreatHall/images/GH24.png';
 import GH25 from './GreatHall/images/GH25.png';
 import GH27 from './GreatHall/images/GH27.png';
@@ -308,23 +311,23 @@ const data = {
         },
 
         "GH21" : {
-            title: "Coelacanths",
-            description: "Coelacanths are a ratre order of fish that was thought extinct until a specimen was discovered 1938 off the coast of South&nbsp;Africa. Coelacanths are a &ldquo;living fossil,&rdquo; meaning that they represent traits present in ancient fish species.",
-            image: GH03,
+            title: "Exhibit 1",
+            description: "xxxx",
+            image: GH21,
             more: "",
         },
 
         "GH22" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH03,
+            image: GH22,
             more: "",
         },
 
         "GH23" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH03,
+            image: GH23,
             more: "",
         },
 
