@@ -45,6 +45,7 @@
 
 .left {
     margin-left: -3vh;
+    margin-top: calc(-40px + 6vh);
 }
 
 .text {
