@@ -1,8 +1,3 @@
-.row {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-}
-
 .title {
     margin-bottom: 10px;
 }
