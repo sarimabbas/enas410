@@ -4,7 +4,7 @@ import SpotlightCard from '../../../components/Spotlight/SpotlightCard';
 
 
 import classNames from 'classnames';
-import styles from './search.module.css';
+import styles from './Search.module.css';
 
 // routing
 import { Link } from 'react-router-dom';
