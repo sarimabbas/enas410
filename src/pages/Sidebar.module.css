@@ -19,9 +19,13 @@
 	font-weight: 700;
 }
 
+.linkBack {
+    margin-top:0px;
+}
+
 .heading {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-top: 18px;
-    margin-bottom:25px;
+    margin-bottom:23px;
 }

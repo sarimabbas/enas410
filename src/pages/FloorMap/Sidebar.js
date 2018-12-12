@@ -12,6 +12,7 @@ const sidebar = (props) => {
     return (
         <Aux>
             <div className={classNames(styles.sidebar)}>
+                <p className={classNames(styles.linkBack)}><a href="/visit">&lsaquo; Back to Visit</a></p>
                 <h3 className={classNames(styles.heading)}>
                     Interactive Floor Plan
                 </h3>
