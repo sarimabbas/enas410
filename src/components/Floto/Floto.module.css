@@ -4,14 +4,14 @@
     /* absolute: stay in place */
     /* top: how far from the top of screen */
 
-    position: static;
-    top: 0!important;
+/*    position: static;
+    top: 0!important;*/
 
  
 
-    left: 7vh;
+    left: -3vh;
     
-    z-index: 10;
+    z-index: 2;
 
     /* expand to height of masthead */
     height: 100vh;
