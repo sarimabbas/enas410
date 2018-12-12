@@ -66,7 +66,7 @@ class floormap extends Component {
     handleRoom = (event) => {
         let name = "" + event.currentTarget.id
         this.setState({
-            soundStatus: Sound.status.STOPPED,
+            // soundStatus: Sound.status.STOPPED,
 
             roomSelected: true,
             roomName: name,
@@ -79,10 +79,9 @@ class floormap extends Component {
     }
 
     playTrollAudio = (event) => {
-        console.log("playing")
         let name = "" + event.currentTarget.id
         this.setState({
-            soundStatus : Sound.status.PLAYING,
+            // soundStatus : Sound.status.PLAYING,
 
 
             roomSelected: true,
@@ -140,7 +139,7 @@ class floormap extends Component {
                                 <Route path='/floor-plan/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/first-floor/great-hall' 
-                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom}  playTrollAudio={this.playTrollAudio}/>}/>
+                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom}/>}/>
                             </Switch>
                         </div>
                         {/* content */}

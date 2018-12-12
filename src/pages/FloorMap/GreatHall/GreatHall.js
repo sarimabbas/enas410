@@ -88,7 +88,7 @@ const greathall = (props) => {
                     <g id="GH29" onClick={props.handleRoom}>
                         <rect className={styles.cls3} height="201.41" width="196.02" x="531.74" y="128.59"/>
                     </g>
-                    <g id="GH28" onClick={props.playTrollAudio}>
+                    <g id="GH28" onClick={props.handleRoom}>
                         <rect className={styles.cls3} height="201.41" width="306.74" x="225" y="128.59"/>
                     </g>
                 </g>
