@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux';
 import Overlay from './Overlay';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 // styles
 import styles from './Nav.module.css'
@@ -12,7 +11,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom';
 
 class nav extends Component {
-    targetElement = null;
 
     constructor(props) {
         super(props);
@@ -25,7 +23,6 @@ class nav extends Component {
 
     showSettings = (event) => {
         if (this.state.showOverlay) {
-            enableBodyScroll(this.targetElement);
             document.ontouchmove = function (e) {
                 return true;
             }
@@ -33,7 +30,6 @@ class nav extends Component {
                 showOverlay: false,
             })
         } else {
-            disableBodyScroll(this.targetElement);
             document.ontouchmove = function (e) {
                 e.preventDefault();
             }
@@ -42,20 +38,7 @@ class nav extends Component {
             })
         }
     }
-
-    componentWillUnmount() {
-        // 5. Useful if we have called disableBodyScroll for multiple target elements,
-        // and we just want a kill-switch to undo all that.
-        // OR useful for if the `hideTargetElement()` function got circumvented eg. visitor 
-        // clicks a link which takes him/her to a different page within the app.
-        clearAllBodyScrollLocks();
-    }
-
-
-    componentDidMount() {
-        // 2. Get a target element that you want to persist scrolling for (such as a modal/lightbox/flyout/nav). 
-        // this.targetElement = document.querySelector('#');
-    } 
+ 
 
     render() {
         // fade logic

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 // components
 import Aux from '../../hoc/Aux';
 import Overlay from './Overlay';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 // styles
@@ -24,10 +23,7 @@ class navSimple extends Component {
     }
 
     showSettings = (event) => {
-        console.log(event);
-
         if (this.state.showOverlay) {
-            enableBodyScroll(this.targetElement);
             document.ontouchmove = function (e) {
                 return true;
             }
@@ -35,7 +31,6 @@ class navSimple extends Component {
                 showOverlay: false,
             })
         } else {
-            disableBodyScroll(this.targetElement);
             document.ontouchmove = function (e) {
                 e.preventDefault();
             }

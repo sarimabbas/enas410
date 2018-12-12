@@ -10,7 +10,7 @@ class navmanager extends Component {
         super(props)
         this.state = {
             scrollThresholdMet: false,
-            width: "'wdth' 1000" + ", 'wght' 800",
+            width: "'wdth' 1000, 'wght' 800",
             positionType: "absolute",
             top: 0,
             fadedOnce: false,
@@ -29,9 +29,6 @@ class navmanager extends Component {
     }
 
     handleScroll = (event) => {
-
-        console.log(window.innerWidth)
-
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight - 64;
 
@@ -39,7 +36,7 @@ class navmanager extends Component {
             this.setState({
                 positionType: "absolute",
                 top: 0,
-                width: "'wdth' 1000" + ", 'wght' 800",
+                width: "'wdth' 1000, 'wght' 800",
             })
         } else {
 

@@ -86,8 +86,6 @@ class hero extends Component {
             selected: e.currentTarget.id,
             link : link,
         })
-        
-        console.log(this.state)
     }
 
     render() {

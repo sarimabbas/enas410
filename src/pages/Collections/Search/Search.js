@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import classNames from 'classnames';
-import { Link, Redirect, Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 
 // components
