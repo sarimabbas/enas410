@@ -20,7 +20,7 @@ const cafe = (props) => {
                 <img className={classNames(styles.image)} src={CAFE}></img>
             </div>
             <p>
-                We are excited to announce the Peabody Cafe, coming to you Spring 2019! The cafe will be a space in the museum for visitors to take a break and refuel in addition to a study spot for Yale and New Haven students.
+                We are excited to announce the Peabody Café, coming to you Spring 2019! The café will be a space in the museum for visitors to take a break and refuel in addition to a study spot for Yale and New Haven students. It will also feature The Magic Mural, a wall on which visitors' dinosaur drawings will be displayed.
             </p>
         </Aux>
     )

@@ -32,8 +32,14 @@ span .footer {
     display: block;
 }
 
+.icons {
+    margin-top: 0px;
+    margin-bottom:0px;
+}
+
 .icons > * {
     margin-right: 10px;
+    text-decoration: none;
 }
 
 .separator {
