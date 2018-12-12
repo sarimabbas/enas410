@@ -12,8 +12,6 @@ import NavManager from '../../containers/NavManager/NavManager';
 const home = (props) => {
     return (
         <Aux>
-            {/* <Floto/>
-            <Nav/> */}
             <NavManager/>
             <Hero/>
             <SpotlightSection/>
