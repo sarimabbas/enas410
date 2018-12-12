@@ -5,7 +5,7 @@ import Aux from '../../../hoc/Aux';
 
 // styles
 import classNames from 'classnames';
-import styles from './Group.module.css'
+// import styles from './Group.module.css'
 
 // images
 
@@ -15,7 +15,6 @@ const group = (props) => {
             <h1>School Programs by Topic</h1>
             <div className={classNames("workshop")}>
                 {/* <img src={workshop} alt="workshop" className={styles.image}></img> */}
-                {/* <h2>School Programs by Topic</h2> */}
                 <h3>Anthropology</h3>
                 <p>
                     <b>Ancient Egypt</b>
