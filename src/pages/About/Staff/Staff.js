@@ -14,7 +14,6 @@ const staff = (props) => {
     return (    
         <Aux>
             <h1>Administrative Staff</h1> 
-            <br/>  
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>David Skelly</b>
@@ -75,7 +74,6 @@ const staff = (props) => {
             </div>
             <br/> 
             <h1>Curatorial Staff</h1>
-            <br/>    
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Michael Anderson</b>
