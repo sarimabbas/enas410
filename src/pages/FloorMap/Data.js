@@ -149,14 +149,14 @@ const data = {
 
         "student_exhibit": {
             title: "Student Gallery",
-            description: "Why can't you hear a pteractyl go to the bathroom? The 'p' is silent.",
+            description: "Garnet: This beautiful red mineral can reveal the secrets of mountains.  In the proces of mountain forming, garnets record the temperature and pressure of the mountain core.  View garnet samples from the major mountain ranges of the world in this comphrensive display of January's birthstone. The student gallery features a rotating sereies of exhibits by Yale College undergraduates which feature their work. This exhibit, by Seamus Houlihan '19, will be on display from January 2019 until July 2019.",
             image: studentOverlayImg,
             more: "",
         },  
 
         "life_sciences": {
             title: "Life Sciences",
-            description: "Ahh, the joy of life!",
+            description: "The rennovated Life Sciences Hall offers a view into the diversity and beuaty of the life on Earth. Featuring the Peabody's extensive collections of flora and fauna, the Life Science Hall has something for everyone who loves life.  Peabody contains information on the dioramas and specimens from the previous Connecticut Hall of Birds. ",
             image: lifesciOverlayImg,
             more: "",
         },  
