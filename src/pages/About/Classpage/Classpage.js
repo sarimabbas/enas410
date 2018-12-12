@@ -85,7 +85,7 @@ const classpage = (props) => {
             </div>
             <br/>
 
-            <h1>Egypt Team</h1> 
+            <h1>Discovery Team</h1> 
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Emily Chu</b>
@@ -111,7 +111,7 @@ const classpage = (props) => {
             </div>
             <br/>
 
-            <h1>Dome Team</h1> 
+            <h1>Light Team</h1> 
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Avital Smotrich-Barr</b>
