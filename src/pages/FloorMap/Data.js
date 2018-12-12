@@ -174,7 +174,7 @@ const data = {
 
         "discovery_room" : {
             title: "Discovery Room",
-            description: "The Discovery Room is one of the most popular destinations at the Yale Peabody Museum, visited by more than 60,000 people a year. Full of touchable specimens and hands-on activities, the Discovery Room also houses interesting live animals from both around the world and right in your own backyard — endangered poison dart frogs from South America, giant hissing cockroaches from Madagascar, tropical leaf-cutter ants from Trinidad, a bearded dragon from Australia, and walking sticks from Vietnam.",
+            description: "The Discovery Room is one of the most popular destinations at the Yale Peabody Museum, visited by more than 60,000 people a year. Full of touchable specimens and hands-on activities, the Discovery Room also houses interesting live animals from both around the world and right in your own backyard—endangered poison dart frogs from South America, giant hissing cockroaches from Madagascar, tropical leaf-cutter ants from Trinidad, a bearded dragon from Australia, and walking sticks from Vietnam.",
             image: discoveryRoomOverlayImg,
             more: "",
         },
