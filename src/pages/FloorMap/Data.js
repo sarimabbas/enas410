@@ -357,7 +357,7 @@ const data = {
 
         "GH28" : {
             title: "Brontosaurus",
-            description: "The Brotosaurus was the first mounted dinosaur to be featured in a university museum, in 1901.",
+            description: " The Bro-toe-saurus is a four-legged herbivorous dinosaur which lived during the Late Jurassic Period. First described by O.C. Marsh in 1879, this dinosaur is named from the Greek for “thunder lizard”. It was excavated from a dig site on Como Bluff, Wyoming.  The Brontonsaurus was the first mounted dinosaur to be featured in a university museum, in 1901.",
             image: GH28,
             more: "",
         },
