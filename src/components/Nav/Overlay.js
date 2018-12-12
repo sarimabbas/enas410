@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Aux from '../../hoc/Aux';
 import { Link } from 'react-router-dom';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 // styles
 import styles from './Overlay.module.css'
@@ -62,7 +61,7 @@ class overlay extends Component {
                                     <div className={classNames(styles.links)}>
                                         <Link to="/exhibits/main">Exhibits On View</Link>
                                         <Link to="/exhibits/temporary">Temporary Exhibits</Link>
-                                        <Link to="/exhibits/upcoming">Past Exhibits</Link>
+                                        <Link to="/exhibits/past">Past Exhibits</Link>
                                         {/* <Link to="/exhibits/calendar">Events Calendar</Link> */}
                                     </div>
                                 </div>
@@ -74,7 +73,7 @@ class overlay extends Component {
                                     <div className={classNames(styles.links)}>
                                         <Link to="/learn/k12">K-12 Programs</Link>
                                         <Link to="/learn/summer-camps">Summer Camps</Link>
-                                        <Link to="https://evolutions.peabody.yale.edu/">Peabody Evolutions</Link>
+                                        <Link to="/learn/evolutions">Peabody Evolutions</Link>
                                         <Link to="/learn/yale">Yale Student Opportunities</Link>
                                         <Link to="/learn/adult">Adult Programs</Link>
                                     </div>

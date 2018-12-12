@@ -1,7 +1,6 @@
 // all the required stuff
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu'
 import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
@@ -66,7 +65,6 @@ class floormap extends Component {
 
     handleRoom = (event) => {
         let name = "" + event.currentTarget.id
-        console.log(name)
         this.setState({
             roomSelected: true,
             roomName: name,
@@ -78,14 +76,24 @@ class floormap extends Component {
         })
     }
 
-    playTrollAudio = () => {
+    playTrollAudio = (event) => {
         this.setState({
             soundStatus : Sound.status.PLAYING
+        })
+
+        let name = "" + event.currentTarget.id
+        this.setState({
+            roomSelected: true,
+            roomName: name,
+
+            title: Data.roomName[name].title,
+            description: Data.roomName[name].description,
+            image: Data.roomName[name].image,
+            more: Data.roomName[name].more,
         })
     }
 
     monitorScreenWidth = () => {
-        console.log(window.innerWidth);
         if (window.innerWidth < 768) {
             if (!this.isMobile) {
                 this.setState({
@@ -105,7 +113,6 @@ class floormap extends Component {
         if (this.state.more !== "") {
             more = <Link to={this.state.more}>View Room &rsaquo;</Link>
         }
-        let currentPath = this.props.location.pathname;
 
         return (
             <Aux>

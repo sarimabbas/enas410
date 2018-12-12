@@ -3,12 +3,8 @@ import Aux from '../../../hoc/Aux';
 
 
 import classNames from 'classnames';
-import styles from './Temporary.module.css';
-
 import egypt from './Egyptiangallery.png';
 
-// routing
-import { Link } from 'react-router-dom';
 
 const temporary = (props) => {
     return (

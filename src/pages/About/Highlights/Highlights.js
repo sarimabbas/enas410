@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import classNames from 'classnames';
-import { Link, Redirect, Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 
 // components
@@ -18,8 +18,6 @@ class highlights extends Component {
 
     constructor(props) {
         super(props)
-
-        console.log(window.location.pathname)
 
         if (window.location.pathname !== "/about/highlights") {
             this.state = {
