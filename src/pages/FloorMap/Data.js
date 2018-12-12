@@ -159,7 +159,7 @@ const data = {
 
         "life_sciences": {
             title: "Life Sciences",
-            description: "Ahh, the joy of life!",
+            description: "Ahh, the joy of life! How I love living and the life-like nature of the things in nature!",
             image: lifesciOverlayImg,
             more: "",
         },  

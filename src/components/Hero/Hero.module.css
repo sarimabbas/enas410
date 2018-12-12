@@ -42,6 +42,7 @@
 .text {
     color: white;
     text-align: right;
+    align-self: end;
 }
 
 .title {
