@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
 import { Route, Redirect, Switch } from 'react-router-dom';
-import Sound from 'react-sound';
+// import Sound from 'react-sound';
 
 // all the components that make up the page
 import FirstFloor from './FirstFloor/FirstFloor';
@@ -31,7 +31,7 @@ class floormap extends Component {
 
         this.state = {
 
-            soundStatus : Sound.status.STOPPED,
+            // soundStatus : Sound.status.STOPPED,
             roomSelected : false,
             roomName : "great_hall",
 
@@ -119,11 +119,11 @@ class floormap extends Component {
             <Aux>
                 <Generic>
                     {/* troll audio */}
-                     <Sound
+                     {/* <Sound
                         url={soundfile}
                         playStatus={this.state.soundStatus}
                         loop={false}
-                        />
+                        /> */}
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         {/* left sidebar */}
