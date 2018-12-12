@@ -9,7 +9,7 @@ import Peabody2 from './peabody2.jpg'
 const past = (props) => {
     return (
         <Aux>
-            <h1>Past</h1>
+            <h1>Past Exhibits</h1>
             <p></p>
 
             <img className={classNames("imageKing", "imageQueen")} alt="Peabody2" src={Peabody2}></img>
