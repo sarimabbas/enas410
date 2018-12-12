@@ -1,4 +1,24 @@
-.title {
-    font-size: 1.6rem;
-    
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    /* grid-auto-flow: column; */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
+
+@media screen and (max-width: 987px) {
+    .hideFirst {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .hideSecond {
+        display: none;
+    }
+}
+
+.imageFull {
+    height: 500px;
+}
+
