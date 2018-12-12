@@ -268,21 +268,21 @@ const data = {
         "GH13" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH03,
+            image: GH13,
             more: "",
         },
 
         "GH14" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH03,
+            image: GH14,
             more: "",
         },
 
         "GH15" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH03,
+            image: GH15,
             more: "",
         },
 
@@ -336,7 +336,7 @@ const data = {
         },
 
         "GH25" : {
-            title: "The Giant Turtle",
+            title: "The Giant Turtle <i>Archelon</i>",
             description: "The giant turtle, <i>Archelon</i>, skeleton measures about 11 feet from snout to tail (more than 3 meters), and about 15 feet (4.5 meters) from the tip of one fore paddle to the other. Comparisons with the most similar and largest modern turtle suggest that <i>Archelon</i> weighed over 3 tons.",
             image: GH25,
             more: "",
@@ -345,7 +345,7 @@ const data = {
         "GH27" : {
             title: "Bony Fishes",
             description: "Bony fishes represent a diverse group of fish that contain bones, in place of cartilage.  The majority of fish are bony fish.",
-            image: GH03,
+            image: GH27,
             more: "",
         },
 
