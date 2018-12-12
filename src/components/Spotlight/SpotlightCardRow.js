@@ -30,21 +30,15 @@ const spotlightcardrow = (props) => {
             </div>
 
 
-
-            <div>
-                
-                
-                <SpotlightCard
-                image={briggs}
-                subtitle="Researcher Highlight"
-                title="Professor Derek Briggs"
-                description = "Read about Professor Derek Briggs, whose research focuses on the preservation and evolutionary significance of exceptionally preserved fossils."
-                ></SpotlightCard>
-                <p><Link name="briggs" to="/about/highlights/2019-01-01-briggs">Read More &rsaquo;</Link></p>
-            
-        
+            <div><SpotlightCard
+                            image={scorpion}
+                            subtitle="Behind the Dioramas"
+                            title="Live Model for Scorpion Painting"
+                            description="Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: scorpions!"
+                        ></SpotlightCard>
+                        <p><Link to="/about/highlights/2017-12-20-scorpion-painting">Read More &rsaquo;</Link></p>
             </div>
-
+          
 
             <div><SpotlightCard
                 image={grass}
@@ -73,16 +67,23 @@ const spotlightcardrow = (props) => {
             ></SpotlightCard>
             <p><Link to="/about/highlights/2004-11-15-dino-snore">Read More &rsaquo;</Link></p>
             </div>
+
+
+            <div className={styles.hideFirst}>
+                
+                
+                <SpotlightCard
+                image={briggs}
+                subtitle="Researcher Highlight"
+                title="Professor Derek Briggs"
+                description = "Read about Professor Derek Briggs, whose research focuses on the preservation and evolutionary significance of exceptionally preserved fossils."
+                ></SpotlightCard>
+                <p><Link name="briggs" to="/about/highlights/2019-01-01-briggs">Read More &rsaquo;</Link></p>
             
-            
-            <div className={styles.hideFirst}><SpotlightCard
-                image={scorpion}
-                subtitle="Behind the Dioramas"
-                title="Live Model for Scorpion Painting"
-                description="Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: scorpions!"
-            ></SpotlightCard>
-            <p><Link to="/about/highlights/2017-12-20-scorpion-painting">Read More &rsaquo;</Link></p>
+        
             </div>
+
+
         </div>
     )
 }

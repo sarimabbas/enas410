@@ -119,7 +119,7 @@ const firstfloor = (props) => {
                         <polyline className={styles.cls6} points="1911.515 513.063 1911.515 1564.063 875.515 1564.063 875.515 1775.063 549.515 1775.063 548.515 1484.063 459.515 1484.259 459.515 1552.563"/>
                     </g>
                 </g>
-                <g id="north_hall" onClick={props.handleRoom} onHover={props.playTrollAudio}>
+                <g id="north_hall" onClick={props.handleRoom} onMouseEnter={props.playTrollAudio}>
                     <g id="hover">
                         <rect className={styles.cls7} height="795" width="312" x="1588.0151" y="757.5634"/>
                     </g>

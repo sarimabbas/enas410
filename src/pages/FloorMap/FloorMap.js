@@ -15,6 +15,8 @@ import SecondFloor from './SecondFloor/SecondFloor';
 import ThirdFloor from './ThirdFloor/ThirdFloor';
 import Sidebar from './Sidebar';
 
+// 
+
 // styling
 import styles from './FloorMap.module.css';
 import './FloorMap.css';
@@ -27,17 +29,14 @@ class floormap extends Component {
     constructor(props) {
         super(props);
 
-
-        // console.log(this.props.location.pathname)
-
         this.state = {
             roomSelected : false,
-            roomName : "",
+            roomName : "great_hall",
 
-            title: "",
-            description: "",
-            image: "",
-            more: "",
+            title: Data.roomName["great_hall"].title,
+            description: Data.roomName["great_hall"].description,
+            image: Data.roomName["great_hall"].image,
+            more: Data.roomName["great_hall"].more,
 
             currentPath: "",
         }
@@ -76,6 +75,15 @@ class floormap extends Component {
         })
     }
 
+    playTrollAudio = () => {
+        var btn = document.getElementById('troll');
+        btn.click();
+
+        console.log("triggered")
+        let audio = new Audio("./kostesaurus.mp3")
+        audio.play()
+    }
+
     monitorScreenWidth = () => {
         console.log(window.innerWidth);
         if (window.innerWidth < 768) {
@@ -97,12 +105,12 @@ class floormap extends Component {
         if (this.state.more !== "") {
             more = <Link to={this.state.more}>View Room &rsaquo;</Link>
         }
-
         let currentPath = this.props.location.pathname;
 
         return (
             <Aux>
                 <Generic>
+                    <button id="troll" style={{display: "none"}}></button>
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         {/* left sidebar */}
@@ -112,7 +120,8 @@ class floormap extends Component {
                             <Switch>
                                 <Redirect exact from="/floor-plan" to="/floor-plan/first-floor"/>
                                 <Route exact path='/floor-plan/first-floor' 
-                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} />}/>
+                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} 
+                                                                                playTrollAudio={this.playTrollAudio}/>}/>
                                 <Route path='/floor-plan/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/third-floor' 
@@ -123,7 +132,6 @@ class floormap extends Component {
                         </div>
                         {/* content */}
                         {
-                            this.state.roomSelected ? 
                             <div className={styles.gridRight}>
                             <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                             <div className={classNames(styles.menuContent)}>
@@ -131,8 +139,7 @@ class floormap extends Component {
                                 <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
                                 <p className={classNames(styles.more)}>{ more }</p>
                             </div>
-                            </div> :
-                            <div></div>
+                            </div>
                         }
                     </div>
                 </Generic>
