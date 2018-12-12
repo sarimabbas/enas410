@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import classNames from 'classnames';
-import { Link, Redirect, Route } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 
 
 // components
@@ -19,13 +19,21 @@ class highlights extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            gridView : true,
+        if (window.location.pathname !== "/about/highlights") {
+            this.state = {
+                gridView : false,
+            }
+        } else {
+            this.state = {
+                gridView : true,
+            }
         }
 
+        
         this.handleClick = this.handleClick.bind(this);
         this.handleBack2Grid = this.handleBack2Grid.bind(this);
     }
+
     
     handleClick = (event) => {
         this.setState({
@@ -70,7 +78,7 @@ class highlights extends Component {
                         </div>
                     </Aux>
                     :
-                    <Route exact path='/about/highlights/:id' 
+                    <Route path='/about/highlights/:id' 
                             render={(props) => <HighlightsFull {...props} handleBack2Grid={this.handleBack2Grid}/>}/>
                 }
             </Aux>

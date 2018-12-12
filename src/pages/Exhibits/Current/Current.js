@@ -1,16 +1,7 @@
 import React from 'react';
 import Aux from '../../../hoc/Aux';
-
-
 import classNames from 'classnames';
-import styles from './Current.module.css';
 
-// routing
-import { Link } from 'react-router-dom';
-
-
-// assets
-import egypt from './Egyptiangallery.png';
 import NAdioramas from './NAdioramas.png';
 import davidfriend from './David-Friend-Hall.png';
 import mammals from './HallofMammals.png';

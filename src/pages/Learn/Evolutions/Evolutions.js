@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Redirect, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // components
 import Aux from '../../../hoc/Aux';
@@ -17,7 +17,7 @@ const evolutions = (props) => {
             <h1>Peabody Evolutions</h1>
             <div className={classNames("workshop")}>
                 {/* <img src={workshop} alt="workshop" className={styles.image}></img> */}
-                <img src={evolutions_banner} className={styles.image}></img>
+                <img src={evolutions_banner} alt="evolutions" className={styles.image}></img>
                 <p>
                     The Evolutions (Evoking Learning and Understanding through Investigations of the Natural Science) Afterschool Program is a free science and college-focused program that provides academic support and science career exploration for 120 students from New Haven and West Haven public school districts.. The program focuses on supplementing the formal school experience and encourages students to see themselves as college-bound, scientifically literate citizens. Throughout all four years of high school, students participate in weekly afterschool classes focused on science career exploration, transferable skill development, and college preparation. Together they form a community of STEM-focused, academically driven youth leaders, and represent a key Peabody Museum initiative to bring science and local neighborhoods together.
                 </p>

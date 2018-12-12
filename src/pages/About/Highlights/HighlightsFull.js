@@ -10,13 +10,10 @@ class highlightsfull extends Component {
     constructor(props) {
         super(props)
 
-        console.log("made it")
 
         let id = props.match.params.id
-        console.log(id)
         let post  = NaN
         for(let i = 0; i < Data.length; i++) {
-            console.log(Data[i])
             if (Data[i].id === id) {
                 post = Data[i];
             }

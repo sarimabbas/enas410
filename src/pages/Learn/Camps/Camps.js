@@ -5,7 +5,6 @@ import Aux from '../../../hoc/Aux';
 
 // styles
 import classNames from 'classnames';
-import styles from './Camps.module.css'
 
 // images
 

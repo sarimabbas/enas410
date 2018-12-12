@@ -1,11 +1,11 @@
 // all the required stuff
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { slide as Menu } from 'react-burger-menu'
 import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
 import { Route, Redirect, Switch } from 'react-router-dom';
+import Sound from 'react-sound';
 
 // all the components that make up the page
 import FirstFloor from './FirstFloor/FirstFloor';
@@ -22,22 +22,23 @@ import './FloorMap.css';
 // data source for the map
 import Data from './Data';
 
+import soundfile from './kostesaurus.mp3'
+
 class floormap extends Component {
 
     constructor(props) {
         super(props);
 
-
-        // console.log(this.props.location.pathname)
-
         this.state = {
-            roomSelected : false,
-            roomName : "",
 
-            title: "",
-            description: "",
-            image: "",
-            more: "",
+            soundStatus : Sound.status.STOPPED,
+            roomSelected : false,
+            roomName : "great_hall",
+
+            title: Data.roomName["great_hall"].title,
+            description: Data.roomName["great_hall"].description,
+            image: Data.roomName["great_hall"].image,
+            more: Data.roomName["great_hall"].more,
 
             currentPath: "",
         }
@@ -64,7 +65,23 @@ class floormap extends Component {
 
     handleRoom = (event) => {
         let name = "" + event.currentTarget.id
-        console.log(name)
+        this.setState({
+            roomSelected: true,
+            roomName: name,
+
+            title: Data.roomName[name].title,
+            description: Data.roomName[name].description,
+            image: Data.roomName[name].image,
+            more: Data.roomName[name].more,
+        })
+    }
+
+    playTrollAudio = (event) => {
+        this.setState({
+            soundStatus : Sound.status.PLAYING
+        })
+
+        let name = "" + event.currentTarget.id
         this.setState({
             roomSelected: true,
             roomName: name,
@@ -77,7 +94,6 @@ class floormap extends Component {
     }
 
     monitorScreenWidth = () => {
-        console.log(window.innerWidth);
         if (window.innerWidth < 768) {
             if (!this.isMobile) {
                 this.setState({
@@ -98,11 +114,15 @@ class floormap extends Component {
             more = <Link to={this.state.more}>View Room &rsaquo;</Link>
         }
 
-        let currentPath = this.props.location.pathname;
-
         return (
             <Aux>
                 <Generic>
+                    {/* troll audio */}
+                     <Sound
+                        url={soundfile}
+                        playStatus={this.state.soundStatus}
+                        loop={false}
+                        />
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         {/* left sidebar */}
@@ -112,27 +132,25 @@ class floormap extends Component {
                             <Switch>
                                 <Redirect exact from="/floor-plan" to="/floor-plan/first-floor"/>
                                 <Route exact path='/floor-plan/first-floor' 
-                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} />}/>
+                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom}/>}/>
                                 <Route path='/floor-plan/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/first-floor/great-hall' 
-                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom} />}/>
+                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom}  playTrollAudio={this.playTrollAudio}/>}/>
                             </Switch>
                         </div>
                         {/* content */}
                         {
-                            this.state.roomSelected ? 
                             <div className={styles.gridRight}>
                             <img src={this.state.image} className={classNames(styles.image)} alt="overlay"></img>
                             <div className={classNames(styles.menuContent)}>
-                                <h3 className={classNames(styles.title)}>{this.state.title}</h3> 
+                                <h3 dangerouslySetInnerHTML={{__html: this.state.title}} className={classNames(styles.title)}></h3> 
                                 <p dangerouslySetInnerHTML={{ __html: this.state.description}} className={classNames(styles.description)}></p>
                                 <p className={classNames(styles.more)}>{ more }</p>
                             </div>
-                            </div> :
-                            <div></div>
+                            </div>
                         }
                     </div>
                 </Generic>

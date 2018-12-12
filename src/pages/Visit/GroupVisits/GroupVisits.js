@@ -1,6 +1,4 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
-import classNames from 'classnames';
 
 // components
 import Aux from '../../../hoc/Aux';
