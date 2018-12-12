@@ -23,16 +23,10 @@ class nav extends Component {
 
     showSettings = (event) => {
         if (this.state.showOverlay) {
-            document.ontouchmove = function (e) {
-                return true;
-            }
             this.setState({
                 showOverlay: false,
             })
         } else {
-            document.ontouchmove = function (e) {
-                e.preventDefault();
-            }
             this.setState({
                 showOverlay: true,
             })
