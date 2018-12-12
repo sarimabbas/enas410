@@ -26,7 +26,7 @@ const history = (props) => {
                 intensify.
                 </p>
                 <br/>
-            <h1>History of the Peabody</h1>
+            <h1>History</h1>
             <div>
                 <div>
                     <p>
