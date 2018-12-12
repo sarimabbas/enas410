@@ -90,8 +90,8 @@ const classpage = (props) => {
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Emily Chu</b>
-                        <br/>Geology {'&'} Geophysics, <br/>Mechanical Engineering
-                        <br/>Pauli Murray '20
+                        <br/>Mechanical Engineering, <br/>Geology {'&'} Geophysics
+                        <br/>Pauli Murray '19
                         <br/>emily.chu@yale.edu
                     </p>
                 </div>
