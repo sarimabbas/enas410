@@ -6,6 +6,7 @@ import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
 import { Route, Redirect, Switch } from 'react-router-dom';
+import Sound from 'react-sound';
 
 // all the components that make up the page
 import FirstFloor from './FirstFloor/FirstFloor';
@@ -15,8 +16,6 @@ import SecondFloor from './SecondFloor/SecondFloor';
 import ThirdFloor from './ThirdFloor/ThirdFloor';
 import Sidebar from './Sidebar';
 
-// 
-
 // styling
 import styles from './FloorMap.module.css';
 import './FloorMap.css';
@@ -24,12 +23,16 @@ import './FloorMap.css';
 // data source for the map
 import Data from './Data';
 
+import soundfile from './kostesaurus.mp3'
+
 class floormap extends Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
+
+            soundStatus : Sound.status.STOPPED,
             roomSelected : false,
             roomName : "great_hall",
 
@@ -76,12 +79,9 @@ class floormap extends Component {
     }
 
     playTrollAudio = () => {
-        var btn = document.getElementById('troll');
-        btn.click();
-
-        console.log("triggered")
-        let audio = new Audio("./kostesaurus.mp3")
-        audio.play()
+        this.setState({
+            soundStatus : Sound.status.PLAYING
+        })
     }
 
     monitorScreenWidth = () => {
@@ -110,7 +110,12 @@ class floormap extends Component {
         return (
             <Aux>
                 <Generic>
-                    <button id="troll" style={{display: "none"}}></button>
+                    {/* troll audio */}
+                     <Sound
+                        url={soundfile}
+                        playStatus={this.state.soundStatus}
+                        loop={false}
+                        />
                     {/* grid of sidebar and map */}
                     <div className={classNames(styles.grid)}>
                         {/* left sidebar */}
@@ -120,14 +125,13 @@ class floormap extends Component {
                             <Switch>
                                 <Redirect exact from="/floor-plan" to="/floor-plan/first-floor"/>
                                 <Route exact path='/floor-plan/first-floor' 
-                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} 
-                                                                                playTrollAudio={this.playTrollAudio}/>}/>
+                                    render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom}/>}/>
                                 <Route path='/floor-plan/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
                                 <Route path='/floor-plan/first-floor/great-hall' 
-                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom} />}/>
+                                    render={(props) => <GreatHall {...props} handleRoom={this.handleRoom}  playTrollAudio={this.playTrollAudio}/>}/>
                             </Switch>
                         </div>
                         {/* content */}
