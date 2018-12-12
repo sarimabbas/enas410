@@ -86,7 +86,7 @@ class search extends Component {
                     :
                     <div>
                         <p className={styles.back} onClick={this.handleBack2Grid}>&lsaquo; Back to Collections</p>
-                        <h3 className={styles.title}>{this.state.title}</h3>
+                        <h3 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h3>
                         <img src={this.state.image} alt="Spotlight" className={classNames("imageKing", styles.imageFull)} ></img>
                         <p dangerouslySetInnerHTML={{__html: this.state.description}} className={styles.description}></p>
                     </div>

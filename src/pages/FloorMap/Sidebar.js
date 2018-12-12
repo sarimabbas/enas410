@@ -17,9 +17,9 @@ const sidebar = (props) => {
                     Interactive Floor Plan
                 </h3>
                 <div className={classNames(styles.links)}>
-                    <NavLink activeClassName={styles.activeLink} to="/map/first-floor"><span>First Floor</span></NavLink>
-                    <NavLink activeClassName={styles.activeLink} to="/map/second-floor"><span>Second Floor</span></NavLink>
-                    <NavLink activeClassName={styles.activeLink} to="/map/third-floor"><span>Third Floor</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/floor-plan/first-floor"><span>First Floor</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/floor-plan/second-floor"><span>Second Floor</span></NavLink>
+                    <NavLink activeClassName={styles.activeLink} to="/floor-plan/third-floor"><span>Third Floor</span></NavLink>
                 </div>
             </div>
         </Aux>
