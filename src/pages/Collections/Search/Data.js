@@ -15,7 +15,7 @@ import Abisara from '../Assets/Abisara.jpg'
 const data = [
 
         {
-            id: "/2019/01/01/acanthite",
+            id: "040571-acanthite",
             title: "Acanthite", 
             subtitle: "Mineralogy and Meteoritics",
             image: acanthite,
@@ -24,7 +24,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/smithsonite",
+            id: "030888-smithsonite",
             title: "Smithsonite", 
             subtitle: "Mineralogy and Meteoritics",
             image: smithsonite,
@@ -33,7 +33,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/zoomorphic-bowl",
+            id: "207013-zoomorphic-bowl",
             title: "Zoomorphic bowl with handles in the form of animal heads, clay, 5' high, 3 1/4' diameter, Late Archaic culture of Colima, Western Mexico, ca. 300-600 A.D.", 
             subtitle: "Anthropology",
             image: zoomorphic,
@@ -42,7 +42,7 @@ const data = [
         } ,
 
         {
-        	id: "/2004/11/15/Butbuttung",
+        	id: "261125-butbuttung",
             title: "<i>Butbuttung</i> - small man's hip-bag. White with black and red and yellow embroidery. White fringe. Brass carrying ring. L: 55 cm W: 23 cm.", 
             subtitle: "Anthropology",
             image: bag,

@@ -35,7 +35,7 @@ class highlightsfull extends Component {
             <Aux>
                 <div>
                     <p className={styles.back}><Link onClick={this.props.handleBack2Grid} exact to="/about/highlights">&lsaquo; Back to Highlights</Link></p>
-                    <h3 className={styles.title}>{this.state.title}</h3>
+                    <h3 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h3>
                     <img src={this.state.image} alt="Spotlight" className={classNames("imageKing", styles.imageFull)} ></img>
                     <p dangerouslySetInnerHTML={{__html: this.state.description}} className={styles.description}></p>
                 </div>
