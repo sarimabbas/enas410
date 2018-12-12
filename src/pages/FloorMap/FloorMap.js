@@ -66,6 +66,8 @@ class floormap extends Component {
     handleRoom = (event) => {
         let name = "" + event.currentTarget.id
         this.setState({
+            soundStatus: Sound.status.STOPPED,
+
             roomSelected: true,
             roomName: name,
 
@@ -77,12 +79,12 @@ class floormap extends Component {
     }
 
     playTrollAudio = (event) => {
-        this.setState({
-            soundStatus : Sound.status.PLAYING
-        })
-
+        console.log("playing")
         let name = "" + event.currentTarget.id
         this.setState({
+            soundStatus : Sound.status.PLAYING,
+
+
             roomSelected: true,
             roomName: name,
 

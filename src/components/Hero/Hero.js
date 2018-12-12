@@ -106,12 +106,12 @@ class hero extends Component {
                 style={{backgroundImage: url}}>
 
                 <div className={styles.heroInner}>
-                    <Link to={this.state.link} style={{textDecoration: "none", color:"inherit"}}>
+                    {/* <Link to={this.state.link} style={{textDecoration: "none", color:"inherit", lineHeight:"0", marginBottom:"0"}}> */}
                     <div className={styles.text}>
                         <h1 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h1>
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
                     </div>
-                    </Link>
+                    {/* </Link> */}
                     <div className={styles.controls}>
                         <div name="slider" id="slider-1" 
                              className={classNames(styles.radio, slider1Selected)} 
