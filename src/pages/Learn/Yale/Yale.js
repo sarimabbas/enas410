@@ -19,12 +19,12 @@ const yale = (props) => {
                 <div className={classNames("yale")}>
                     <p> The Yale Peabody Museum Office of Student Programs was established in 2016 to support Yale student participation in the activities of the Peabody Museum across all of its departments and divisions. In the 2016 academic year, over 100 students developed sustained, long-term relationships with the Museum as research interns, advisors and student employees, while an additional 1000+ students learned from Peabody objects and specimens as part of their coursework. This really is your natural history museum – our resources are here for you, to learn from and to help steward for the next generation.
                     </p>
-                    <img src={drawing} alt="drawing" className={styles.image}></img>
-                    <p className="caption">Basic Drawing students with Peabody specimens</p>
-                    <p> The Office of Student Programs is currently expanding the number and types of courses that make use of Peabody Museum resources. With dedicated classroom and lab facilities in the Class of 1954 Environmental Sciences Center and the Kline Geology Building, and many of our unparalleled collections just steps away, the Museum provides exceptional object-based learning opportunities.
-                    </p>
                     <img src={rebecca} alt="rebecca" className={styles.image}></img>
                     <p className="caption">Rebecca Beilinson ('16) giving a tour of the Entomology division</p>
+                    <p> The Office of Student Programs is currently expanding the number and types of courses that make use of Peabody Museum resources. With dedicated classroom and lab facilities in the Class of 1954 Environmental Sciences Center and the Kline Geology Building, and many of our unparalleled collections just steps away, the Museum provides exceptional object-based learning opportunities.
+                    </p>
+                    <img src={drawing} alt="drawing" className={styles.image}></img>
+                    <p className="caption">Basic Drawing students with Peabody specimens</p>
                     <p> We also strive to create a sense of community among the students who work and conduct research with Museum staff and faculty. Field trips, special tours, exhibition previews, picnics and evening events draw these and other students together in fun and informal settings where natural history and social interaction often share the bill.
                     </p>
                     <img src={yusbs} alt="yusbs" className={styles.image}></img>

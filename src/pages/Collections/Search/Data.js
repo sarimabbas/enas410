@@ -91,7 +91,7 @@ const data = [
 
         {
         	id: "045048-cinnamomum",
-            title: "Cinnamomum hesperium Van Boskirk", 
+            title: "<i>Cinnamomum hesperium</i> Van Boskirk", 
             subtitle: "Paleobotany",
             image: cinnamomum,
             short: "YPM PB 045048.A",
@@ -100,7 +100,7 @@ const data = [
 
         {
         	id: "006361-liriodendron",
-            title: "Liriodendron laramiense Ward", 
+            title: "<i>Liriodendron laramiense</i> Ward", 
             subtitle: "Paleobotany",
             image: Liriodendron,
             short: "YPM PB 006361",
@@ -109,7 +109,7 @@ const data = [
 
         {
         	id: "7556334-abisara",
-            title: "Abisara echerius (Stoll)", 
+            title: "<i>Abisara echerius</i> (Stoll)", 
             subtitle: "Entomology",
             image: Abisara,
             short: "YPM ENT 756334",
