@@ -50,6 +50,9 @@ import GH23 from './GreatHall/images/GH23.png';
 import GH24 from './GreatHall/images/GH24.png';
 import GH25 from './GreatHall/images/GH25.png';
 import GH27 from './GreatHall/images/GH27.png';
+import GH28 from './GreatHall/images/GH28.png';
+import GH29 from './GreatHall/images/GH29.png';
+
 
 const data = {
 
@@ -284,7 +287,7 @@ const data = {
 
         "GH15" : {
             title: "<i>Cycadeoid</i>",
-            description: "What a nice object!",
+            description: "In the early 1890s O.C. Marsh became interested in an extinct group of Mesozoic plants known as the cycadeoids and instructed his agent, H.F. Wells, to begin acquiring them for Yale. Aiding Marsh in this collecting was George R. Wieland, the Peabody’s first paleobotanist. Wieland’s scientific interest in these enigmatic fossil trunks flourished, and it is principally through his efforts that the Museum accumulated over 1,000 specimens—the world’s largest collection of cycadeoids.",
             image: GH15,
             more: "",
         },
@@ -355,14 +358,14 @@ const data = {
         "GH28" : {
             title: "Brontosaurus",
             description: "The Brotosaurus was the first mounted dinosaur to be featured in a university museum, in 1901.",
-            image: GH03,
+            image: GH28,
             more: "",
         },
 
         "GH29" : {
             title: "Stegosaurus",
             description: "In 1877 O.C. Marsh described and named Stegosaurus ungulatus from bones collected in the Morrison Formation at Como Bluff, Wyoming, some of which is included in the mounted skeleton on display in the Yale Peabody Museum’s Great Hall. This skeleton is reconstructed from the fossil bones of at least five individuals, possibly including more than one species and different sexes.",
-            image: GH03,
+            image: GH29,
             more: "",
         },
 
