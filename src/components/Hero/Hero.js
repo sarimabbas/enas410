@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // styles
 import styles from './Hero.module.css';
@@ -29,6 +30,7 @@ class hero extends Component {
             title: "Behind the Giant Squid",
             subtitle: "Peabody Highlights",
             selected: "slider-1",
+            link: "/about/highlights/2015-08-12"
         }
 
         // controls handler binding
@@ -41,29 +43,35 @@ class hero extends Component {
         let image = null;
         let title = null;
         let subtitle = null;
+        let link = null;
 
         switch (e.currentTarget.id) {
             case "slider-1":
+                link = "/about/highlights/2015-08-12"
                 image = slide1
                 title = "Behind the Giant Squid"
                 subtitle = "Specimen Highlight"
                 break;
             case "slider-2":
+                link = "/about/highlights/2018-10-10-renovation"
                 image = slide4
                 title = "Peabody Expands After Donation"
                 subtitle = "Event News"
                 break;            
             case "slider-3":
+                link = "/floor-plan/first-floor"
                 image = slide2
                 title = "New Inter&shy;active Floor Plan"
                 subtitle = "Click to Visit"
                 break;
             case "slider-4":
+                link = "/about/highlights/2019-01-01-egypt-hall"
                 image = slide3
                 title = "New Ancient Egypt Hall"
                 subtitle = "Exhibit Update"
                 break;
             default:
+                link = "/about/highlights/2015-08-12"
                 image = slide1
                 title = "Behind the Giant Squid"
                 subtitle = "Specimen Highlight"
@@ -76,6 +84,7 @@ class hero extends Component {
             title: title,
             subtitle: subtitle,
             selected: e.currentTarget.id,
+            link : link,
         })
         
         console.log(this.state)
@@ -97,11 +106,14 @@ class hero extends Component {
             <Hero 
                 className={classNames(styles.hero, styles.fadeIn)} 
                 style={{backgroundImage: url}}>
+
                 <div className={styles.heroInner}>
+                    <Link to={this.state.link} style={{textDecoration: "none", color:"inherit"}}>
                     <div className={styles.text}>
                         <h1 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h1>
                         <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
                     </div>
+                    </Link>
                     <div className={styles.controls}>
                         <div name="slider" id="slider-1" 
                              className={classNames(styles.radio, slider1Selected)} 
