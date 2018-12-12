@@ -307,7 +307,7 @@ const data = {
         },
 
         "GH20" : {
-            title: "Mosasaurs",
+            title: "Mosasaur",
             description: "Mosasaurs lived during the Late Cretaceous from around 99 to 65&nbsp;million years ago. They are members of the group of reptiles that includes living lizards (including snakes), although their precise relationships among lizards are unclear.",
             image: GH20,
             more: "",
