@@ -183,14 +183,14 @@ const data = {
         
         "GH01" : {
             title: "<i>Poposaurus</i>",
-            description: "What a nice object!",
+            description: "The most complete remains ever found of the extremely rare Poposaurus, dating from approximately 220 million years ago. Poposaurus is a representative from a fleet-footed, land-dwelling, side line in crocodile evolution that could easily have preyed on dinosaurs, and certainly challenged them as the top carnivores of their day.",
             image: GH01,
             more: "",
         }, 
 
         "GH02" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
+            title: "Brontosaurus",
+            description: "This is the original skull mounted on the Apatosaurus in the Great Hall in 1931 and provided the basis for Zallinger's Age of Reptiles mural. This plaster skull is a restoration which contains part of jaw now known to be part of a Camarusaurus.",
             image: GH02,
             more: "",
         }, 
@@ -198,53 +198,170 @@ const data = {
         "GH03" : {
             title: "Exhibit 1",
             description: "What a nice object!",
-            image: GH01,
+            image: GH03,
             more: "",
         }, 
 
         "GH04" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+            title: "Crinoid: A Jurassic Sea Lily",
+            description: "Although cinoids with long stems are commonly called &ldquo;sea lilies&rdquo; because of their resemblance to flowers, they are actually animals belonging to the echinoderms, the group that includes sea stars, sand dollars, sea urchins and sea cucumbers. This specimen Seirocrinus subangularis was quarried from the 180-million-year-old Jurassic of southern Germany",
+            image: GH04,
             more: "",
         }, 
 
         "GH05" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+            title: "<i>Limnoscelis paludis</i>",
+            description: "One of the earliest known terrestrial vertebrates, Limnoscelis lived about 290 million years ago. It had claws like living mammals and reptiles, and could have used its forelimbs to dig holes to bury its eggs.  The specimen is a cast of the Peabody Museum's collections, which is the most complete example of this species.",
+            image: GH05,
             more: "",
         }, 
 
-        "GH1" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+        "GH06" : {
+            title: "<i>Edaphosaurus boanerges</i>",
+            description: "Edaphosaurus is not a dinosaur. Rather, it is a very distant cousin of today's mammals. The hole in its cheek behind the eye, bounded below by a bar of bone, is the same one through which your jaw muscles bulge out. The earliest ecidence of land-egg laying animals (amniotes), more than 300 million years old, shows the mammal and reptile lines had already diverged.",
+            image: GH06,
             more: "",
         }, 
 
-        "GH1" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+        "GH07" : {
+            title: "<i>Othnielia rex</i>",
+            description: "Othnielia is a plant-eating ornithopod, part of the great ornithischian branch of dinsaurs that also includes Triceratops and Stegosaurus. A small bipedal dinosaur, it was probably a fast runner and relied primarily on speed for protection from large predatory dinosaurs such as Allosaurus.",
+            image: GH07,
             more: "",
         }, 
 
-        "GH1" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+        "GH08" : {
+            title: "The Devlopment of Plants",
+            description: "Various plant specimens from the Devonian Era to modern times. These fossils represent a variety of mechanisms of preservation and plant life styles. ",
+            image: GH08,
             more: "",
         }, 
 
-        "GH1" : {
-            title: "Exhibit 1",
-            description: "What a nice object!",
-            image: GH01,
+        "GH09" : {
+            title: "Dinosaurs",
+            description: "Dinosaurs are a great and exciting group of reptiles that lived from the Triassic until the extinction 65&nbsp;million years ago.",
+            image: GH09,
             more: "",
         }, 
 
-        // make more like the above
+        "GH10" : {
+            title: "Birds",
+            description: "Birds are warm blooded, egg-laying feathered vertebrates related to crocodiles and dinosaurs.",
+            image: GH10,
+            more: "",
+        },
+
+        "GH11" : {
+            title: "<i>Moas</i>",
+            description: "The extinct Moa was a flightless bird unique to the islands of New Zealand. There were at least 13 species on the North and South Island. Moas were herbivores, primarily favoring verries and fruits growing in branches.",
+            image: GH11,
+            more: "",
+        },
+
+        "GH12" : {
+            title: "<i>Torosaurus</i>",
+            description: "<i>Torosaurus</i>, a horned dinosaur that lived at the end of the Cretaceous Period (65 million years ago), is a member of the group of frilled and horned dinosaurs known as ceratopsians that also includes the more familiar Triceratops. Ceratopsians were herbivorous dinosaurs that fed on cycads and other low-lying plants, using their tough beak to crop plants, and their well-developed cheek teeth to chew.",
+            image: GH12,
+            more: "",
+        },
+
+        "GH13" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH14" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH15" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH17" : {
+            title: "<i>Tyrannosaurus rex</i>",
+            description: "This skull is a cast of a specimen collected by the American Museum of Natural History. Is is from Hell Creek Formation in Montana, a rock deposit from the very end of the Cretaceous some 67 to 65 million years ago.",
+            image: GH17,
+            more: "",
+        },
+
+        "GH18" : {
+            title: "<i>Ichthyosaurs & Plesiosaurs<i>",
+            description: "Ichthyosaurs were highly specialized fish-like predators that lived from about 245 to 90 million years ago. The earliest ichthyosaurs looked more like lizards with fins, but over time there was a general transition from a lizard-shaped body plan to a fish-shaped one. Plesiosaurs were less fish-like than ichthyosaurs but were sitll well adapted for life in the oceans. A large and varied group, some were over 50 feet (15 meters) long. They have been broadly defined as two distinct types: the long-necked, small-headed plesopsaurs such as Thalassiodracon, and the short necked, large-headed pliosaurs.",
+            image: GH18,
+            more: "",
+        },
+
+        "GH20" : {
+            title: "Mosasaurs",
+            description: "Mosasaurs lived during the Late Cretaceous from around 99 to 65&nbsp;million years ago. They are members of the group of reptiles that includes living lizards (including snakes), although their precise relationships among lizards are unclear.",
+            image: GH20,
+            more: "",
+        },
+
+        "GH21" : {
+            title: "Coelacanths",
+            description: "Coelacanths are a ratre order of fish that was thought extinct until a specimen was discovered 1938 off the coast of South&nbsp;Africa. Coelacanths are a &ldquo;living fossil,&rdquo; meaning that they represent traits present in ancient fish species.",
+            image: GH03,
+            more: "",
+        },
+
+        "GH22" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH23" : {
+            title: "Exhibit 1",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH24" : {
+            title: "Coelacanths",
+            description: "Coelacanths are a ratre order of fish that was thought extinct until a specimen was discovered 1938 off the coast of South&nbsp;Africa. Coelacanths are a &ldquo;living fossil,&rdquo; meaning that they represent traits present in ancient fish species.",
+            image: GH24,
+            more: "",
+        },
+
+        "GH25" : {
+            title: "The Giant Turtle",
+            description: "The giant turtle, <i>Archelon</i>, skeleton measures about 11 feet from snout to tail (more than 3 meters), and about 15 feet (4.5 meters) from the tip of one fore paddle to the other. Comparisons with the most similar and largest modern turtle suggest that <i>Archelon</i> weighed over 3 tons.",
+            image: GH25,
+            more: "",
+        },
+
+        "GH27" : {
+            title: "Bony Fishes",
+            description: "Bony fishes represent a diverse group of fish that contain bones, in place of cartilage.  The majority of fish are bony fish.",
+            image: GH03,
+            more: "",
+        },
+
+        "GH28" : {
+            title: "Brontosaurus",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
+
+        "GH29" : {
+            title: "Stegosaurus??",
+            description: "What a nice object!",
+            image: GH03,
+            more: "",
+        },
 
 
     }
