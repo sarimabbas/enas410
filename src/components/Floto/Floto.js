@@ -13,8 +13,6 @@ class floto extends Component {
     // }
     
     render() {
-
-        console.log(this.props)
         // hiding the logo completely
         let fade = this.props.scrollThresholdMet ? styles.transparent : styles.opaque;
         // yo on line 23 put back "fade" if you want floto to fade out
