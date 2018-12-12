@@ -53,7 +53,7 @@ const data = [
  
 
         {
-        	id: "/2014/10/31/tablet",
+        	id: "015930-tablet",
             title: "2 column tablet. Account of barley and wheat. Ur III. Clay.", 
             subtitle: "Babylonian Collection",
             image: tablet,
@@ -63,7 +63,7 @@ const data = [
 
 
         {
-        	id: "/2018/10/10/cylinderseal",
+        	id: "029880-cylinder-seal",
             title: "Cylinder seal. Goddess with two raised hand, long flounced dress and horned headdress, god in ascending pose with long skirt parted over knee, and holding weapon facing figure almost lost: inscription. Old Babylonian. Hematite.", 
             subtitle: "Babylonian Collection",
             image: cylinder,
@@ -72,7 +72,7 @@ const data = [
         } ,
 
        {
-        	id: "/2018/11/16/abies",
+        	id: "104586-abies",
             title: "Abies concolor (Gord. & Glend.) Lindl. ex Hildebr.", 
             subtitle: "Botany",
             image: abies,
@@ -81,7 +81,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/06/12/algae",
+        	id: "053645-algae",
             title: "Algae", 
             subtitle: "Botany",
             image: algae,
@@ -90,7 +90,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/28/Cinnamomum",
+        	id: "045048-cinnamomum",
             title: "Cinnamomum hesperium Van Boskirk", 
             subtitle: "Paleobotany",
             image: cinnamomum,
@@ -99,7 +99,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/26/liriodendron",
+        	id: "006361-liriodendron",
             title: "Liriodendron laramiense Ward", 
             subtitle: "Paleobotany",
             image: Liriodendron,
@@ -108,7 +108,7 @@ const data = [
         } ,
 
         {
-        	id: "/2017/12/20/Abisara",
+        	id: "7556334-abisara",
             title: "Abisara echerius (Stoll)", 
             subtitle: "Entomology",
             image: Abisara,
