@@ -20,7 +20,7 @@ import video from './assets/video.png'
 const data = [
 
         {
-            id: "/2019/01/01/bhullar",
+            id: "2019-01-01-bhullar",
             title: "Bhart-Anjan Bhullar", 
             subtitle: "Researcher Highlight",
             image: bhullar,
@@ -29,7 +29,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/briggs",
+            id: "2019-01-01-briggs",
             title: "Professor Derek Briggs", 
             subtitle: "Researcher Highlight",
             image: briggs,
@@ -38,7 +38,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/26/grass",
+        	id: "2018-11-26-grass",
             title: "Installing Grass", 
             subtitle: "Behind the Dioramas",
             image: grass,
@@ -47,7 +47,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/egypt-hall",
+            id: "2019-01-01-egypt-hall",
             title: "New Ancient Egypt Hall", 
             subtitle: "Exhibit Update",
             image: egypthall,
@@ -56,7 +56,7 @@ const data = [
         } ,
 
         {
-        	id: "/2004/11/15/dino-snore",
+        	id: "2004-11-15-dino-snore",
             title: "Dino Snore Enlivens History for Children", 
             subtitle: "Event News",
             image: dinosnore,
@@ -65,7 +65,7 @@ const data = [
         } ,
 
         {
-        	id: "/2017/12/20/scorpion-painting",
+        	id: "2017-12-20-scorpion-painting",
             title: "Live Model for Scorpion Painting", 
             subtitle: "Behind the Dioramas",
             image: scorpion,
@@ -74,7 +74,7 @@ const data = [
         } ,
 
         {
-        	id: "/2014/10/31/haunted-hall",
+        	id: "2014-10-31-haunted-hall",
             title: "Peabody Haunts", 
             subtitle: "Event News",
             image: hauntedhall,
@@ -83,7 +83,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/16/sea-scorpions",
+        	id: "2018-11-16-sea-scorpions",
             title: "Sea Scorpions", 
             subtitle: "Specimen Highlight",
             image: sea_scorpions,
@@ -92,7 +92,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/10/10/renovation",
+        	id: "2018-10-10-renovation",
             title: "Peabody Expands After Donation", 
             subtitle: "Event News",
             image: peabody_renovation,
@@ -101,7 +101,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/06/12/bison",
+        	id: "2018-06-12-bison",
             title: "Bison Fur", 
             subtitle: "Behind the Dioramas",
             image: bison,
@@ -110,7 +110,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/28/musk-ox",
+        	id: "2018-11-28-musk-ox",
             title: "Musk Ox Diorama Renovation", 
             subtitle: "Behind the Dioramas",
             image: muskox,
@@ -120,7 +120,7 @@ const data = [
 
 
         {
-        	id: "/2016/05/10/online-specimens",
+        	id: "2016-05-10-online-specimens",
             title: "Peabody specimens thrive online", 
             subtitle: "Specimen Highlight",
             image: butterflies,
@@ -129,7 +129,7 @@ const data = [
         } ,
 
         {
-        	id: "/2017/09/18/printing-insects",
+        	id: "2017-09-18-printing-insects",
             title: "Printing Insects, Printing Small", 
             subtitle: "Behind the Dioramas",
             image: printing_insects,
@@ -138,7 +138,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/04/03/crdt-documentary",
+        	id: "2018-04-03-crdt-documentary",
             title: "Behind-the-scenes at the Yale Peabody Museum", 
             subtitle: "Peabody Videos",
             image: video,
@@ -147,7 +147,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/08/07/female-figures",
+        	id: "2018-08-07/female-figures",
             title: "Representations of Paleolithic Female Figures", 
             subtitle: "Exhibit Update",
             image: paleolithic_females,
@@ -156,7 +156,7 @@ const data = [
         } ,
 
         {
-        	id: "/2017/03/31/printing-insects",
+        	id: "2017-03-31-printing-insects",
             title: "Three D Experiments", 
             subtitle: "Behind the Dioramas",
             image: threed,
@@ -165,7 +165,7 @@ const data = [
         } ,
 
         {
-        	id: "/2015/04/13/brontosaurus",
+        	id: "2015-04-13-brontosaurus",
             title: "Return of the Brontosaurus", 
             subtitle: "Specimen Highlight",
             image: jacques,

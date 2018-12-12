@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { Link, Redirect, Route } from 'react-router-dom';
 
 
 // components
 import Aux from '../../../hoc/Aux';
 import SpotlightCard from '../../../components/Spotlight/SpotlightCard';
+import HighlightsFull  from './HighlightsFull';
 
 // data
 import Data from './Data';
@@ -20,10 +21,6 @@ class highlights extends Component {
 
         this.state = {
             gridView : true,
-            title : "",
-            subtitle : "",
-            image : "",
-            description : "",
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -31,20 +28,8 @@ class highlights extends Component {
     }
     
     handleClick = (event) => {
-        let id = event.currentTarget.id
-        let post  = NaN
-        for(let i = 0; i < Data.length; i++) {
-            if (Data[i].id === id) {
-                post = Data[i];
-            }
-        }
-
         this.setState({
             gridView : false,
-            title : post.title,
-            subtitle : post.subtitle,
-            image : post.image,
-            description : post.long,
         })
     }
 
@@ -55,18 +40,18 @@ class highlights extends Component {
     }
 
     pullPosts = () => {
-
-        console.log(Data.length)
         let posts_array = []
         for (let i = 0; i < Data.length; i++) {
+            let path = "/about/highlights/" + Data[i].id
             posts_array.push(
-                <div id={Data[i].id} onClick={this.handleClick}>
+                <div id={Data[i].id}>
                     <SpotlightCard
                         title={Data[i].title}
                         subtitle={Data[i].subtitle}
                         image={Data[i].image}
                         description={Data[i].short}>
                     </SpotlightCard>
+                    <p onClick={this.handleClick}><Link to={path}>Read More &rsaquo;</Link></p>
                 </div>
             )
         }
@@ -85,12 +70,8 @@ class highlights extends Component {
                         </div>
                     </Aux>
                     :
-                    <div>
-                        <p className={styles.back} onClick={this.handleBack2Grid}>&lsaquo; Back to Highlights</p>
-                        <h3 className={styles.title}>{this.state.title}</h3>
-                        <img src={this.state.image} alt="Spotlight" className={classNames("imageKing", styles.imageFull)} ></img>
-                        <p dangerouslySetInnerHTML={{__html: this.state.description}} className={styles.description}></p>
-                    </div>
+                    <Route exact path='/about/highlights/:id' 
+                            render={(props) => <HighlightsFull {...props} handleBack2Grid={this.handleBack2Grid}/>}/>
                 }
             </Aux>
         )
