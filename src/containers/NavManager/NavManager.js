@@ -29,12 +29,12 @@ class navmanager extends Component {
     handleScroll = (event) => {
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight - 64;
-        const shrinkSpeed = 5.20;
+        const shrinkSpeed = 4.37+1052.3/window.innerWidth;
 
         // set the font-width as a function of scroll and max font width
         const fontMax = 1000;
         let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
-       
+
         let widthNo = ((1 - normalized) * fontMax).toString();
 
         let fontWeight = 800 - (200 / window.innerHeight * scrollTop);
@@ -53,18 +53,18 @@ class navmanager extends Component {
         // console.log(width)
 
         // don't follow on scroll once width threshold has been met
-        const pos = scrollThreshold / 1.8;
-        // if (scrollTop > pos) {
-        //     this.setState({
-        //         positionType: "absolute",
-        //         top: pos
-        //     })
-        // } else {
-        //     this.setState({
-        //         positionType: "fixed",
-        //         top: 0
-        //     })
-        // }
+        const pos = scrollThreshold / 1.47;
+        if (scrollTop > pos) {
+            this.setState({
+                positionType: "absolute",
+                top: pos
+            })
+        } else {
+            this.setState({
+                positionType: "fixed",
+                top: 0
+            })
+        }
 
         // hiding the logo completely after a threshold
         if (!this.state.scrollThresholdMet && scrollTop > scrollThreshold - 280) {
