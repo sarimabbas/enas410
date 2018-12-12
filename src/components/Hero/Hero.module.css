@@ -42,6 +42,7 @@
 .text {
     color: white;
     text-align: right;
+    align-self: end;
 }
 
 .title {
@@ -65,6 +66,7 @@
 .controls {
     text-align: right;
     align-self: end;
+    margin-top: 10px;
 }
 
 .controls > * {
@@ -72,17 +74,17 @@
 }
 
 .radio {
-    height: 12px;
-    width: 12px;
+    height: 11px;
+    width: 11px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 1.5px solid white;
     display: inline-block;
     margin: 1px 5px;
 }
 
 .radioSelected{
-    height: 12px;
-    width: 12px;
+    height: 11px;
+    width: 11px;
     border-radius: 50%;
     background-color: white;
     display: inline-block;

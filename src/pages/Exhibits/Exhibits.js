@@ -24,9 +24,9 @@ const exhibits = (props) => {
                     <Sidebar></Sidebar>
                     <div className={classNames(styles.content)}>
                         <Switch>
-                            <Redirect exact from="/exhibits" to="/exhibits/on-view"/>
+                            <Redirect exact from="/exhibits" to="/exhibits/main"/>
                             <Route path={'/exhibits/calendar'} component={Calendar} />
-                            <Route path={'/exhibits/on-view'} component={Current} />
+                            <Route path={'/exhibits/main'} component={Current} />
                             <Route path={'/exhibits/past'} component={Past} />
                             <Route path={'/exhibits/temporary'} component={Temporary} />
                         </Switch>

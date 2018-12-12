@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Aux from '../../../hoc/Aux';
-import classNames from 'classnames';
 import styles from './ThirdFloor.module.css';
 
 const thirdfloor = (props) => {

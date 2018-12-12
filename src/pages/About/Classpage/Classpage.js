@@ -1,5 +1,4 @@
 import React from 'react'
-import { Route } from 'react-router-dom';
 import classNames from 'classnames';
 
 // components
@@ -14,7 +13,6 @@ const classpage = (props) => {
     return (    
         <Aux>
             <h1>Design Team</h1> 
-            <br/>  
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Sarim Abbas</b>
@@ -55,7 +53,6 @@ const classpage = (props) => {
             <br/>
 
             <h1>Café Team</h1> 
-            <br/>  
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Antonio Cao</b>
@@ -89,7 +86,6 @@ const classpage = (props) => {
             <br/>
 
             <h1>Egypt Team</h1> 
-            <br/>  
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Emily Chu</b>
@@ -116,7 +112,6 @@ const classpage = (props) => {
             <br/>
 
             <h1>Dome Team</h1> 
-            <br/> 
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Avital Smotrich-Barr</b>
@@ -136,7 +131,6 @@ const classpage = (props) => {
             <br/>
 
             <h1>Audio Team</h1> 
-            <br/> 
             <div className={classNames(styles.grid)}>
                 <div>
                     <p> <b>Collin Bentley</b>

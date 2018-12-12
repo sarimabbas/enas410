@@ -15,7 +15,7 @@ import Abisara from '../Assets/Abisara.jpg'
 const data = [
 
         {
-            id: "/2019/01/01/acanthite",
+            id: "040571-acanthite",
             title: "Acanthite", 
             subtitle: "Mineralogy and Meteoritics",
             image: acanthite,
@@ -24,7 +24,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/smithsonite",
+            id: "030888-smithsonite",
             title: "Smithsonite", 
             subtitle: "Mineralogy and Meteoritics",
             image: smithsonite,
@@ -33,7 +33,7 @@ const data = [
         } ,
 
         {
-            id: "/2019/01/01/zoomorphic-bowl",
+            id: "207013-zoomorphic-bowl",
             title: "Zoomorphic bowl with handles in the form of animal heads, clay, 5' high, 3 1/4' diameter, Late Archaic culture of Colima, Western Mexico, ca. 300-600 A.D.", 
             subtitle: "Anthropology",
             image: zoomorphic,
@@ -42,7 +42,7 @@ const data = [
         } ,
 
         {
-        	id: "/2004/11/15/Butbuttung",
+        	id: "261125-butbuttung",
             title: "<i>Butbuttung</i> - small man's hip-bag. White with black and red and yellow embroidery. White fringe. Brass carrying ring. L: 55 cm W: 23 cm.", 
             subtitle: "Anthropology",
             image: bag,
@@ -53,7 +53,7 @@ const data = [
  
 
         {
-        	id: "/2014/10/31/tablet",
+        	id: "015930-tablet",
             title: "2 column tablet. Account of barley and wheat. Ur III. Clay.", 
             subtitle: "Babylonian Collection",
             image: tablet,
@@ -63,7 +63,7 @@ const data = [
 
 
         {
-        	id: "/2018/10/10/cylinderseal",
+        	id: "029880-cylinder-seal",
             title: "Cylinder seal. Goddess with two raised hand, long flounced dress and horned headdress, god in ascending pose with long skirt parted over knee, and holding weapon facing figure almost lost: inscription. Old Babylonian. Hematite.", 
             subtitle: "Babylonian Collection",
             image: cylinder,
@@ -72,7 +72,7 @@ const data = [
         } ,
 
        {
-        	id: "/2018/11/16/abies",
+        	id: "104586-abies",
             title: "Abies concolor (Gord. & Glend.) Lindl. ex Hildebr.", 
             subtitle: "Botany",
             image: abies,
@@ -81,7 +81,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/06/12/algae",
+        	id: "053645-algae",
             title: "Algae", 
             subtitle: "Botany",
             image: algae,
@@ -90,7 +90,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/28/Cinnamomum",
+        	id: "045048-cinnamomum",
             title: "Cinnamomum hesperium Van Boskirk", 
             subtitle: "Paleobotany",
             image: cinnamomum,
@@ -99,7 +99,7 @@ const data = [
         } ,
 
         {
-        	id: "/2018/11/26/liriodendron",
+        	id: "006361-liriodendron",
             title: "Liriodendron laramiense Ward", 
             subtitle: "Paleobotany",
             image: Liriodendron,
@@ -108,7 +108,7 @@ const data = [
         } ,
 
         {
-        	id: "/2017/12/20/Abisara",
+        	id: "7556334-abisara",
             title: "Abisara echerius (Stoll)", 
             subtitle: "Entomology",
             image: Abisara,

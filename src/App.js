@@ -1,6 +1,6 @@
 // react
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollToTop from './hoc/ScrollToTop';
 
 // pages
@@ -32,7 +32,7 @@ class App extends Component {
                             <Route path="/learn" component={Learn} />
                             <Route path="/collections" component={Collections} />
                             <Route path="/about" component={About} />
-                            <Route path="/map" component={FloorMap} />
+                            <Route path="/floor-plan" component={FloorMap} />
                         </Switch>
                     </ScrollToTop>
                 </Router>

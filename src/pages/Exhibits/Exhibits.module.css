@@ -8,7 +8,7 @@
 
 .content {
     grid-column: auto / span 3;
-    min-height: 35vh;
+    min-height: 50vh;
 }
 
 /*.exhibitImg{

@@ -17,7 +17,6 @@
 
 .gridRight {
     grid-column: auto / span 2;
-
     width: 100%;
 }
 
@@ -52,6 +51,8 @@
 }
 
 .more {
+    margin-top: 0px;
+    font-size: 1.5rem;
     font-weight: 600;
-    padding-top: 20px;
+    line-height:1.7rem;
 }

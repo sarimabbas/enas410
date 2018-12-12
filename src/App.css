@@ -97,7 +97,8 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 3rem;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -105,11 +106,13 @@ h2 {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 2.2rem;
+    margin-bottom:15px;
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 600;
+    line-height:1.7rem;
 }
 
 p {
@@ -122,6 +125,11 @@ p {
 .caption {
     font-style: italic;
     text-align: center;
+}
+
+/* divider line */
+.rule {
+    border-bottom: 1px solid #939597;
 }
 
 /* container */
@@ -198,4 +206,8 @@ p {
     width: 100%;
 }
 
-/* Exhibits, Collections, Learn, About */
+.imageQueen {
+    min-height: 200px;
+}
+
+/* scrolling */

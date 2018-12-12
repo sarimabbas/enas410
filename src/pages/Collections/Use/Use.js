@@ -1,16 +1,6 @@
 import React from 'react';
 import Aux from '../../../hoc/Aux';
 
-
-import classNames from 'classnames';
-import styles from './Use.module.css';
-
-// routing
-import { Link } from 'react-router-dom';
-
-// assets
-
-
 const search = (props) => {
     return (
         <Aux>

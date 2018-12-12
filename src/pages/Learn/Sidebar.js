@@ -18,7 +18,8 @@ const sidebar = (props) => {
                 <div className={classNames(styles.links)}>
                     <NavLink activeClassName={styles.activeLink} to="/learn/k12"><span>K-12 Programs</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/learn/summer-camps"><span>Summer Camps</span></NavLink>
-                    <a href="https://evolutions.peabody.yale.edu"><span>Peabody Evolutions</span></a>
+                    {/* <a href="https://evolutions.peabody.yale.edu"><span>Peabody Evolutions</span></a> */}
+                    <NavLink activeClassName={styles.activeLink} to="/learn/evolutions"><span>Peabody Evolutions</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/learn/yale"><span>Yale Student Opportunities</span></NavLink>
                     <NavLink activeClassName={styles.activeLink} to="/learn/adult"><span>Adult Programs</span></NavLink>
                 </div>
