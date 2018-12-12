@@ -59,7 +59,7 @@ class overlay extends Component {
                                         <Link to="/exhibits">Exhibits</Link>
                                     </span>
                                     <div className={classNames(styles.links)}>
-                                        <Link to="/exhibits/main">Exhibits On View</Link>
+                                        <Link to="/exhibits/main">Main Exhibits</Link>
                                         <Link to="/exhibits/temporary">Temporary Exhibits</Link>
                                         <Link to="/exhibits/past">Past Exhibits</Link>
                                         {/* <Link to="/exhibits/calendar">Events Calendar</Link> */}

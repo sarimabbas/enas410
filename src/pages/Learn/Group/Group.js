@@ -12,7 +12,7 @@ import classNames from 'classnames';
 const group = (props) => {
     return (
         <Aux>
-            <h1>School Programs by Topic</h1>
+            <h1>K-12 Programs by Topic</h1>
             <div className={classNames("workshop")}>
                 {/* <img src={workshop} alt="workshop" className={styles.image}></img> */}
                 <h3>Anthropology</h3>

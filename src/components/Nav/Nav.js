@@ -50,9 +50,9 @@ class nav extends Component {
             <Aux>
                 <div className={classNames(styles.nav, barFade, overlayFade)} >
                     <div className={classNames(styles.logo, logoFade)}>
-                    <a href="/" className={classNames(styles.link, styles.museumTitle)}>
+                    <Link to="/" className={classNames(styles.link, styles.museumTitle)}>
                             Peabody Museum of Natural History
-                    </a>
+                    </Link>
                     </div>
                     <div className={classNames(styles.right)}>
                         <div className={classNames(styles.links)}>
