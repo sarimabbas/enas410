@@ -2,88 +2,81 @@ import React from 'react';
 import styles from './SpotlightCardRow.module.css';
 import classNames from 'classnames';
 import SpotlightCard from './SpotlightCard';
+import { Link } from 'react-router-dom';
 
-// sample images
-import sample1 from './assets/sample1.png';
-import sample2 from './assets/sample2.png';
-import sample3 from './assets/sample3.png';
+import bhullar from '../../pages/About/Highlights/assets/image3.jpg'
+import briggs from '../../pages/About/Highlights/assets/image1.jpg'
+import egypthall from '../../pages/About/Highlights/assets/image2.jpg'
+import dinosnore from '../../pages/About/Highlights/assets/dinosnores_nhm.jpg'
+import grass from '../../pages/About/Highlights/assets/grass.jpeg'
+import scorpion from '../../pages/About/Highlights/assets/scorpion.jpg'
 
 // sample row content
 const spotlightcardrow = (props) => {
     return (
         <div className={classNames(styles.row)}>
+            
+            
+            <div>
+                <SpotlightCard
+                    image={bhullar}
+                    subtitle="Researcher Highlight"
+                    title="Bhart-Anjan Bhullar"
+                    description = "My group focuses on great transitions in the history of vertebrates. In the field and in the lab, we use the geological record of life to guide questions about major transformations across Vertebrata, especially at the origins of birds and mammals."
+                ></SpotlightCard>
+                    <p>
+                        <a href="/about">Read More &rsaquo;</a>
+                    </p>
+            </div>
+
+
+
+            <div>
+                
+                
+                <SpotlightCard
+                image={briggs}
+                subtitle="Researcher Highlight"
+                title="Professor Derek Briggs"
+                description = "Read about Professor Derek Briggs, whose research focuses on the preservation and evolutionary significance of exceptionally preserved fossils."
+                ></SpotlightCard>
+                <p><Link name="briggs" to="/about/highlights/2019-01-01-briggs">Read More &rsaquo;</Link></p>
+            
+        
+            </div>
+
+
             <div><SpotlightCard
-                image={sample1}
-                subtitle="Smithsonian Gardens"
-                title="Peabody Evolved"
-                description="Following the Museum’s sesquicentennial
-                in 2016, we are pleased to announce a
-                major renovation project that will reinvent
-                the Peabody for the 21st century and
-                beyond, further establishing the Museum
-                as a home for cutting-edge research,
-                extraordinary education, and breathtaking
-                exhibitions."
-            ></SpotlightCard></div>
-            <div><SpotlightCard
-                image={sample2}
-                title="History of the Dinosaur Hall"
-                description="Dedicated in December 1925, the new
-                building’s two-story Great Hall was
-                specifically designed to accommodate
-                some of O.C. Marsh’s dinosaurs, such
-                the mounting of the giant Brontosaurus,
-                completed in 1931 after six years of labor. "
-            ></SpotlightCard></div>
-            <div><SpotlightCard
-                image={sample3}
-                title="Behind the Giant Squid"
-                description="Many Peabody memories start with the
-                giant squid hanging in the lobby. The model
-                is based on the first giant squid that was
-                ever discovered, part of which—a tentacled
-                arm—is stored in the collections of the
-                Division of Invertebrate Zoology. The giant
-                squid is one of over 13 million specimens in
-                the Museum’s scientific collections."
-            ></SpotlightCard></div>
+                image={grass}
+                subtitle="Behind the Dioramas"
+                title="Installing Grass"
+                description = "Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: grass!"
+            ></SpotlightCard>
+            <p><Link to="/about/highlights/2019-01-01-bhullar">Read More &rsaquo;</Link></p></div>
             <div className={styles.hideSecond}><SpotlightCard
-                image={sample3}
-                title="Behind the Giant Squid"
-                description="Many Peabody memories start with the
-                giant squid hanging in the lobby. The model
-                is based on the first giant squid that was
-                ever discovered, part of which—a tentacled
-                arm—is stored in the collections of the
-                Division of Invertebrate Zoology. The giant
-                squid is one of over 13 million specimens in
-                the Museum’s scientific collections."
-            ></SpotlightCard></div>
+                image={egypthall}
+                subtitle="Exhibit Update"
+                title="New Ancient Egypt Hall"
+                description="Visitors will have the opportunity to explore a dark tomb, wielding a flashlight like a true explorer, and uncover the mysteries of Ancient Egypt firsthand. Get excited!"
+            ></SpotlightCard>
+            <p><a href="/about/highlights/2019-01-01-bhullar">Read More &rsaquo;</a></p>
+            </div>
             <div className={styles.hideFirst}><SpotlightCard
-                image={sample3}
-                title="Behind the Giant Squid"
-                description="Many Peabody memories start with the
-                giant squid hanging in the lobby. The model
-                is based on the first giant squid that was
-                ever discovered, part of which—a tentacled
-                arm—is stored in the collections of the
-                Division of Invertebrate Zoology. The giant
-                squid is one of over 13 million specimens in
-                the Museum’s scientific collections."
-            ></SpotlightCard></div>
+                image={dinosnore}
+                title="Dino Snore Enlivens History for Children"
+                subtitle="Event News"
+                description="We had a great time at Dino Snore this past weekend and are glad so many visitors could join us! Read about it here!"
+            ></SpotlightCard>
+            <p><Link to="/about/highlights/2019-01-01-bhullar">Read More &rsaquo;</Link></p>
+            </div>
             <div className={styles.hideFirst}><SpotlightCard
-                className={styles.rory}
-                image={sample3}
-                title="Behind the Giant Squid"
-                description="Many Peabody memories start with the
-                giant squid hanging in the lobby. The model
-                is based on the first giant squid that was
-                ever discovered, part of which—a tentacled
-                arm—is stored in the collections of the
-                Division of Invertebrate Zoology. The giant
-                squid is one of over 13 million specimens in
-                the Museum’s scientific collections."
-            ></SpotlightCard></div>
+                image={scorpion}
+                subtitle="Behind the Dioramas"
+                title="Live Model for Scorpion Painting"
+                description="Read about the details that Michael Anderson and his team considered in the construction and mainenance of the Peabody dioramas. This time: scorpions!"
+            ></SpotlightCard>
+            <p><Link to="/about/highlights/2019-01-01-bhullar">Read More &rsaquo;</Link></p>
+            </div>
         </div>
     )
 }
