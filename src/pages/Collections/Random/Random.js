@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import styles from './random.module.css';
 
 import Data from '../Search/Data';
-import { Link } from 'react-router-dom';
 
 class random extends Component {
 
