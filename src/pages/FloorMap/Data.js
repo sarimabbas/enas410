@@ -82,7 +82,7 @@ const data = {
             title: "The Great Hall",
             description: "The Great Hall of Dinosaurs is the centerpiece of the Yale Peabody Museum. Featuring skeletons from the Museum’s world-renowned paleontology collections, it is also home to Rudolph Zallinger’s famous mural The Age of Reptiles. The hall contains the dinosaurs <i>Deinonychus, Camarasaurus, Stegosaurus, Camptosaurus, </i>and of course the <i>Brontosaurus.</i>",
             image: greatHallOverlayImg,
-            more: "/map/first-floor/great-hall",
+            more: "/floor-plan/first-floor/great-hall",
         },
 
         "hall_of_ancient_oceans": {

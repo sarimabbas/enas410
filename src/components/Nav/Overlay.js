@@ -48,7 +48,7 @@ class overlay extends Component {
                                     </span>
                                     <div className={classNames(styles.links)}>
                                         <Link to="/visit/admission">Admission {'&'} Hours</Link>
-                                        <Link to="/map">Floor Plan {'&'} Virtual Tour</Link>
+                                        <Link to="/floor-plan">Interactive Floor Plan</Link>
                                         <Link to="/visit/cafe">Peabody Café</Link>
                                         <Link to="/visit/directions">Directions {'&'} Parking</Link>
                                         <Link to="/visit/group-visits">Group Visits</Link>

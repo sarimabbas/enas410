@@ -32,7 +32,7 @@ class App extends Component {
                             <Route path="/learn" component={Learn} />
                             <Route path="/collections" component={Collections} />
                             <Route path="/about" component={About} />
-                            <Route path="/map" component={FloorMap} />
+                            <Route path="/floor-plan" component={FloorMap} />
                         </Switch>
                     </ScrollToTop>
                 </Router>

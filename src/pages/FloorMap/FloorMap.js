@@ -110,14 +110,14 @@ class floormap extends Component {
                         {/* middle floor */}
                         <div className={styles.gridMiddle}>
                             <Switch>
-                                <Redirect exact from="/map" to="/map/first-floor"/>
-                                <Route exact path='/map/first-floor' 
+                                <Redirect exact from="/floor-plan" to="/floor-plan/first-floor"/>
+                                <Route exact path='/floor-plan/first-floor' 
                                     render={(props) => <FirstFloor {...props} handleRoom={this.handleRoom} />}/>
-                                <Route path='/map/second-floor' 
+                                <Route path='/floor-plan/second-floor' 
                                     render={(props) => <SecondFloor {...props} handleRoom={this.handleRoom} />}/>
-                                <Route path='/map/third-floor' 
+                                <Route path='/floor-plan/third-floor' 
                                     render={(props) => <ThirdFloor {...props} handleRoom={this.handleRoom} />}/>
-                                <Route path='/map/first-floor/great-hall' 
+                                <Route path='/floor-plan/first-floor/great-hall' 
                                     render={(props) => <GreatHall {...props} handleRoom={this.handleRoom} />}/>
                             </Switch>
                         </div>
