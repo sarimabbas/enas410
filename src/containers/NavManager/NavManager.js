@@ -11,7 +11,7 @@ class navmanager extends Component {
         this.state = {
             scrollThresholdMet: false,
             width: "'wdth' 1000" + ", 'wght' 800",
-            positionType: "fixed",
+            positionType: "absolute",
             top: 0,
             fadedOnce: false,
             paddingBottom: "7vh",
@@ -39,6 +39,7 @@ class navmanager extends Component {
             this.setState({
                 positionType: "absolute",
                 top: 0,
+                width: "'wdth' 1000" + ", 'wght' 800",
             })
         } else {
 
