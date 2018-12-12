@@ -20,50 +20,56 @@ class navmanager extends Component {
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.handleScroll)
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.handleScroll)
     }
 
     handleScroll = (event) => {
+
+        console.log(window.innerWidth)
+
         let scrollTop = document.scrollingElement.scrollTop
         const scrollThreshold = window.innerHeight - 64;
-        const shrinkSpeed = 4.4+1052.3/window.innerWidth;
 
-        // set the font-width as a function of scroll and max font width
-        const fontMax = 1000;
-        let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
-
-        let widthNo = ((1 - normalized) * fontMax).toString();
-
-        let fontWeight = 800 - (200 / window.innerHeight * scrollTop);
-
-
-        
-        let width = "'wdth' " + widthNo + ", 'wght' " + fontWeight; 
-        let paddingBottom = 7 - (7 / window.innerHeight * scrollTop);
-    
-
-        this.setState({
-            width : width,
-            paddingBottom : paddingBottom + "vh",
-        })
-
-        // console.log(width)
-
-        // don't follow on scroll once width threshold has been met
-        const pos = scrollThreshold / 1.47;
-        if (scrollTop > pos) {
+        if (window.innerWidth < 415) {
             this.setState({
                 positionType: "absolute",
-                top: pos
+                top: 0,
             })
         } else {
+
+            
+            const shrinkSpeed = 4.4+1052.3/window.innerWidth;
+
+            // set the font-width as a function of scroll and max font width
+            const fontMax = 1000;
+            let normalized = ((scrollTop - 0.0) / (document.documentElement.scrollHeight) - 0.0) * shrinkSpeed
+            let widthNo = ((1 - normalized) * fontMax).toString();
+            let fontWeight = 800 - (200 / window.innerHeight * scrollTop);
+            let width = "'wdth' " + widthNo + ", 'wght' " + fontWeight; 
+            let paddingBottom = 7 - (7 / window.innerHeight * scrollTop);
             this.setState({
-                positionType: "fixed",
-                top: 0
+                width : width,
+                paddingBottom : paddingBottom + "vh",
             })
+
+            // don't follow on scroll once width threshold has been met
+            const pos = scrollThreshold / 1.47;
+            if (scrollTop > pos) {
+                this.setState({
+                    positionType: "absolute",
+                    top: pos
+                })
+            } else {
+                this.setState({
+                    positionType: "fixed",
+                    top: 0
+                })
+            }
         }
 
         // hiding the logo completely after a threshold
@@ -79,8 +85,6 @@ class navmanager extends Component {
                 scrollThresholdMet: false,
             })
         }
-
-        // console.log(this.state)
     }
 
     render() {
