@@ -159,7 +159,7 @@ const data = {
 
         "life_sciences": {
             title: "Life Sciences",
-            description: "The rennovated Life Sciences Hall offers a view into the diversity and beuaty of the life on Earth. Featuring the Peabody's extensive collections of flora and fauna, the Life Science Hall has something for everyone who loves life.  Peabody contains information on the dioramas and specimens from the previous Connecticut Hall of Birds. ",
+            description: "The rennovated Life Sciences Hall offers a view into the diversity and beuaty of the life on Earth. Featuring the Peabody's extensive collections of flora and fauna, the Life Science Hall has something for everyone who loves life.  Peabody contains information on the dioramas and specimens from the previous Connecticut Hall of Birds.",
             image: lifesciOverlayImg,
             more: "",
         },  
