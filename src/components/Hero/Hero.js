@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // styles
 import styles from './Hero.module.css';
@@ -9,6 +9,7 @@ import classNames from 'classnames';
 import posed from 'react-pose';
 
 // assets
+import slide0 from './assets/slide0.gif';
 import slide1 from './assets/slide1.jpg';
 import slide2 from './assets/slide2.jpg';
 import slide3 from './assets/slide3.jpg';
@@ -26,11 +27,11 @@ class hero extends Component {
 
         // initial state
         this.state = {
-            image: slide1,
-            title: "Behind the Giant Squid",
-            subtitle: "Peabody Highlights",
-            selected: "slider-1",
-            link: "/about/highlights/2015-08-12"
+            link : "https://vimeo.com/305635679/56c9cc5fe1",
+            image : slide0,
+            title : "This was Making Spaces",
+            subtitle : "Watch the Video",
+            selected : "slider-0",
         }
 
         // controls handler binding
@@ -46,6 +47,12 @@ class hero extends Component {
         let link = null;
 
         switch (e.currentTarget.id) {
+            case "slider-0":
+                link = "https://vimeo.com/305635679/56c9cc5fe1"
+                image = slide0
+                title = "This was Making Spaces"
+                subtitle = "Watch the Video"
+                break;
             case "slider-1":
                 link = "/about/highlights/2015-08-12"
                 image = slide1
@@ -95,6 +102,7 @@ class hero extends Component {
         let url = vignette + "url('" + this.state.image + "')"
 
         // which is selected?
+        const slider0Selected = this.state.selected === "slider-0" ? styles.radioSelected : NaN
         const slider1Selected = this.state.selected === "slider-1" ? styles.radioSelected : NaN
         const slider2Selected = this.state.selected === "slider-2" ? styles.radioSelected : NaN
         const slider3Selected = this.state.selected === "slider-3" ? styles.radioSelected : NaN
@@ -106,13 +114,18 @@ class hero extends Component {
                 style={{backgroundImage: url}}>
 
                 <div className={styles.heroInner}>
-                    {/* <Link to={this.state.link} style={{textDecoration: "none", color:"inherit", lineHeight:"0", marginBottom:"0"}}> */}
+                    
                     <div className={styles.text}>
-                        <h1 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h1>
-                        <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
+                        <a href={this.state.link} style={{textDecoration: "none", color:"inherit", lineHeight:"0", marginBottom:"0"}}>
+                            <h1 dangerouslySetInnerHTML={{__html: this.state.title}} className={styles.title}></h1>
+                            <h2 className={styles.subtitle}>{this.state.subtitle}</h2>
+                        </a>
                     </div>
-                    {/* </Link> */}
+                    
                     <div className={styles.controls}>
+                        <div name="slider" id="slider-0" 
+                             className={classNames(styles.radio, slider0Selected)} 
+                             onClick={this.handleControls}/>
                         <div name="slider" id="slider-1" 
                              className={classNames(styles.radio, slider1Selected)} 
                              onClick={this.handleControls}/>
