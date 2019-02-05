@@ -21,7 +21,7 @@
     "react-mt-svg-lines": "^0.9.0",
     "react-pose": "^4.0.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "^2.1.3",
     "react-sound": "^1.2.0",
     "react-spring": "^6.1.8"
   },

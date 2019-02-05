@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import Aux from '../../hoc/Aux';
 import Generic from '../Generic/Generic';
 import { Route, Redirect, Switch } from 'react-router-dom';
-// import Sound from 'react-sound';
+import Sound from 'react-sound';
 
 // all the components that make up the page
 import FirstFloor from './FirstFloor/FirstFloor';
@@ -21,7 +21,6 @@ import './FloorMap.css';
 
 // data source for the map
 import Data from './Data';
-
 import soundfile from './kostesaurus.mp3'
 
 class floormap extends Component {
