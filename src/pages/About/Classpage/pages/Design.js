@@ -9,11 +9,10 @@ import design3 from './design3.png'
 
 class Design extends Component {
 
-
     render() {
         return (
             <Aux>
-                <p><Link onClick={this.props.handleBack2Overview} exact to="/about/class">&lsaquo; Back to Class</Link></p>
+                <p><Link to="/about/class">&lsaquo; Back to Class</Link></p>
                 <h1>Design Team</h1>
                 <p>As the design team, we wanted to create a hypothetical image of the renovated Peabody. We brought to the forefront the historical significance of the museum with the logo and brand identity, we highlighted the diverse exhibits with the website and map, we emphasized the Peabody’s reputation as a leading research facility through the Highlights page, and we encapsulated all of our work by promoting it with our website and social media.</p>
                 <h3>Visual Identity</h3>

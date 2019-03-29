@@ -14,6 +14,14 @@ import Staff from './Staff/Staff'
 import Classpage from './Classpage/Classpage'
 import Highlights from './Highlights/Highlights'
 
+import Design from './Classpage/pages/Design'
+import Audio from './Classpage/pages/Audio'
+import Mural from './Classpage/pages/Mural'
+import Egypt from './Classpage/pages/Egypt'
+import Dome from './Classpage/pages/Dome'
+import Cafe from './Classpage/pages/Cafe'
+
+
 // styles
 import styles from './About.module.css'
 
@@ -29,7 +37,15 @@ const about = (props) => {
                             <Route path={'/about/mission'} component={History} />
                             <Route path={'/about/contact'} component={Contact} />
                             <Route path={'/about/staff'} component={Staff} />
-                            <Route path={'/about/class'} component={Classpage} />
+
+                            <Route path={'/about/class'} exact component={Classpage} />
+                            <Route path={'/about/class/design'} exact component={Design} />
+                            <Route path={'/about/class/audio'} exact component={Audio} />
+                            <Route path={'/about/class/cafe'} exact component={Cafe} />
+                            <Route path={'/about/class/dome'} exact component={Dome} />
+                            <Route path={'/about/class/egypt'} exact component={Egypt} />
+                            <Route path={'/about/class/mural'} exact component={Mural} />
+
                             <Route path={'/about/highlights'} component={Highlights} />
                         </Switch>
                     </div>

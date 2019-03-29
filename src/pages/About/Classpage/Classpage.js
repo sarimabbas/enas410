@@ -26,6 +26,7 @@ import styles from './Classpage.module.css'
 
 class classpage extends Component {
 
+
     constructor(props) {
         super(props)
 
@@ -38,22 +39,8 @@ class classpage extends Component {
                 overview: true,
             }
         }
-
-        this.handleClick = this.handleClick.bind(this);
-        this.handleBack2Overview = this.handleBack2Overview.bind(this);
     }
 
-    handleClick = (event) => {
-        this.setState({
-            overview: false,
-        })
-    }
-
-    handleBack2Overview = (event) => {
-        this.setState({
-            overview: true,
-        })
-    }
 
     render() {
         return (
@@ -101,7 +88,7 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/design"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/design"}>Read more about our process &rsaquo;</Link></p>
                     <br />
 
                     <h1>Café Team</h1>
@@ -131,7 +118,7 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/cafe"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/cafe"}>Read more about our process &rsaquo;</Link></p>
                     <br />
 
                     <h1>Immersive Audio Team</h1>
@@ -154,7 +141,7 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/audio"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/audio"}>Read more about our process &rsaquo;</Link></p>
                     <br />
 
                     <h1>Dome Team</h1>
@@ -177,7 +164,7 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/dome"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/dome"}>Read more about our process &rsaquo;</Link></p>
                     <br />
 
                     <h1>Egypt Team</h1>
@@ -207,7 +194,7 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/egypt"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/egypt"}>Read more about our process &rsaquo;</Link></p>
                     <br />
 
                     <h1>Magic Mural</h1>
@@ -223,23 +210,23 @@ class classpage extends Component {
                         </p>
                         </div>
                     </div>
-                    <p><Link onClick={this.handleClick} to={"/about/class/mural"}>Read more about our process &rsaquo;</Link></p>
+                    <p><Link to={"/about/class/mural"}>Read more about our process &rsaquo;</Link></p>
                     <br />
                 </Aux>
                 :
                 <Aux>
                     <Route path='/about/class/design' 
-                        render={(props) => <Design {...props} handleBack2Overview={this.handleBack2Overview}/>}/>
+                        render={(props) => <Design {...props} />}/>
                     <Route path='/about/class/cafe'
-                        render={(props) => <Cafe {...props} handleBack2Overview={this.handleBack2Overview} />} />
+                        render={(props) => <Cafe {...props} />} />
                     <Route path='/about/class/audio'
-                        render={(props) => <Audio {...props} handleBack2Overview={this.handleBack2Overview} />} />
+                        render={(props) => <Audio {...props} />} />
                     <Route path='/about/class/mural'
-                        render={(props) => <Mural {...props} handleBack2Overview={this.handleBack2Overview} />} />
+                        render={(props) => <Mural {...props} />} />
                     <Route path='/about/class/dome'
-                        render={(props) => <Dome {...props} handleBack2Overview={this.handleBack2Overview} />} />
+                        render={(props) => <Dome {...props} />} />
                     <Route path='/about/class/egypt'
-                        render={(props) => <Egypt {...props} handleBack2Overview={this.handleBack2Overview} />} />
+                        render={(props) => <Egypt {...props} />} />
                 </Aux> }
             </Aux>
         )

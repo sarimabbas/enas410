@@ -8,11 +8,10 @@ import egypt2 from './egypt2.png'
 
 class Egypt extends Component {
 
-
     render() {
         return (
             <Aux>
-                <p><Link onClick={this.props.handleBack2Overview} exact to="/about/class">&lsaquo; Back to Class</Link></p>
+                <p><Link exact to="/about/class">&lsaquo; Back to Class</Link></p>
                 <h1>Egypt Team</h1>
                 <img className={classNames("imageKing")}
                     src={egypt1} alt="Egypt Team"

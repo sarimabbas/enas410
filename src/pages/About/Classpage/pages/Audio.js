@@ -8,11 +8,10 @@ import audio2 from './audio2.png'
 
 class Audio extends Component {
 
-
     render() {
         return (
             <Aux>
-                <p><Link onClick={this.props.handleBack2Overview} exact to="/about/class">&lsaquo; Back to Class</Link></p>
+                <p><Link exact to="/about/class">&lsaquo; Back to Class</Link></p>
                 <h1>Immersive Audio Team</h1>
                 <img className={classNames("imageKing")}
                     src={audio1} alt="Audio Team"

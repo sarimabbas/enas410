@@ -8,11 +8,10 @@ import cafe2 from './cafe2.png'
 
 class Cafe extends Component {
 
-
     render() {
         return (
             <Aux>
-                <p><Link onClick={this.props.handleBack2Overview} exact to="/about/class">&lsaquo; Back to Class</Link></p>
+                <p><Link exact to="/about/class">&lsaquo; Back to Class</Link></p>
                 <h1>Cafe Team</h1>
                 <img className={classNames("imageKing")}
                     src={cafe1} alt="Cafe Team"

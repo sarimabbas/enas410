@@ -7,11 +7,10 @@ import mural1 from './mural1.gif'
 
 class Mural extends Component {
 
-
     render() {
         return (
             <Aux>
-                <p><Link onClick={this.props.handleBack2Overview} exact to="/about/class">&lsaquo; Back to Class</Link></p>
+                <p><Link exact to="/about/class">&lsaquo; Back to Class</Link></p>
                 <h1>Magic Mural</h1>
                 <img className={classNames("imageKing")}
                     src={mural1} alt="Magic Mural"
